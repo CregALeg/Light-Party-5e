@@ -1,0 +1,1544 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "LightParty5e",
+        "abbreviation": "LP5e",
+        "full": "Light Party 5e - A Final Fantasy XIV conversion to Dungeons and Dragons 5th Edition.",
+        "authors": [
+          "CregALeg"
+        ],
+        "convertedBy": [
+          "CregALeg"
+        ],
+        "url": "https://homebrewery.naturalcrit.com/share/8s-QIvGX_tuB",
+        "version": "Before the Dawn Edition",
+        "color": "00FFFF"
+      }
+    ],
+    "optionalFeatureTypes": {
+      "MNK:MBT": "Monk: Masterful Blitz Techniques",
+      "MCH:G": "Machinist: Gadgets",
+      "SMN:S": "Summoner: Summons",
+      "LP5e:LB": "Limit Breaks"
+    },
+    "dateAdded": 0,
+    "dateLastModified": 1717500001
+  },
+  "race": [
+    {
+      "name": "Au Ra",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": [
+        "Natural Armor"
+      ],
+      "skillProficiencies": [
+        {
+          "perception": true
+        }
+      ],
+    	"weaponProficiencies": [
+    		{
+    			"choose": {
+    				"fromFilter": "type=martial weapon|miscellaneous=mundane",
+    				"count": 2
+    			}
+    		}
+    	],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Armor",
+          "entries": [
+            "Your tough scales provide you extra protection. When you aren’t wearing armor, your base AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Cranial Horns",
+          "entries": [
+            "Your horns grant you an enhanced sense of perception and spatial awareness. You have proficiency in the Perception skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Weapon Training",
+          "entries": [
+            "You have proficiency in two melee weapons of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "As an au ra, you come from either the raen or xaela clans, each of which gives you different benefits."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Au Ra",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Elezen",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30
+      },
+      "darkvision": 60,
+      "traitTags": [
+        "Darkvision"
+      ],
+      "skillProficiencies": [
+        {
+          "perception": true
+        }
+      ],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Keen Senses",
+          "entries": [
+            "You have proficiency in the Perception skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "As an elezen, you hail from one of two clans; either the duskwight or wildwood. Choose either of these clans as your subrace."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Elezen",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Hrothgar",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": [
+        "Natural Weapon"
+      ],
+    	"toolProficiencies": [
+    		{
+    			"choose": {
+    				"from": [
+    					"smith's tools",
+    					"tinker's tools"
+    				]
+    			}
+    		}
+    	],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Claws",
+          "entries": [
+            "Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Weapon Smith",
+          "entries": [
+            "Your people are known for crafting unique weapons. You have proficiency in your choice of Smith’s Tools or Tinker’s Tools."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Courage and Fealty",
+          "entries": [
+            "You have advantage on saving throws against being Charmed or Frightened."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Bolstering Roar",
+          "entries": [
+            "As a bonus action, you let out a battle cry that rouses your fighting spirit. You gain a number of temporary hit points equal to twice your proficiency bonus.",
+            "Once you use this trait, you can’t use it again until you finish a short or long rest.",
+            "This trait gains an additional effect based on your choice of subrace."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "As a hrothgar, you belong to one of two clans, the Helion or the Lost. While the two clans have little-to-no physical differences, slight differences in history and culture give you unique features. Choose from either the Helion or Lost clans as your subrace."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Hrothgar",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Hyur",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": [
+        "Skill Proficiency",
+        "Tool Proficiency"
+      ],
+    	"skillProficiencies": [
+    		{
+    			"any": 1
+    		}
+    	],
+    	"toolProficiencies": [
+    		{
+    			"any": 1
+    		}
+    	],
+
+    	"languageProficiencies": [
+    		{
+    			"common": true,
+    			"anyStandard": 2
+    		}
+    	],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Broad Skillset",
+          "entries": [
+            "You gain proficiency in one skill of your choice, one tool or gaming set of your choice, and you know one additional language of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Adaptable",
+          "entries": [
+            "You are adept at adjusting to unfamiliar situations. When you make an attack roll, ability check or saving throw that doesn’t already include your proficiency bonus, you can choose to add half your proficiency bonus, rounded down, to that roll."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Migratory",
+          "entries": [
+            "Your body is built for long journeys on foot. You have advantage on saving throws against Exhaustion caused by a forced march during travel."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fast Learner",
+          "entries": [
+            "It takes you half as much time to learn a new language or set of tools."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "As a hyur, you descend from one of two clans; either the Midlander or Highlander clans. Choose either of these clans as your subrace."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Hyur",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Lalafell",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "S",
+      "speed": {
+        "walk": 25
+      },
+      "traitTags": [
+        "Tool Proficiency"
+      ],
+    	"toolProficiencies": [
+    		{
+    			"any": 1
+    		}
+    	],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Small."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 25 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Lalafellin Nimbleness",
+          "entries": [
+            "You can move through the space of any creature that is of a size larger than yours."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Scurry",
+          "entries": [
+            "You can take the Disengage action as a bonus action. Whenever you take the Disengage action, your speed increases by 5 feet until the end of your turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tradesmen",
+          "entries": [
+            "You have proficiency in one tool of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "As a lalafell, you descend from one of two clans; either the Plainsfolk and Dunesfolk clans. Choose either of these clans as your subrace."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Lalafell",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Miqo'te",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 35
+      },
+      "darkvision": 60,
+      "traitTags": [
+        "Darkvision"
+      ],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 35 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colours in that darkness only as shades of grey."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Keen Awareness",
+          "entries": [
+            "Your senses have been honed by generations of hunting. You have a +2 bonus to your passive Wisdom (Perception) score and to any Wisdom (Perception) checks you make."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hunter's Stride",
+          "entries": [
+            "You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "As a miqo’te, you belong to either the Seekers of the Sun clan, or the Keepers of the Moon clan. Choose either of these clans as your subrace."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Miqo'te",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Roegadyn",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": [
+        "Powerful Build"
+      ],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Powerful Build",
+          "entries": [
+            "You count as one size larger when determining your carrying weight and the weight you can push, drag, or lift."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Roegadyn Toughness",
+          "entries": [
+            "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Endless Stamina",
+          "entries": [
+            "You can use your action to tap into the endless well of stamina within you. You regain a number of hit points equal to your level, and reduce your exhaustion level, if any, by 1. Once you use this trait, you can’t use it again until you finish a long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "Among roegadyn, there are two distinct clans, each with their own unique physiology and cultures. Choose from the sea wolf or hellsguard subraces."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Roegadyn",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    },
+    {
+      "name": "Viera",
+      "source": "LightParty5e",
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 35
+      },
+      "darkvision":60,
+      "traitTags": [
+        "Darkvision"
+      ],
+      "entries":[
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Speed",
+          "entries": [
+            "Your walking speed is 35 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Standing Leap",
+          "entries": [
+            "Your long jump distance increases by 10 feet, and your high jump increases by 5 feet. You also don’t need a running start to gain the full effects of a jump."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Long Fall",
+          "entries": [
+            "Making your home in the trees teaches you to fall from them safely. When you fall and aren’t incapacitated, you can subtract up to 20 feet from the fall when calculating the fall’s damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hidden Hunter",
+          "entries": [
+            "You can take the Hide action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": [
+            "The different lifestyles and adaptations of the rava and veena clan provide slight but meaningful differences in the two. Choose from the rava or veena subraces."
+          ]
+        }
+      ],
+      "fluff": {
+        "_raceFluff": {
+          "name": "Viera",
+          "source": "LightParty5e"
+        }
+      },
+      "hasFluff": true
+    }
+  ],
+  "subrace": [
+    {
+      "name": "Raen",
+      "source": "LightParty5e",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "insight",
+              "performance",
+              "persuasion"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Social Proficiency",
+          "entries": [
+            "You gain proficiency in one of the following skills of your choice: Insight, Performance or Persuasion."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Loyalty",
+          "entries": [
+            "You have advantage on saving throws against being charmed."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Will of Azim",
+          "entries": [
+            "When you make a saving throw and fail, you can use your reaction to roll a d6 and add it to the save, potentially turning the failure into a success. Once you use this trait, you can’t use it again until you finish a short or long rest."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "As a member of the auri raen clan, you have integrated into the cultures of the Far East, granting you unique traits that reflects your social nature and iron will."
+        ],
+        "_appendRaceFluff": {
+          "name": "Au Ra",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Au Ra",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Xaela",
+      "source": "LightParty5e",
+      "speed": {
+        "walk": 35
+      },
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "animal handling",
+              "athletics",
+              "intimidation"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Warrior's Insight",
+          "entries": [
+            "You gain proficiency in one of the following skills of your choice: Animal Handling, Athletics or Intimidation."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Nomadic Wanderer",
+          "entries": [
+            "Hardened by many years of wandering the steppe, your walking speed increases to 35 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Might of Nhaama",
+          "entries": [
+            "When you make a weapon attack and miss, you can use your reaction to roll a d6 and add it to the roll, potentially turning the miss into a hit. Once you use this trait, you can’t use it again until you finish a short or long rest."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "As a member of the auri xaela clan, you are part of a nomadic warrior culture, granting you unique traits that reflects your combat skill and fiery will."
+        ],
+        "_appendRaceFluff": {
+          "name": "Au Ra",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Au Ra",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Duskwight",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Tool Proficiency"
+      ],
+    	"toolProficiencies": [
+    		{
+    			"choose": {
+    				"from": [
+    					"mason's tools",
+    					"potter's tools"
+    				]
+    			}
+    		}
+    	],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Traditional Tools",
+          "entries": [
+            "You have proficiency in your choice of mason’s tools or potter’s tools."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sensitive Hearing",
+          "entries": [
+            "Thanks to your sensitive ears, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that rely on hearing.",
+            "Additionally, you can take the Search action as a bonus action, using the uncanny awareness granted by your senitive hearing to listen for signs of enemies."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The duskwight elezen dwell in the caves beneath the black shroud. Many years of living in the dark, dank tunnels have blessed them with phenomenal hearing. Their traditions hold fast to the arts of stonecarving and pottery."
+        ],
+        "_appendRaceFluff": {
+          "name": "Elezen",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Elezen",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Wildwood",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Tool Proficiency",
+        "Weapon Proficiency"
+      ],
+      "weaponProficiencies": [
+      	{
+      		"shortbow|phb": true,
+      		"longbow|phb": true
+      	}
+      ],
+    	"toolProficiencies": [
+    		{
+    			"choose": {
+    				"from": [
+    					"flute",
+    					"lute",
+    					"lyre",
+    					"viol"
+    				]
+    			}
+    		}
+    	],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Gridanian Training",
+          "entries": [
+            "You have proficiency with shortbows and longbows. Additionally, you gain proficiency in one of the following musical instruments of your choice: flute, lute, lyre or viol."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hawk Shot",
+          "entries": [
+            "Your impeccable eyesight allows you to make attacks at long range. When you make a ranged attack, you can increase the range of the attack by 30 feet. If the attack uses a weapon, both the long and normal ranges are increased.",
+            "You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The wildwood elezen primarily hail from the forest city of Gridania. Their ancestors created the arts of archery and string musical instruments, traditions which are taught to most wildwood elezen in the modern day. They also possess fantastic eyesight, which aids in their use of ranged weapons."
+        ],
+        "_appendRaceFluff": {
+          "name": "Elezen",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Elezen",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Ishgardian",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Tool Proficiency",
+        "Weapon Proficiency"
+      ],
+      "skillProficiencies": [
+        {
+          "religion": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Holy Scriptures",
+          "entries": [
+            "You have proficiency in the Religion skill. Additionally, you have advantage on checks made to recall information about the goddess Halone."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Halone's Fury",
+          "entries": [
+            "You can channel your holy fervour through your weapons. When you hit a target with a simple or martial weapon, you can cause the target to take extra damage equal to your proficiency bonus.",
+            "You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "For generations the proud city of Ishgard stood as a beacon for the virtues of the church. The people’s devotion to their religion has given rise to a devout and noble culture."
+        ],
+        "_appendRaceFluff": {
+          "name": "Elezen",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Elezen",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Helion",
+      "source": "LightParty5e",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Roar of Fealty",
+          "entries": [
+            "When you use your Bolstering Roar, you end the Charmed condition on yourself and creatures of your choice within 10 feet."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The life of a helion revolves around their queen. Helions are unwavering in their loyalty, both to their queen and their allies."
+        ],
+        "_appendRaceFluff": {
+          "name": "Hrothgar",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Hrothgar",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "The Lost",
+      "source": "LightParty5e",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Roar of Courage",
+          "entries": [
+            "When you use your Bolstering Roar, you end the Frightened condition on yourself and creatures of your choice within 10 feet."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Having lost or abandoned their queen, The Lost value their freedom and travel the world in search of new meaning."
+        ],
+        "_appendRaceFluff": {
+          "name": "Hrothgar",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Hrothgar",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Midlander",
+      "source": "LightParty5e",
+      "skillProficiencies": [
+        {
+          "perception": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Natural Companion",
+          "entries": [
+            "You have proficiency in the Persuasion skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tool Master",
+          "entries": [
+            "Choose one of your tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses your chosen tool."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Midlanders are widespread and quickly adopt the social norms of where they settle. They are naturally amicable with the people they meet, and put particular focus into mastering their professions."
+        ],
+        "_appendRaceFluff": {
+          "name": "Hyur",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Hyur",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Highlander",
+      "source": "LightParty5e",
+      "skillProficiencies": [
+        {
+          "athletics": true
+        }
+      ],
+    	"weaponProficiencies": [
+    		{
+    			"choose": {
+    				"fromFilter": "type=martial weapon|miscellaneous=mundane",
+    				"count": 2
+    			}
+    		}
+    	],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Natural Athlete",
+          "entries": [
+            "You have proficiency in the Athletics skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Martial Training",
+          "entries": [
+            "You are proficient in two martial weapons of your choice."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Highlanders are much less populous, and hail primarily from the mountains of Gyr Abania. Their bodies and cultures have been harded by generations of conflict."
+        ],
+        "_appendRaceFluff": {
+          "name": "Hyur",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Hyur",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Far-Eastern",
+      "source": "LightParty5e",
+      "skillProficiencies": [
+        {
+          "insight": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Natural Insight",
+          "entries": [
+            "You have proficiency in the Insight skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Loyalty",
+          "entries": [
+            "You have advantage on saving throws against being charmed."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Like most Hyur, those in the far east are adaptable, but have unique traits brought about by their wildly different cultures."
+        ],
+        "_appendRaceFluff": {
+          "name": "Hyur",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Hyur",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Padjal",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Spellcasting"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "druidcraft#w"
+            ]
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "nature": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Natural Naturalist",
+          "entries": [
+            "You have proficiency in the Nature skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Padjali Magic",
+          "entries": [
+            "You know the {@spell druidcraft} cantrip. Wisdom is your spellcasting ability for it."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Padjal are horned, youthful Hyur rarely born within the Black Shroud. Ironically, they are not a natural occurence; rather, they are gifted power from birth by the Elementals."
+        ],
+        "_appendRaceFluff": {
+          "name": "Hyur",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Hyur",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Plainsfolk",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Skill Proficiency"
+      ],
+      "skillProficiencies": [
+        {
+          "nature": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Agrarian Folk",
+          "entries": [
+            "You have proficiency in the Nature skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Prarie Camoflague",
+          "entries": [
+            "You have advantage on Dexterity (Stealth) checks made to hide in grassland or forest terrain."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The Plainsfolk inhabit the grasslands of western Eorzea, primarily on the island of Vylbrand, but some have made their way east and settled in the lands in and around the Black Shroud."
+        ],
+        "_appendRaceFluff": {
+          "name": "Lalafell",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Lalafell",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Dunesfolk",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Skill Proficiency"
+      ],
+      "skillProficiencies": [
+        {
+          "deception": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Merchant Folk",
+          "entries": [
+            "You have proficiency in the Deception skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Acclimatised",
+          "entries": [
+            "You are naturally adapted to harsh desert heat. You are immune to the effects of extreme heat."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dust Shield",
+          "entries": [
+            "Your eyes are covered in a thin membrane that keeps out desert sands and sunlight. You have advantage on saving throws against being blinded."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The Dunesfolk dwell in the deserts of Thanalan, and are naturally adapted to the harsh climates therein."
+        ],
+        "_appendRaceFluff": {
+          "name": "Lalafell",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Lalafell",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Dwarf",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Skill Proficiency"
+      ],
+      "skillProficiencies": [
+        {
+          "athletics": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Miner Folk",
+          "entries": [
+            "You have proficiency in the Athletics skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Heavy Handed",
+          "entries": [
+            "You ignore the Heavy property of weapons."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Strong Stomach",
+          "entries": [
+            "You have advantage on saving throws against the Poisoned condition."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "On The First, a parallel world to the one that contains Eorzea, Lalafell are known as Dwarves. A similarly stout and hardy folk, they dwell in the northern mountains of Norvrandt, and are known for their face-obscuring helmets and beard-like scarves."
+        ],
+        "_appendRaceFluff": {
+          "name": "Lalafell",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Lalafell",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Seekers of the Sun",
+      "source": "LightParty5e",
+      "speed": [
+        {
+          "walk": 35,
+          "climb": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Superior Dash",
+          "entries": [
+            "When you take the Dash action, your gain an additional 15 feet of movement for the current turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Climber",
+          "entries": [
+            "You have a climbing speed equal to your walking speed."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Seekers of the Sun are diurnal hunters, and frequently worshippers of Azeyama, the Warden. They possess fierce agility and stamina, capable of chasing prey through the desert heat with ease, and thanks to their natural talent for climbing, they often find work as sailors."
+        ],
+        "_appendRaceFluff": {
+          "name": "Miqo'te",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Miqo'te",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Keepers of the Moon",
+      "source": "LightParty5e",
+      "darkvision": 120,
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Superior Darkvision",
+          "entries": [
+            "Accustomed to the dark of night, you have even greater darkvision than that of your cousins. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Veil of the Moon",
+          "entries": [
+            "You have advantage on Dexterity (Stealth) checks made to hide in darkness."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Nocturnal hunters with a matriarchal society, the Keepers of the Moon are frequently worshippers of Menphina. They make their home in the cool, dark barrows of the Black Shroud, hunting the forest’s myriad beasts and trading the spoils in exchange for agricultural goods."
+        ],
+        "_appendRaceFluff": {
+          "name": "Miqo'te",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Miqo'te",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Sea Wolf",
+      "source": "LightParty5e",
+      "speed": [
+        {
+          "walk": 30,
+          "swim": true
+        }
+      ],
+      "traitTags": [
+        "Tool Proficiency"
+      ],
+      "toolProficiencies": [
+        {
+          "navigator's tools": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Natural Swimmer",
+          "entries": [
+            "Thanks to your life at sea, you have a swimming speed of 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sea Legs",
+          "entries": [
+            "You have advantage on saving throws against being knocked prone."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Navigator",
+          "entries": [
+            "You have proficiency in navigator’s tools."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Descended from the pirates that plagued the Northern Empty, the Sea Wolves are most at home on the seas or in the maritime city of Limsa Lominsa. True to their roots, many make a name for themselves as pirates, navigators of fishermen."
+        ],
+        "_appendRaceFluff": {
+          "name": "Roegadyn",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Roegadyn",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Hellsguard",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Damage Resistance",
+        "Tool Proficiency"
+      ],
+      "toolProficiencies": [
+        {
+          "smith's tools": true
+        }
+      ],
+      "resist": [
+        "fire"
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Fire Resistance",
+          "entries": [
+            "You have resistance to fire damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Navigator",
+          "entries": [
+            "You have proficiency in smith's tools."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Making their home in the rugged mountains of Abalathia’s Spine, the Hellsguard are few in number but great in spirit. They are proud warriors, with bodies and spirits tempered by the unforgiving heat of their volcanic homeland."
+        ],
+        "_appendRaceFluff": {
+          "name": "Roegadyn",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Roegadyn",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Othardian",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Weapon Proficiency"
+      ],
+    	"weaponProficiencies": [
+    		{
+    			"choose": {
+    				"fromFilter": "type=martial weapon|miscellaneous=mundane",
+    				"count": 2
+    			}
+    		}
+    	],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Weapon Training",
+          "entries": [
+            "You have proficiency in two martial weapons of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fearless",
+          "entries": [
+            "You have advantage on saving throws against being frightened."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "A common site in the Far East and even amongst the forces of Garlemald, the Othardian Roegadyn resemble the Hellsguard in appearance, though with paler skin that sets them apart."
+        ],
+        "_appendRaceFluff": {
+          "name": "Roegadyn",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Roegadyn",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Rava",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Weapon Proficiency"
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Nature's Step",
+          "entries": [
+            "Accustomed to weaving through the dense foliage of the jungle, you can move through nonmagical difficult terrain without expending extra movement, if you are using your walking speed on the ground or a floor."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Jungle Camouflage",
+          "entries": [
+            "You have advantage on Dexterity (Stealth) checks made to hide in jungle or forest terrain."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Dwelling in the Golmore Jungle, the Rava’s umber skin helps them blend into the forest to ambush their prey."
+        ],
+        "_appendRaceFluff": {
+          "name": "Viera",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Viera",
+      "raceSource": "LightParty5e"
+    },
+    {
+      "name": "Veena",
+      "source": "LightParty5e",
+      "traitTags": [
+        "Weapon Proficiency"
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Mountain Acclimation",
+          "entries": [
+            "You have resistance to cold damage. You also naturally acclimate to high altitudes, including elevations above 20,000 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Snow Camouflage",
+          "entries": [
+            "You have advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "Making their homes in the forests surrounding the Skatay Range, the Veena are well adapted to their mountainous, snowcapped surroundings."
+        ],
+        "_appendRaceFluff": {
+          "name": "Viera",
+          "source": "LightParty5e"
+        }
+      },
+      "raceName": "Viera",
+      "raceSource": "LightParty5e"
+    }
+  ]
+}
