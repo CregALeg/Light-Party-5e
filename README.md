@@ -2,8 +2,11 @@
 Light Party 5e - A project converting FFXIV to D&amp;D 5th Edition
 
 # Changelog
-## Astrologian
 
+## Astrologian
+Added in Light Party V1.0.0 - Before the Dawn Edition
+### V1 - 25/05/2024
+- First draft of the class, with 12 fate cards, 5 subclasses and 6 new spells.
 ## Bard
 
 ## Black Mage
@@ -17,7 +20,7 @@ Light Party 5e - A project converting FFXIV to D&amp;D 5th Edition
 ## Dragoon
 
 ## Gunbreaker
-
+Added in Light Party V1.0.0 - Before the Dawn Edition
 ### V2
 - New: Subclasses: Shadow Hunter & Chemmonger Contingents
 - Adjusted: Burst Strike upgrade at Level 11 allows you to push a creature back 15 feet, rather than dropping an item.
@@ -33,7 +36,7 @@ Light Party 5e - A project converting FFXIV to D&amp;D 5th Edition
 - First draft of the class. 3 subclasses: Queen’s Guard, Ravager and Elementalist Contingents
 
 ## Machinist
-
+Added in Light Party V1.0.0 - Before the Dawn Edition
 ### V3
 - New: Subclass: Construction Industry
 - New: Gadgets: Defibrillator, Hoverboard
@@ -80,6 +83,8 @@ Light Party 5e - A project converting FFXIV to D&amp;D 5th Edition
 - First draft of the class. 22 Gadgets, and 3 subclasses; Automaton, Demolition and Marksman Industries.
 
 ## Monk
+### V1 16/05/2024
+ - First draft of the class, complete with 3 subclasses, 2 beta subclasses, and 18 Masterful Blitz techniques.
 
 ## Ninja
 
@@ -90,7 +95,7 @@ Light Party 5e - A project converting FFXIV to D&amp;D 5th Edition
 ## Red Mage
 
 ## Sage
-
+Added in Light Party V1.0.0 - Before the Dawn Edition
 ### V3
 - New: Sublcass: Dracology Study
 - Fixed: The version number for V0.2 in the changelog.
@@ -112,7 +117,7 @@ Light Party 5e - A project converting FFXIV to D&amp;D 5th Edition
 First draft of the class. 8 custom spells and 3 subclasses; Aetherology, Vivilogy and Illicitology Studies.
 
 ## Samurai
-
+Added in Light Party V1.0.0 - Before the Dawn Edition
 ### V3
 - New: Subclass: Master of the Mind.
 - Adjusted: Iaijutsu no longer regains an expended use when rolling initiative. Uses increased by one from the start.
@@ -154,7 +159,7 @@ First draft of the class. 8 custom spells and 3 subclasses; Aetherology, Vivilog
 ## Scholar
 
 ## Summoner
-
+Added in Light Party V1.0.0 - Before the Dawn Edition
 ### V2
 - New: Heavens Arcanum
 - Adjusted: Egis and Demis have had AC, HP and damage adjusted across the board; all AC now scales with PB; weapon attack damage factors in ability scores.

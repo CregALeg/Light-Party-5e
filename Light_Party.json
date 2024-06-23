@@ -2542,5 +2542,62 @@
   ],
   "item":[
 
+  ],
+  "monster":[
+    {
+    	"name": "Chocobo",
+    	"source": "LightParty5e",
+			"tokenUrl": "https://i.imgur.com/8PQFKNx.png",
+    	"size": [
+    		"L"
+    	],
+    	"type": "beast",
+    	"alignment": [
+    		"U"
+    	],
+    	"ac": [
+    		13
+    	],
+    	"hp": {
+    		"average": 26,
+    		"formula": "4d10 + 4"
+    	},
+    	"speed": {
+    		"walk": 40
+    	},
+    	"str": 14,
+    	"dex": 16,
+    	"con": 12,
+    	"int": 4,
+    	"wis": 11,
+    	"cha": 7,
+    	"passive": 10,
+    	"cr": "1/4",
+    	"action": [
+    		{
+    			"name": "Peck",
+    			"entries": [
+    				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+    			]
+    		}
+    	],
+      "bonus": [
+        {
+          "name": "Sprinter",
+          "entries": [
+            "The chocobo can take the dash action as a bonus action."
+          ]
+        }
+      ],
+    	"environment": [
+    		"grassland",
+        "forest",
+    		"hill"
+    	],
+    	"damageTags": [
+    		"P"
+    	],
+    	"hasFluff": true
+    }
   ]
 }
