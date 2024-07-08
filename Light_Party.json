@@ -1731,9 +1731,830 @@
       ],
       "subclassTitle": "Contingent",
       "hasFluff": true
-    }
+    },
+    {
+        "name": "Astrologian",
+        "source": "LightParty5e",
+        "hd": {
+          "number": 1,
+          "faces": 6
+        },
+        "proficiency": [
+          "int",
+          "wis"
+        ],
+        "classTableGroups": [
+          {
+            "colLabels": [
+              "Fate Die",
+  						"{@filter Cantrips Known|spells|level=0|class=Astrologian (LightParty5e)}"
+            ],
+            "rows": [
+  						[
+  							"1d6",
+                3
+  						],
+  						[
+  							"1d6",
+                3
+  						],
+  						[
+  							"1d6",
+                3
+  						],
+  						[
+  							"1d6",
+                4
+  						],
+  						[
+  							"1d8",
+                4
+  						],
+  						[
+  							"1d8",
+                4
+  						],
+  						[
+  							"1d8",
+                4
+  						],
+  						[
+  							"1d8",
+                4
+  						],
+  						[
+  							"1d8",
+                4
+  						],
+  						[
+  							"1d8",
+                4
+  						],
+  						[
+  							"1d10",
+                5
+  						],
+  						[
+  							"1d10",
+                5
+  						],
+  						[
+  							"1d10",
+                5
+  						],
+  						[
+  							"1d10",
+                5
+  						],
+  						[
+  							"1d10",
+                5
+  						],
+  						[
+  							"1d10",
+                5
+  						],
+  						[
+  							"1d12",
+                5
+  						],
+  						[
+  							"1d12",
+                5
+  						],
+  						[
+  							"1d12",
+                5
+  						],
+  						[
+  							"1d12",
+                5
+  						]
+            ]
+          },
+  				{
+  					"title": "Spell Slots per Spell Level",
+  					"colLabels": [
+  						"{@filter 1st|spells|level=1|class=Astrologist (FFXIV5E)}",
+  						"{@filter 2nd|spells|level=2|class=Astrologist (FFXIV5E)}",
+  						"{@filter 3rd|spells|level=3|class=Astrologist (FFXIV5E)}",
+  						"{@filter 4th|spells|level=4|class=Astrologist (FFXIV5E)}",
+  						"{@filter 5th|spells|level=5|class=Astrologist (FFXIV5E)}",
+  						"{@filter 6th|spells|level=6|class=Astrologist (FFXIV5E)}",
+  						"{@filter 7th|spells|level=7|class=Astrologist (FFXIV5E)}",
+  						"{@filter 8th|spells|level=8|class=Astrologist (FFXIV5E)}",
+  						"{@filter 9th|spells|level=9|class=Astrologist (FFXIV5E)}"
+  					],
+  					"rows": [
+  						[
+  							2,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							3,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							2,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							2,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							1,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							2,
+  							0,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							1,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							0,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							0,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							1,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							1,
+  							0,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							1,
+  							1,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							1,
+  							1,
+  							0
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							1,
+  							1,
+  							1
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							3,
+  							1,
+  							1,
+  							1,
+  							1
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							3,
+  							2,
+  							1,
+  							1,
+  							1
+  						],
+  						[
+  							4,
+  							3,
+  							3,
+  							3,
+  							3,
+  							2,
+  							2,
+  							1,
+  							1
+  						]
+  					]
+  				}
+        ],
+  			"preparedSpells": "<$level$> + <$wis_mod$>",
+        "cantripProgression": [
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5,
+              5
+          ],
+  			"spellcastingAbility": "wis",
+  			"casterProgression": "full",
+        "startingProficiencies": {
+          "weapons": [
+  					"{@item dagger|phb|daggers}",
+  					"{@item dart|phb|darts}",
+  					"{@item sling|phb|slings}",
+  					"{@item quarterstaff|phb|quarterstaffs}",
+  					"{@item light crossbow|phb|light crossbows}"
+          ],
+          "skills": [
+  					{
+  						"choose": {
+  							"from": [
+  								"arcana",
+  								"history",
+  								"insight",
+  								"medicine",
+  								"perception",
+  								"religion"
+  							],
+  							"count": 2
+  						}
+  					}
+  				]
+        },
+        "multiclassing": {
+  				"requirements": {
+  					"wis": 13
+  				}
+        },
+        "startingEquipment": {
+  				"additionalFromBackground": true,
+          "default": [
+            "(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
+            "(a) a {@item priest's pack|PHB} or (b) an {@item explorer's pack|PHB}",
+            "an {@item astrolabe|LightParty5e} and a {@item deck of sixty|LightParty5e}"
+          ]
+        },
+        "classFeatures": [
+          "Spellcasting|Astrologian|LightParty5e|1",
+          "Fate Arcana|Astrologian|LightParty5e|1",
+  				{
+  					"classFeature": "Astral Sect|Astrologian|LightParty5e|2",
+  					"gainSubclassFeature": true
+  				},
+          "Fate Teller|Astrologian|LightParty5e|3",
+  				"Ability Score Improvement|Astrologian|LightParty5e|4",
+          "Cantrip Versatility (Optional)|Astrologian|LightParty5e|4",
+  				{
+  					"classFeature": "Astral Sect Feature|Astrologian|LightParty5e|6",
+  					"gainSubclassFeature": true
+  				},
+  				"Ability Score Improvement|Astrologian|LightParty5e|8",
+          "Cantrip Versatility (Optional)|Astrologian|LightParty5e|8",
+  				{
+  					"classFeature": "Astral Sect Feature|Astrologian|LightParty5e|10",
+  					"gainSubclassFeature": true
+  				},
+  				"Ability Score Improvement|Astrologian|LightParty5e|12",
+          "Cantrip Versatility (Optional)|Astrologian|LightParty5e|12",
+  				{
+  					"classFeature": "Astral Sect Feature|Astrologian|LightParty5e|14",
+  					"gainSubclassFeature": true
+  				},
+  				"Ability Score Improvement|Astrologian|LightParty5e|16",
+          "Cantrip Versatility (Optional)|Astrologian|LightParty5e|16",
+          "Chosen Fate|Astrologian|LightParty5e|18",
+  				"Ability Score Improvement|Astrologian|LightParty5e|19",
+          "Cantrip Versatility (Optional)|Astrologian|LightParty5e|19",
+          "Cosmic Omen|Astrologian|LightParty5e|20"
+        ],
+        "subclassTitle": "Sect",
+        "classSpells": [
+          "Blade Ward",
+          "Dancing Lights",
+          "Friends",
+          "Frostbite|XGE",
+          "Guidance",
+          "Gust|XGE",
+          "Light",
+          "Mage Hand",
+          "Message",
+          "Minor Illusion",
+          "Prestidigitation",
+          "Resistance",
+          "Sacred Flame",
+          "Spare the Dying",
+          "Toll the Dead|XGE",
+          "Word of Radiance|XGE",
+          "Bane",
+          "Bless",
+          "Command",
+          "Comprehend Languages",
+          "Cure Wounds",
+          "Detect Poison and Disease",
+          "Faerie Fire",
+          "Guiding Bolt",
+          "Healing Word",
+          "Heroism",
+          "Identify",
+          "Illusory Script",
+          "Mage Armor",
+          "Magnify Gravity|EGW",
+          "Magic Missile",
+          "Malefic|LightParty5e",
+          "Protection from Evil and Good",
+          "Purify Food and Drink",
+          "Rescue|LightParty5e",
+          "Sanctuary",
+          "Silent Image",
+          "Silvery Barbs|SCC",
+          "Sleep",
+          "Aid",
+          "Air BubbleAAG",
+          "Augury",
+          "Blindness/Deafness",
+          "Borrowed Knowledge|SCC",
+          "Calm Emotions",
+          "Darkvision",
+          "Earthbind|XGE",
+          "Gentle Repose",
+          "Healing Spirit|XGE",
+          "Hold Person",
+          "Invisibility",
+          "Lesser Restoration",
+          "Levitate",
+          "Lightspeed|LightParty5e",
+          "Locate Object",
+          "Misty Step",
+          "Moonbeam",
+          "Nystul’s Magic Aura",
+          "Protection from Poison",
+          "Ray of Enfeeblement",
+          "See Invisibility",
+          "Silence",
+          "Zone of Truth",
+          "Counterspell",
+          "Clairvoyance",
+          "Daylight",
+          "Dispel Magic",
+          "Earthly Star|LightParty5e",
+          "Incite Greed|AI",
+          "Leomund’s Tiny Hut",
+          "Life Transference|XGE",
+          "Magic Circle",
+          "Major Image",
+          "Mass Healing Word",
+          "Melf’s Minute Meteors|XGE",
+          "Nondetection",
+          "Remove Curse",
+          "Revivify",
+          "Sending",
+          "Slow",
+          "Tongues",
+          "Banishment",
+          "Blight",
+          "Death Ward",
+          "Dimension Door",
+          "Divination",
+          "Essential Dignity|LightParty5e",
+          "Gravity Sinkhole|EGW",
+          "Polymorph",
+          "Commune",
+          "Contact Other Plane",
+          "Dawn|XGE",
+          "Dispel Evil and Good",
+          "Dream",
+          "Far Step|XGE",
+          "Mass Cure Wounds",
+          "Scrying",
+          "Summon Celestial|TCE",
+          "Teleportation Circle",
+          "Wall of Light|XGE",
+          "Collective Unconscious|LightParty5e",
+          "Find the Path",
+          "Forbiddance",
+          "Gravity Fissure|EGW",
+          "Heal",
+          "Programmed Illusion",
+          "Sunbeam",
+          "True Seeing",
+          "Crown of Stars|XGE",
+          "Etherealness",
+          "Plane Shift",
+          "Project Image",
+          "Resurection",
+          "Reverse Gravity",
+          "Teleport",
+          "Antimagic Field",
+          "Dark Star|EGW",
+          "Demiplane",
+          "Reality Break|EGW",
+          "Sunburst",
+          "Astral Projection",
+          "Foresight",
+          "Mass Heal",
+          "Time Stop",
+          "Wish"
+        ],
+        "hasFluff": true
+      }
   ],
   "classFeature": [
+    {
+			"name": "Spellcasting",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"Attuned to the stars above, you can cast astrologian spells.",
+        {
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"At 1st level, you know three cantrips of your choice from the astrologian spell list. You learn additional astrologian cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Astrologian table."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Astrologian table shows how many spell slots you have to cast your astrologian spells of 1st level and higher. To cast one of these astrologian spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of astrologian spells that are available for you to cast, choosing from the astrologian spell list. When you do so, choose a number of astrologian spells equal to your Wisdom modifier + your astrologian level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level astrologian, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of astrologian spells requires time spent studying the stars: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your astrologian spells. The power of your spells comes from the stars above and your attunement to them. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an astrologian spell you cast and when making an attack roll with one.",
+            {
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+          ]
+				},
+        {
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast an astrologian spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use an astrolabe as a spellcasting focus for your astrologian spells."
+					]
+				}
+      ]
+		},
+    {
+			"name": "Fate Arcana",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"At 1st level you are able to draw cards from your deck of sixty and instill them with cosmic magic to create powerful effects.",
+				"Fate Die. Your arcana cards make use of a special die called a Fate Die. At 1st level your Fate Die is a d6. Your Fate Die increases in size as you gain levels in this class, as shown in the Fate Die column of the Astrologian table.",
+        "Draw. When you finish a long rest, you can draw a number of cards up to your Wisdom modifier. For each card you draw, roll on the Fate Arcana table using your Fate Die to determine which card you draw. Your drawn cards retain their potency until you next finish a long rest, until you play the card to bestow an effect, or until the card is discarded.",
+        "When you finish a short or long rest, you can choose one of your drawn fate cards to discard, then draw a new card in its place.",
+        "Play. As an action, you can choose a creature within 30 feet of you (you can choose yourself) and play one of your drawn arcana cards, bestowing its effect to that creature. If the card effect requires a saving throw, the DC equals your spell save DC."
+			]
+		},
+    {
+			"name": "Astral Sect",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you delve into one of the astral sects, groups of astrologians that attune themselves to specific heavenly bodies, becoming one with the myriad powers of the cosmos. Choose from the Solar Sect, Lunar Sect, Comet Sect, Binary Sect or Meteor Sect, each of which is detailed at the end of the class description. Your choice grants you features at 2nd level, and then again at 6th level, 10th level and 14th level.",
+        {
+					"type": "entries",
+					"name": "Sect Spells",
+					"entries": [
+						"Each sect has a list of spells – its sect spells – that you gain at the astrologian levels noted in the sect description. Once you gain a sect spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.",
+            "If you have a sect spell that doesn’t appear on the astrologian spell list, the spell is nonetheless an astrologian spell for you."
+					]
+				}
+			]
+		},
+    {
+			"name": "Fate Teller",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you can use your attunement to the stars and deck of sixty to gain glimpses into the future. You have the {@spell augury} spell prepared, which doesn’t count against the number of spells you can prepare each day. You can cast the augury spell once without expending a spell slot, and regain the ability to do so when you finish a long rest. When you cast augury, it has no verbal or somatic components, and only uses your deck of sixty as a material component."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Cantrip Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+      "optional": true,
+			"level": 4,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class’s Spellcasting feature with another cantrip from the astrologian spell list"
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 8,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Cantrip Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+      "optional": true,
+			"level": 8,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class’s Spellcasting feature with another cantrip from the astrologian spell list"
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 12,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Cantrip Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+      "optional": true,
+			"level": 12,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class’s Spellcasting feature with another cantrip from the astrologian spell list"
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 16,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Cantrip Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+      "optional": true,
+			"level": 16,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class’s Spellcasting feature with another cantrip from the astrologian spell list"
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 19,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Cantrip Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+      "optional": true,
+			"level": 19,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class’s Spellcasting feature with another cantrip from the astrologian spell list"
+			]
+		},
+    {
+			"name": "Astral Sect Feature",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 6,
+			"entries": [
+				"At 7th level, you gain a feature granted by your Astral Sect."
+			]
+		},
+    {
+			"name": "Astral Sect Feature",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature granted by your Astral Sect."
+			]
+		},
+    {
+			"name": "Astral Sect Feature",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature granted by your Astral Sect."
+			]
+		},
+    {
+			"name": "Chosen Fate",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 18,
+			"entries": [
+				"Starting at 18th level, when you draw a fate arcana card, instead of rolling you can choose which card you draw. You can do so only once each time you draw cards at the end of a long rest."
+			]
+		},
+    {
+			"name": "Cosmic Omen",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"level": 20,
+			"entries": [
+				"When you reach 20th level, you are able to take hold of another creature’s fate. When you or a creature you can see succeeds or fails on an attack roll, saving throw or ability check, you can use your reaction to force it to become the opposite; failing if it succeeded, or succeeding if it failed. You can use this reaction twice, regaining all expended uses when you finish a long rest."
+			]
+		},
     {
 			"name": "Gunblade",
 			"source": "LightParty5e",
@@ -2115,6 +2936,112 @@
   ],
   "subclass": [
     {
+			"name": "Solar Sect",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"shortName": "Solar Sect",
+      "subclassSpells": [
+        "Burning Hands","Healing Word",
+        "Healing Spirit|XGE","Flaming Sphere",
+        "Daylight","Mass Healing Word",
+        "Essential Dignity|LightParty5e","Wall of Fire",
+        "Dawn","Greater Restoration"
+      ],
+			"subclassFeatures": [
+				"Sect Spells|Astrologian|LightParty5e|Solar Sect|LightParty5e|2",
+				"Brilliant Radiance|Astrologian|LightParty5e|Solar Sect|LightParty5e|2",
+  			"Diurnal Regeneration|Astrologian|LightParty5e|Solar Sect|LightParty5e|6",
+				"Maim and Mend|Astrologian|LightParty5e|Solar Sect|LightParty5e|10",
+				"Solar Flare|Astrologian|LightParty5e|Solar Sect|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Lunar Sect",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"shortName": "Lunar Sect",
+      "subclassSpells": [
+        "Guiding Bolt","Sleep",
+        "Misty Step","Moonbeam",
+        "Dispel Magic","Phantom Steed",
+        "Arcane Eye","Banishment",
+        "Dream","Scrying"
+      ],
+			"subclassFeatures": [
+				"Sect Spells|Astrologian|LightParty5e|Lunar Sect|LightParty5e|2",
+				"Lunar Hound|Astrologian|LightParty5e|Lunar Sect|LightParty5e|2",
+  			"Menphina's Gaze|Astrologian|LightParty5e|Lunar Sect|LightParty5e|6",
+				"Nocturnal Strength|Astrologian|LightParty5e|Lunar Sect|LightParty5e|10",
+				"Dalamud's Pack|Astrologian|LightParty5e|Lunar Sect|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Comet Sect",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"shortName": "Comet Sect",
+      "subclassSpells": [
+        "Ice Knife","Longstrider",
+        "Rime's Binding Ice|FTD","Snilloc’s Snowball Swarm",
+        "Haste","Sleet Storm",
+        "Freedom of Movement","Ice Storm",
+        "Cone of Cold","Far Step"
+      ],
+			"subclassFeatures": [
+				"Sect Spells|Astrologian|LightParty5e|Comet Sect|LightParty5e|2",
+				"Comet Trail|Astrologian|LightParty5e|Comet Sect|LightParty5e|2",
+  			"Shooting Star|Astrologian|LightParty5e|Comet Sect|LightParty5e|6",
+				"Siphon Speed|Astrologian|LightParty5e|Comet Sect|LightParty5e|10",
+				"Time Dilation|Astrologian|LightParty5e|Comet Sect|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Binary Sect",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"shortName": "Binary Sect",
+      "subclassSpells": [
+        "Ceremony","Charm Person","Guidance",
+        "Borrowed Knowledge|SCC","Warding Bond",
+        "Fast Friends","Life Transference",
+        "Charm Monster","Psychic Lance",
+        "Contact Other Plane","Skill Empowerment"
+      ],
+			"subclassFeatures": [
+				"Sect Spells|Astrologian|LightParty5e|Binary Sect|LightParty5e|2",
+				"Twin Fate|Astrologian|LightParty5e|Binary Sect|LightParty5e|2",
+  			"Borrowed Destiny|Astrologian|LightParty5e|Binary Sect|LightParty5e|2",
+  			"Synastry|Astrologian|LightParty5e|Binary Sect|LightParty5e|6",
+				"Horoscope|Astrologian|LightParty5e|Binary Sect|LightParty5e|10",
+				"Dual Arcana|Astrologian|LightParty5e|Binary Sect|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Meteor Sect",
+			"source": "LightParty5e",
+			"className": "Astrologian",
+			"classSource": "LightParty5e",
+			"shortName": "Meteor Sect",
+      "subclassSpells": [
+        "Burning Hands","Catapult|XGE",
+        "Flaming Sphere","Scorching Ray",
+        "Fireball","Melf’s Minute Meteors|XGE",
+        "Fire Shield","Wall of Fire",
+        "Destructive Wave","Flame Strike"
+      ],
+			"subclassFeatures": [
+				"Sect Spells|Astrologian|LightParty5e|Meteor Sect|LightParty5e|2",
+				"Cosmic Meteor|Astrologian|LightParty5e|Meteor Sect|LightParty5e|2",
+  			"Potent Radiance|Astrologian|LightParty5e|Meteor Sect|LightParty5e|6",
+				"Asteroid Belt|Astrologian|LightParty5e|Meteor Sect|LightParty5e|10",
+				"Explosive Force|Astrologian|LightParty5e|Meteor Sect|LightParty5e|14"
+			]
+		},
+    {
 			"name": "Queen's Guard Contingent",
 			"source": "LightParty5e",
 			"className": "Gunbreaker",
@@ -2186,6 +3113,505 @@
 		}
   ],
   "subclassFeature": [
+    {
+        "name": "Sect Spells",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Solar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+          {
+  					"type": "table",
+  					"caption": "Solar Sect Spells",
+  					"colLabels": [
+  						"Astrologian Level",
+  						"Spells"
+  					],
+  					"colStyles": [
+  						"col-2 text-center",
+  						"col-10"
+  					],
+  					"rows": [
+  						[
+  							"1st",
+  							"{@spell burning hands}, {@spell healing word}"
+  						],
+  						[
+  							"3rd",
+  							"{@spell healing spirit|xge}, {@spell flaming sphere}"
+  						],
+  						[
+  							"5th",
+  							"{@spell daylight}, {@spell mass healing word}"
+  						],
+  						[
+  							"7th",
+  							"{@spell essential dignity|LightParty5e}, {@spell wall of fire}"
+  						],
+  						[
+  							"9th",
+  							"{@spell dawn|xge}, {@spell greater restoration}"
+  						]
+  					]
+  				}
+        ]
+    },
+    {
+        "name": "Brilliant Radiance",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Solar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+            "Starting at 2nd level, as an action you can call down the sun to smite foes and mend wounds. A flare of sunlight descends in a 10-foot radius centered on a point you can see within 30 feet of you. Creatures of your choice within the radius are affected by one of the following effects of your choice:",
+            "The creatures regain hit points equal to a roll of your Fate Die + your Wisdom modifier.",
+            "The creatures must make a Wisdom saving throw, becoming blinded until the end of your next turn on a failed save.",
+            "You can use this feature a number of times equal to your Wisdom modifier, and regain all expended uses after finishing a long rest."
+        ]
+    },
+    {
+        "name": "Diurnal Regeneration",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Solar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "At 6th level, whenever you restore hit points to a creature, that creature regains additional hit points equal to your proficiency bonus. Moreover, when you play a fate card that doesn’t restore hit points, you can choose for the target to regain hit points equal to your proficiency bonus."
+        ]
+    },
+    {
+        "name": "Maim and Mend",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Solar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 10,
+        "entries": [
+            "When you reach 10th level, your mastery over fate extends to healing and harm you inflict. When you roll a 1 or 2 on a damage die for an effect that deals fire or radiant damage, or an effect that restores hit points, you can reroll the die and must use the new roll.",
+            "Alternatively, you can use your reaction to discard one drawn fate card to instead choose a number of the dice rolled, up to your Wisdom modifier, and decide for each of those dice which number was rolled."
+        ]
+    },
+    {
+        "name": "Solar Flare",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Solar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "When you reach 14th level, your attunement to the sun grows stronger. The healing effect of Brilliant Radiance increases to two rolls of your Fate Die + your Wisdom modifier, and the blinding effect deals fire damage equal to a roll of your Fate Die on a failed save."
+        ]
+    },
+    {
+        "name": "Sect Spells",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Lunar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+          {
+  					"type": "table",
+  					"caption": "Lunar Sect Spells",
+  					"colLabels": [
+  						"Astrologian Level",
+  						"Spells"
+  					],
+  					"colStyles": [
+  						"col-2 text-center",
+  						"col-10"
+  					],
+  					"rows": [
+  						[
+  							"1st",
+  							"{@spell guiding bolt}, {@spell sleep}"
+  						],
+  						[
+  							"3rd",
+  							"{@spell misty step}, {@spell moonbeam}"
+  						],
+  						[
+  							"5th",
+  							"{@spell dispel magic}, {@spell phantom steed}"
+  						],
+  						[
+  							"7th",
+  							"{@spell arcane eye}, {@spell banishment}"
+  						],
+  						[
+  							"9th",
+  							"{@spell dream}, {@spell scrying}"
+  						]
+  					]
+  				}
+        ]
+    },
+    {
+        "name": "Lunar Hound",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Lunar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+            "Starting at 2nd level, you are able to conjure the moon’s power in the form of a faithful Lunar Hound. As an action, you can discard one of your drawn fate cards to summon the lunar hound, which lasts for 1 hour or until it is reduced to 0 hit points.",
+            "You can only have one lunar hound summoned at a time and can’t summon a new one while your hound is present. The hound is friendly to you and your companions and it obeys your commands. See its game statistics in the lunar hound stat block, which uses your proficiency bonus (PB) in several places. You determine the hound’s appearance.",
+            "In combat, the hound shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the hound can take any action of its choice, not just Dodge.",
+            "Depending on the fate card you discard, the hound is summoned in a different phase; if the number rolled on the Fate Arcana Table to draw the card is an odd number, then you summon it in Full Moon Phase. If it was an even number, you summon it in New Moon Phase."
+        ]
+    },
+    {
+        "name": "Menphina's Gaze",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Lunar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "Starting at 6th level, moonlight guides you away from danger. As an action, you can open your awareness, gaining darkvision out to 120 feet for 1 minute. You also become aware of the location of any traps within this radius and to you they glow with silver, glittering light."
+        ]
+    },
+    {
+        "name": "Nocturnal Strength",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Lunar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 10,
+        "entries": [
+            "Starting at 10th level, your lunar hound gains access to the following two abilities, based on which phase it is in. Moreover, as an action on your turn, you can swap your lunar hound between Full Moon Phase and New Moon Phase, or vice-versa. Once you do so, you can’t do so again until you finish a short or long rest.",
+            "Lunar Ray (Full Moon Phase Only). As an action, the lunar hound expels radiance in a 15-foot long, 5-foot wide line. Creatures caught in the line must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes radiant damage equal to two rolls of your Fate Die + your proficiency bonus and has disadvantage on attack rolls until the start of your next turn. On a successful save, a creature takes half as much damage and suffers no other effect.",
+            "Lunar Shadow. (New Moon Phase Only). As a bonus action, the lunar hound teleports up to 60 feet, either to an unoccupied space it can see, or magically swapping places with you. The hound then has advantage on the next weapon attack it makes on its turn."
+        ]
+    },
+    {
+        "name": "Dalamud's Pack",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Lunar Sect",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "When you reach 14th level, you can have two lunar hounds summoned at once, and when you use an action to summon a hound, you can discard an additional card to summon a second one as part of the same action. Finally, when you use a bonus action to command your hound, you can command both hounds at the same time."
+        ]
+    },
+    {
+        "name": "Sect Spells",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Comet Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+          {
+  					"type": "table",
+  					"caption": "Comet Sect Spells",
+  					"colLabels": [
+  						"Astrologian Level",
+  						"Spells"
+  					],
+  					"colStyles": [
+  						"col-2 text-center",
+  						"col-10"
+  					],
+  					"rows": [
+  						[
+  							"1st",
+  							"{@spell ice knife|xge}, {@spell longstrider}"
+  						],
+  						[
+  							"3rd",
+  							"{@spell Rime's binding ice|FTD}, {@spell Snilloc's snowball swarm|xge}"
+  						],
+  						[
+  							"5th",
+  							"{@spell haste}, {@spell sleet storm}"
+  						],
+  						[
+  							"7th",
+  							"{@spell freedom of movement}, {@spell ice storm}"
+  						],
+  						[
+  							"9th",
+  							"{@spell cone of cold}, {@spell far step|XGE}"
+  						]
+  					]
+  				}
+        ]
+    },
+    {
+        "name": "Comet Trail",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Comet Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+            "From 2nd level, you can discard a fate card as an action and choose a creature you can see within 30 feet of you (you can choose yourself). The creature is filled with cosmic power, and can immediately fly up to its speed in a straight line. At any point during the move, the creature can use its reaction to make a weapon attack or cast a cantrip. All the damage of the attack or cantrip becomes cold damage."
+        ]
+    },
+    {
+        "name": "Shooting Star",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Comet Sect",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "At 6th level, the power of a comet empowers you and your allies movement. When a creature that has its speed increased by you, including yourself, moves on its turn, it can move through other creatures spaces and opportunity attacks against it are made at disadvantage."
+        ]
+    },
+    {
+        "name": "Siphon Speed",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Comet Sect",
+        "subclassSource": "LightParty5e",
+        "level": 10,
+        "entries": [
+            "Starting at 10th level, when you deal cold damage to a creature, including the cold damage dealt by a creature during Comet Trail, you can use a bonus action to force it to make a Constitution saving throw. On a failed save, the creature’s speed is reduced by 10 feet, and you can choose one creature within 30 feet of you (you can choose yourself) to have its speed increased by 10 feet. Both effects last until the end of your next turn."
+        ]
+    },
+    {
+        "name": "Time Dilation",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Comet Sect",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "At 14th level, the power of the cosmos allows you to subtly manipulate time. You can use an action to target a creature you can see within 60 feet of you and roll your fate die. You can either add or subtract the roll from the creature’s initiative score until the end of the current combat. An unwilling creature must succeed on a Charisma saving throw against your spell save DC to resist this effect.",
+            "Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a spell slot of 7th level or higher to use it again."
+        ]
+    },
+    {
+        "name": "Sect Spells",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Binary Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+          {
+  					"type": "table",
+  					"caption": "Binary Sect Spells",
+  					"colLabels": [
+  						"Astrologian Level",
+  						"Spells"
+  					],
+  					"colStyles": [
+  						"col-2 text-center",
+  						"col-10"
+  					],
+  					"rows": [
+  						[
+  							"1st",
+  							"{@spell ceremony|XGE}, {@spell charm person}, {@spell guidance}"
+  						],
+  						[
+  							"3rd",
+  							"{@spell borrowed knowledge|scc}, {@spell warding bond}"
+  						],
+  						[
+  							"5th",
+  							"{@spell fast friends|AI}, {@spell life transference|XGE}"
+  						],
+  						[
+  							"7th",
+  							"{@spell charm monster|XGE}, {@spell Raulothim's psychic lance|FTD}"
+  						],
+  						[
+  							"9th",
+  							"{@spell contact other plane}, {@spell skill empowerment|XGE}"
+  						]
+  					]
+  				}
+        ]
+    },
+    {
+        "name": "Twin Fate",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Binary Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+            "At 2nd level, you learn the {@spell guidance} cantrip, which doesn’t count against the number of cantrips you know. If you already know guidance, you instead learn one cantrip of your choice from the astrologian spell list.",
+            "When you cast guidance, you can do so with the following modifications:",
+            {
+              "type":"list",
+              "items":[
+                "The range becomes 60 feet.",
+                "You can target two creatures, rather than only one, provided both creatures are within 10 feet of each other."
+              ]
+            }
+        ]
+    },
+    {
+        "name": "Borrowed Destiny",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Binary Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+            "Also at 2nd level, when you make a roll with a d20 that has either advantage or disadvantage, you can choose to capture the advantage or disadvantage for 1 minute, nullifying its effect on your roll. You can have only one advantage or disadvantage captured in this way at a time.",
+            "When you see another creature make a roll with a d20, you can use your reaction to release your stored advantage or disadvantage, imparting that effect on the roll.",
+            "You can use this feature twice and regain all expended uses after finishing a short or long rest."
+        ]
+    },
+    {
+        "name": "Synastry",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Binary Sect",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "Starting at 6th level, the power of twin stars allows you to forge links between your allies. As a bonus action, choose a creature you can see within 30 feet of you that is currently benefiting from one of your fate card effects. You forge a bond between that creature and another creature within 30 feet of it (you can choose yourself), granting the second creature the same effect for the remaining duration.",
+            "Once you use this feature, you can’t use it again until you finish a short or long rest."
+        ]
+    },
+    {
+        "name": "Horoscope",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Binary Sect",
+        "subclassSource": "LightParty5e",
+        "level": 10,
+        "entries": [
+            "Starting at 10th level, as an action, you can discard a fate card to read the horoscope of a creature you can see within 60 feet. The creature must roll a d20. Consult the horoscope table to determine the effect.",
+            "You can also use Synastry to share a creature’s Horoscope effect with another creature within 30 feet of it."
+        ]
+    },
+    {
+        "name": "Dual Arcana",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Binary Sect",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "Starting at 14th level, when you draw a fate card, you can roll twice on the table and choose either result."        ]
+    },
+    {
+        "name": "Sect Spells",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Meteor Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+          {
+  					"type": "table",
+  					"caption": "Meteor Sect Spells",
+  					"colLabels": [
+  						"Astrologian Level",
+  						"Spells"
+  					],
+  					"colStyles": [
+  						"col-2 text-center",
+  						"col-10"
+  					],
+  					"rows": [
+  						[
+  							"1st",
+  							"{@spell burning hands}, {@spell catapult|xge}"
+  						],
+  						[
+  							"3rd",
+  							"{@spell flaming sphere}, {@spell scorching ray}"
+  						],
+  						[
+  							"5th",
+  							"{@spell fireball}, {@spell Melf's minute meteors|XGE}"
+  						],
+  						[
+  							"7th",
+  							"{@spell fire shield}, {@spell wall of fire}"
+  						],
+  						[
+  							"9th",
+  							"{@spell destructive wave}, {@spell flame strike}"
+  						]
+  					]
+  				}
+        ]
+    },
+    {
+        "name": "Cosmic Meteor",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Meteor Sect",
+        "subclassSource": "LightParty5e",
+        "level": 2,
+        "entries": [
+            "Starting at 2nd level, you call on the cosmos to destroy your foes. When you cast a spell that deals damage, or play a fate card that deals damage, you can siphon a portion of the magic to create a tiny meteor that orbits you for 1 minute. You can have up to three meteors orbiting you at once. As a bonus action on your turn, you can command any number of meteors orbiting you to streak towards a creature you can see within 60 feet of you. Make a ranged spell attack against the target. On a hit, the target takes radiant damage equal to a roll of your fate die for each meteor you use. If the attack misses, the meteors you spend are not wasted and return to your orbit."
+          ]
+    },
+    {
+        "name": "Potent Radiance",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Meteor Sect",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "Starting at 6th level, you can add your Wisdom modifier to the damage of your astrologian cantrips."
+          ]
+    },
+    {
+        "name": "Asteroid Belt",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Meteor Sect",
+        "subclassSource": "LightParty5e",
+        "level": 10,
+        "entries": [
+            "At 10th level, your control over cosmic destruction extends to your allies. When you cast a spell that targets a friendly creature, or play a fate card on a friendly creature, that creature also gains a cosmic meteor. A creature that gains a meteor on this way can only have one meteor orbiting it. When you use a bonus action to command your meteors to attack, you can also command any meteor that is orbiting a friendly creature."
+          ]
+    },
+    {
+        "name": "Explosive Force",
+        "source": "LightParty5e",
+        "className": "Astrologian",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Meteor Sect",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "Starting at 14th level, when you deal damage to a creature with your Cosmic Meteor, creatures within 5 feet of the target must make a Dexterity saving throw, taking the same amount of damage on a failed save, or half as much on a successful one.",
+            "Additionally, you can add your Wisdom modifier to the damage of your Cosmic Meteor."
+          ]
+    },
     {
         "name": "Vigilant Companion",
         "source": "LightParty5e",
@@ -2538,10 +3964,273 @@
 		}
   ],
   "spell": [
-
+		{
+			"name": "Collective Unconscious",
+			"source": "LightParty5e",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+        "m": "A glass ball"
+			},
+			"duration": [
+  		{
+  			"type": "timed",
+  			"duration": {
+  				"type": "minute",
+  				"amount": 1,
+  				"upTo": true
+  			},
+			"concentration": true
+      }
+			],
+			"entries": [
+				"A sphere of cosmic light emerges from you and envelops creatures of your choice within a 30-foot sphere. The creatures you choose have resistance to all damage from attacks and effects made from outside the sphere. Creatures you didn’t choose are instead pushed out from the sphere to its edge. The spell ends if you move more than 5 feet on your turn."
+			]
+		},
+    {
+			"name": "Earthly Star",
+			"source": "LightParty5e",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+        "m": "A piece of opal"
+			},
+    	"damageInflict": [
+    		"fire"
+    	],
+			"duration": [
+  		{
+  			"type": "timed",
+  			"duration": {
+  				"type": "minute",
+  				"amount": 1,
+  				"upTo": true
+  			},
+			"concentration": true
+      }
+			],
+			"entries": [
+				"You conjure a blazing, miniscule star at a point you can see within range, which lasts for the duration. The star sheds bright light for 30 feet and dim light for an additional 30 feet. When the spell ends, either because your concentration is broken or because you decide to end it, the star erupts. Each creature in a 20-foot radius sphere centered on the star must make a Dexterity saving throw. A creature takes {@damage 6d6} fire damage on a failed save, or half as much damage on a successful one.",
+        "If the star lasts for at least 5 turns before erupting, its damage increases by {@damage 4d6} and the radius of the explosion increases by 20 feet."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the starting damage increases by {@dice 1d6} for each slot level above 5th."
+					]
+				}
+			]
+		},
+    {
+			"name": "Essential Dignity",
+			"source": "LightParty5e",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+	"duration": [
+    		{
+    			"type": "instant"
+    		}
+    	],
+			"entries": [
+				"You call down the stars to grant succor to a creature you can see within range. The target regains {@dice 4d6} hit points, or {@dice 4d12} hit points if it has less than half of its maximum hit points remaining."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the healing increases by {@dice 1d6}/{@dice 1d12} for each spell level above 4th."
+					]
+				}
+			],
+    	"miscTags": [
+    		"HL"
+    	]
+		},
+    {
+			"name": "Lightspeed",
+			"source": "LightParty5e",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+	     "duration": [
+         {
+     			"type": "timed",
+     			"duration": {
+     				"type": "hour",
+     				"amount": 1
+     			}
+     		}
+    	],
+			"entries": [
+				"You pull on the fabric of the weave to manipulate time around you. Once during the duration of this spell, you can cast a spell with a casting time of 1 action as a bonus action instead. Once you do so, the spell immediately ends."
+			]
+		},
+    {
+			"name": "Malefic",
+			"source": "LightParty5e",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+        "s": true,
+        "m": "a pinch of stardust"
+			},
+    	"savingThrow": [
+    		"constitution"
+    	],
+    	"damageInflict": [
+    		"radiant"
+    	],
+	     "duration": [
+         {
+     			"type": "timed",
+     			"duration": {
+     				"type": "instant"
+     			}
+     		}
+    	],
+			"entries": [
+				"You conjure a facsimile of a burning star to bring harm to a creature you can see within range. The target must succeed on a Constitution saving throw, taking {@damage 2d8} radiant damage on a failed save, or half as much on a successful one. The blazing radiance causes the creature to have disadvantage on the next saving throw it makes against a spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for every spel slot level above 1st."
+					]
+				}
+			]
+		},
+    {
+			"name": "Rescue",
+			"source": "LightParty5e",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+          "amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+	     "duration": [
+         {
+     			"type": "timed",
+     			"duration": {
+     				"type": "instant"
+     			}
+     		}
+    	],
+			"entries": [
+				"Using a tether of light, you pull one willing creature within range to an unoccupied space within 5 feet of you. This movement does not provoke opportunity attacks."
+			]
+		}
   ],
   "item":[
-
+    {
+			"name": "Astrolabe",
+			"source": "LightParty5e",
+	    "type": "G",
+			"rarity": "none",
+	    "weight": 1,
+			"value": 2000,
+			"entries": ["An astrolabe, or “star globe” is a unique tool that can be used as a spellcasting focus by astrologians. Most are capable of folding away for easy storage, and float in the wielder’s hand when in use. Uniquely, the astrolabe also serves as a tool for keeping track of time and contains maps and charts of the stars above. A successful Intelligence check using the astrolabe as a tool can be used to determine the current time or the relative position of heavenly bodies."]
+		},
+    {
+			"name": "Deck of Sixty",
+			"source": "LightParty5e",
+	    "type": "G",
+			"rarity": "none",
+	    "weight": 0.5,
+			"value": 500,
+			"entries": ["A standard Eorzean deck of sixty cards. The deck is split into two distinct groups: the major arcana and the minor arcana. The deck is commonly used for games, fortune telling and gambling. The deck is also used by astrologians, supplying the major and minor arcana that the astrologian transforms into fate cards."]
+		}
   ],
   "monster":[
     {
