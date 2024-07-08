@@ -2581,7 +2581,83 @@
 				"Fate Die. Your arcana cards make use of a special die called a Fate Die. At 1st level your Fate Die is a d6. Your Fate Die increases in size as you gain levels in this class, as shown in the Fate Die column of the Astrologian table.",
         "Draw. When you finish a long rest, you can draw a number of cards up to your Wisdom modifier. For each card you draw, roll on the Fate Arcana table using your Fate Die to determine which card you draw. Your drawn cards retain their potency until you next finish a long rest, until you play the card to bestow an effect, or until the card is discarded.",
         "When you finish a short or long rest, you can choose one of your drawn fate cards to discard, then draw a new card in its place.",
-        "Play. As an action, you can choose a creature within 30 feet of you (you can choose yourself) and play one of your drawn arcana cards, bestowing its effect to that creature. If the card effect requires a saving throw, the DC equals your spell save DC."
+        "Play. As an action, you can choose a creature within 30 feet of you (you can choose yourself) and play one of your drawn arcana cards, bestowing its effect to that creature. If the card effect requires a saving throw, the DC equals your spell save DC.",
+        {
+          "type": "table",
+          "caption": "Fate Arcana",
+          "colLabels": [
+            "Fate Die",
+            "Card",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1",
+            "col-8"
+          ],
+          "rows": [
+            [
+              "1",
+              "The Arrow",
+              "The target can use its reaction to move a number of feet equal to 5 times a roll of your Fate Die without provoking opportunity attacks. For 1 minute, the creature’s speed increases by 10 feet."
+            ],
+            [
+              "2",
+              "The Balance",
+              "For the next minute, the target can add a roll of your Fate Die to any damage roll it makes."
+            ],
+            [
+              "3",
+              "The Bole",
+              "The target regains hit points equal to two rolls of your Fate Die + your Wisdom modifier. For 1 minute, the target regains 1 hit point at the start of each of its turns."
+            ],
+            [
+              "4",
+              "The Cups",
+              "For 1 minute, the target is immune to being Charmed, and the target can add a roll of your Fate Die to any Intelligence, Wisdom or Charisma check it makes."
+            ],
+            [
+              "5",
+              "The Irons",
+              "The target chooses up to five creatures within 30 feet of itself to be wrapped in celestial chains. The creatures must make a Strength saving throw, taking radiant damage equal to a roll of your Fate Die + your Wisdom modifier on a failed save, or half as much on a successful one. A creature that fails the saving throw is restrained for one minute (escape DC equals your spell save dc)"
+            ],
+            [
+              "6",
+              "The Spire",
+              "The target gains temporary hit points equal to a roll of your Fate Die + your Wisdom modifier. While it has these temporary hit points, the target has a +2 bonus to AC."
+            ],
+            [
+              "7",
+              "The Spear",
+              "For 1 minute, the creature can make one additional weapon attack when it takes the Attack action."
+            ],
+            [
+              "8",
+              "The Staves",
+              "For 1 minute, the creature can cast cantrips with a casting time of 1 action as a bonus action."
+            ],
+            [
+              "9",
+              "The Crowns",
+              "The target and creatures of your choice within 5 feet of it must succeed on a Dexterity saving throw, taking radiant damage equal to three rolls of your Fate Die + your Wisdom modifier on a failed save, or half as much on a successful one."
+            ],
+            [
+              "10",
+              "The Knives",
+              "Celestial daggers manifest in a 15-foot radius around the target that moves with the target. Any creature starting its turn in the radius or that enters there for the first time on a turn must make a Dexterity saving throw. On a failed save a creature takes damage equal to a roll of your Fate Die + your Wisdom modifier, or half as much on a success."
+            ],
+            [
+              "11",
+              "The Ewer",
+              "Roll your Fate Die. The target creature regains one expended spell slot of its choice of a level equal to or lower than half the number rolled on your Fate Die (rounded down)"
+            ],
+            [
+              "12",
+              "The Rings",
+              "The target can choose a creature within 30 feet of it to make a Charisma saving throw. On a failed save, the creature takes radiant damage equal to two rolls of your Fate Die and is charmed by the target. On a successful save it takes half as much damage and isn’t charmed. If the charmed creature moves more than 30 feet away from the target, it takes radiant damage equal to two rolls of your Fate Die and becomes frightened of the target."
+            ]
+          ]
+        }
 			]
 		},
     {
