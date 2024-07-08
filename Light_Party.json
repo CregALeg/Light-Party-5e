@@ -1544,195 +1544,6 @@
   ],
   "class":[
     {
-      "name": "Gunbreaker",
-      "source": "LightParty5e",
-      "hd": {
-        "number": 1,
-        "faces": 10
-      },
-      "proficiency": [
-        "str",
-        "con"
-      ],
-      "classTableGroups": [
-        {
-          "colLabels": [
-            "Cartridges"
-          ],
-          "rows": [
-						[
-							2
-						],
-						[
-							3
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							5
-						],
-						[
-							5
-						],
-						[
-							6
-						],
-						[
-							6
-						],
-						[
-							7
-						],
-						[
-							7
-						],
-						[
-							8
-						],
-						[
-							8
-						],
-						[
-							9
-						],
-						[
-							9
-						],
-						[
-							10
-						],
-						[
-							10
-						],
-						[
-							11
-						],
-						[
-							11
-						],
-						[
-							12
-						],
-						[
-							12
-						]
-          ]
-        }
-      ],
-      "startingProficiencies": {
-        "armor": [
-          "light",
-          "medium",
-          "heavy",
-					"{@item shield|phb|shields}"
-        ],
-        "weapons": [
-          "simple",
-          "martial",
-          "firearm"
-        ],
-        "tools": [
-          "Smith's Tools"
-        ],
-        "skills": [
-					{
-						"choose": {
-							"from": [
-								"arcana",
-								"athletics",
-								"history",
-								"insight",
-								"intimidation",
-								"investigation",
-								"perception",
-								"sleight of hand"
-							],
-							"count": 2
-						}
-					}
-				]
-      },
-      "multiclassing": {
-				"requirements": {
-					"str": 13,
-          "con": 13
-				},
-        "proficienciesGained": {
-					"armor": [
-						"light",
-						"medium",
-  					"{@item shield|phb|shields}"
-					],
-					"weapons": [
-						"simple",
-						"martial"
-					],
-          "tools": [
-            "smith's tools"
-          ]
-        }
-      },
-      "startingEquipment": {
-				"additionalFromBackground": true,
-        "default": [
-          "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapon|items|source=phb|category=basic|type=martial weapons}",
-          "(a) a {@item pistol|DMG} and 20 {@item Renaissance Bullet|DMG|bullets} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-          "(a) a {@item dungeoneer's pack|PHB} or (b) an {@item explorer's pack|PHB}",
-          "{@item chain mail|phb} and a set of {@item Smith's tools|PHB}"
-        ]
-      },
-      "classFeatures": [
-        "Gunblade|Gunbreaker|LightParty5e|1",
-        "Cartridges|Gunbreaker|LightParty5e|1",
-        "Fighting Style|Gunbreaker|LightParty5e|2",
-        "Brutal Shell|Gunbreaker|LightParty5e|2",
-				{
-					"classFeature": "Gunbreaker Contingent|Gunbreaker|LightParty5e|3",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Gunbreaker|LightParty5e|4",
-        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|4",
-				"Extra Attack|Gunbreaker|LightParty5e|5",
-        "Deft Hands|Gunbreaker|LightParty5e|6",
-        "Gunblade Improvement|Gunbreaker|LightParty5e|6",
-				{
-					"classFeature": "Gunbreaker Contingent Feature|Gunbreaker|LightParty5e|7",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Gunbreaker|LightParty5e|8",
-        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|8",
-        "Heart of Light|Gunbreaker|LightParty5e|9",
-				{
-					"classFeature": "Gunbreaker Contingent Feature|Gunbreaker|LightParty5e|10",
-					"gainSubclassFeature": true
-				},
-        "Cartridges Improvement|Gunbreaker|LightParty5e|11",
-        "Brutal Shell Improvement|Gunbreaker|LightParty5e|11",
-				"Ability Score Improvement|Gunbreaker|LightParty5e|12",
-        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|12",
-        "Martial Enforcer|Gunbreaker|LightParty5e|13",
-        "Continuation|Gunbreaker|LightParty5e|14",
-				{
-					"classFeature": "Gunbreaker Contingent Feature|Gunbreaker|LightParty5e|15",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Gunbreaker|LightParty5e|16",
-        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|16",
-        "Cartridges Improvement|Gunbreaker|LightParty5e|17",
-        "Brutal Shell Improvement|Gunbreaker|LightParty5e|17",
-        "Bloodfest|Gunbreaker|LightParty5e|18",
-				"Ability Score Improvement|Gunbreaker|LightParty5e|19",
-        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|19",
-        "Gunmetal Soul|Gunbreaker|LightParty5e|20"
-      ],
-      "subclassTitle": "Contingent",
-      "hasFluff": true
-    },
-    {
         "name": "Astrologian",
         "source": "LightParty5e",
         "hd": {
@@ -2293,8 +2104,409 @@
           "Wish"
         ],
         "hasFluff": true
+      },
+    {
+      "name": "Gunbreaker",
+      "source": "LightParty5e",
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "con"
+      ],
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Cartridges"
+          ],
+          "rows": [
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							12
+						]
+          ]
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+					"{@item shield|phb|shields}"
+        ],
+        "weapons": [
+          "simple",
+          "martial",
+          "firearm"
+        ],
+        "tools": [
+          "Smith's Tools"
+        ],
+        "skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"athletics",
+								"history",
+								"insight",
+								"intimidation",
+								"investigation",
+								"perception",
+								"sleight of hand"
+							],
+							"count": 2
+						}
+					}
+				]
+      },
+      "multiclassing": {
+				"requirements": {
+					"str": 13,
+          "con": 13
+				},
+        "proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+  					"{@item shield|phb|shields}"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					],
+          "tools": [
+            "smith's tools"
+          ]
+        }
+      },
+      "startingEquipment": {
+				"additionalFromBackground": true,
+        "default": [
+          "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapon|items|source=phb|category=basic|type=martial weapons}",
+          "(a) a {@item pistol|DMG} and 20 {@item Renaissance Bullet|DMG|bullets} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item dungeoneer's pack|PHB} or (b) an {@item explorer's pack|PHB}",
+          "{@item chain mail|phb} and a set of {@item Smith's tools|PHB}"
+        ]
+      },
+      "classFeatures": [
+        "Gunblade|Gunbreaker|LightParty5e|1",
+        "Cartridges|Gunbreaker|LightParty5e|1",
+        "Fighting Style|Gunbreaker|LightParty5e|2",
+        "Brutal Shell|Gunbreaker|LightParty5e|2",
+				{
+					"classFeature": "Gunbreaker Contingent|Gunbreaker|LightParty5e|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunbreaker|LightParty5e|4",
+        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|4",
+				"Extra Attack|Gunbreaker|LightParty5e|5",
+        "Deft Hands|Gunbreaker|LightParty5e|6",
+        "Gunblade Improvement|Gunbreaker|LightParty5e|6",
+				{
+					"classFeature": "Gunbreaker Contingent Feature|Gunbreaker|LightParty5e|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunbreaker|LightParty5e|8",
+        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|8",
+        "Heart of Light|Gunbreaker|LightParty5e|9",
+				{
+					"classFeature": "Gunbreaker Contingent Feature|Gunbreaker|LightParty5e|10",
+					"gainSubclassFeature": true
+				},
+        "Cartridges Improvement|Gunbreaker|LightParty5e|11",
+        "Brutal Shell Improvement|Gunbreaker|LightParty5e|11",
+				"Ability Score Improvement|Gunbreaker|LightParty5e|12",
+        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|12",
+        "Martial Enforcer|Gunbreaker|LightParty5e|13",
+        "Continuation|Gunbreaker|LightParty5e|14",
+				{
+					"classFeature": "Gunbreaker Contingent Feature|Gunbreaker|LightParty5e|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Gunbreaker|LightParty5e|16",
+        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|16",
+        "Cartridges Improvement|Gunbreaker|LightParty5e|17",
+        "Brutal Shell Improvement|Gunbreaker|LightParty5e|17",
+        "Bloodfest|Gunbreaker|LightParty5e|18",
+				"Ability Score Improvement|Gunbreaker|LightParty5e|19",
+        "Martial Versatility (Optional)|Gunbreaker|LightParty5e|19",
+        "Gunmetal Soul|Gunbreaker|LightParty5e|20"
+      ],
+      "subclassTitle": "Contingent",
+      "hasFluff": true
+    },
+    {
+        "name": "Monk",
+        "source": "LightParty5e",
+        "hd": {
+          "number": 1,
+          "faces": 10
+        },
+        "proficiency": [
+          "str",
+          "dex"
+        ],
+        "startingProficiencies": {
+          "weapons": [
+            "simple",
+            "{@item claws|LightParty5e|claws}",
+            "{@item knuckle|LightParty5e|knuckles}",
+            "{@item scimitar|phb|scimitars}",
+            "{@item blowgun|phb|blowguns}"
+          ],
+          "tools": [
+            "one set of {@item artisan's tools|PHB} of your choice"
+          ],
+          "skills": [
+  					{
+  						"choose": {
+  							"from": [
+  								"acrobatics",
+  								"athletics",
+  								"history",
+  								"insight",
+  								"medicine",
+  								"perception",
+  								"religion",
+  								"stealth"
+  							],
+  							"count": 2
+  						}
+  					}
+  				]
+        },
+        "startingEquipment": {
+  				"additionalFromBackground": true,
+          "default": [
+            "(a) a {@item quarterstaff|phb} or (b) one {@filter simple weapon|items|source=phb|category=basic|type=simple weapons}",
+            "(a) a {@item priest's pack|PHB} or (b) an {@item explorer's pack|PHB}",
+            "10 {@item dart|phb|darts}"
+          ]
+        },
+        "classTableGroups": [
+          {
+            "colLabels": [
+              "Discipline",
+              "Chakra",
+              "Techniques Known"
+            ],
+            "rows": [
+  						[
+  							"1d6",
+                "---",
+                "---"
+  						],
+  						[
+  							"1d6",
+                2,
+                2
+  						],
+  						[
+  							"1d6",
+                3,
+                3
+  						],
+  						[
+  							"1d6",
+                4,
+                3
+  						],
+  						[
+  							"1d6",
+                5,
+                4
+  						],
+  						[
+  							"1d6",
+                6,
+                4
+  						],
+  						[
+  							"1d6",
+                7,
+                4
+  						],
+  						[
+  							"1d6",
+                8,
+                4
+  						],
+  						[
+  							"1d8",
+                9,
+                4
+  						],
+  						[
+  							"1d8",
+                10,
+                5
+  						],
+  						[
+  							"1d8",
+                10,
+                5
+  						],
+  						[
+  							"1d8",
+                11,
+                5
+  						],
+  						[
+  							"1d8",
+                11,
+                5
+  						],
+  						[
+  							"1d8",
+                12,
+                5
+  						],
+  						[
+  							"1d8",
+                12,
+                5
+  						],
+  						[
+  							"1d8",
+                13,
+                6
+  						],
+  						[
+  							"1d10",
+                13,
+                6
+  						],
+  						[
+  							"1d10",
+                14,
+                6
+  						],
+  						[
+  							"1d10",
+                14,
+                6
+  						],
+  						[
+  							"1d10",
+                14,
+                7
+  						]
+            ]
+          }
+        ],
+        "classFeatures": [
+            "Disciplined Fist|Monk|LightParty5e|1",
+            "Combat Forms|Monk|LightParty5e|1",
+            "Unarmored Defense|Monk|LightParty5e|1",
+            "Mantra|Monk|LightParty5e|2",
+            "Masterful Blitz|Monk|LightParty5e|2",
+            {
+    					"classFeature": "Monastic Brotherhood|Monk|LightParty5e|3",
+    					"gainSubclassFeature": true
+    				},
+    				"Ability Score Improvement|Monk|LightParty5e|4",
+            "Extra Attack|Monk|LightParty5e|5",
+            "Rhalgr's Blessing|Monk|LightParty5e|6",
+            {
+    					"classFeature": "Monastic Brotherhood Feature|Monk|LightParty5e|6",
+    					"gainSubclassFeature": true
+    				},
+            "Purification|Monk|LightParty5e|7",
+    				"Ability Score Improvement|Monk|LightParty5e|8",
+            "Combat Forms Improvement|Monk|LightParty5e|9",
+            "Forms of Might|Monk|LightParty5e|10",
+            "Perfect Balance|Monk|LightParty5e|11",
+    				"Ability Score Improvement|Monk|LightParty5e|12",
+            "Improved Mantra|Monk|LightParty5e|13",
+            {
+    					"classFeature": "Monastic Brotherhood Feature|Monk|LightParty5e|14",
+    					"gainSubclassFeature": true
+    				},
+            "Formless Technique|Monk|LightParty5e|15",
+    				"Ability Score Improvement|Monk|LightParty5e|16",
+            "Combat Forms Improvement|Monk|LightParty5e|17",
+            {
+    					"classFeature": "Monastic Brotherhood Feature|Monk|LightParty5e|18",
+    					"gainSubclassFeature": true
+    				},
+    				"Ability Score Improvement|Monk|LightParty5e|19",
+            "Formless Technique|Monk|LightParty5e|20",
+            "Enlightenment|Monk|LightParty5e|20"
+        ],
+        "subclassTitle": "Brotherhood",
+        "multiclassing": {
+  				"requirements": {
+  					"str": 13
+  				},
+          "proficienciesGained": {
+  					"weapons": [
+  						"simple",
+              "{@item scimitar|phb|scimitars}",
+              "{@item blowgun|phb|blowguns}"
+  					]
+          }
+        }
       }
-  ],
+],
   "classFeature": [
     {
 			"name": "Spellcasting",
@@ -2932,6 +3144,288 @@
 			"entries": [
 				"By the time you reach 20th level, your body and soul has been hardened by war. You have resistance to bludgeoning, piercing and slashing damage. Additionally, whenever you use Heart of Stone and target another creature, you can extend this benefit to them. The creature gains resistance to bludgeoning, piercing and slashing damage until the start of its next turn, including against the triggering damage."
 			]
+		},
+    {
+			"name": "Disciplined Fist",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"At 1st level, your practice of martial arts gives you mastery of the unique combat style of your order. You gain the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "You can use a d6 in place of the normal damage dice of your unarmed strikes or melee weapons. This die changes as you gain levels in this class, as shown in the Discipline column of the Monk table.",
+            "Your unarmed strike can deal your choice of bludgeoning, slashing or piercing damage.",
+            "Your unarmed strike counts as a melee weapon for the purpose of any feature, effect or spell that requires a melee weapon.",
+            "Your melee weapon attacks and unarmed strikes deal double damage against objects and structures."
+          ]
+        },
+        "You can’t gain these benefits if you are wearing armour, wielding a shield, or wielding a weapon with the two-handed or heavy properties."
+			]
+		},
+    {
+			"name": "Combat Forms",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"Also at 1st level, you have mastered unique combat forms to give you an edge in battle. You have three combat forms; Coeurl form, Opo-Opo form and Raptor form. Each form grants you unique benefits while you are maintaining that form, as specified in the form’s description.",
+        "When you start your turn, you can assume a combat form of your choice, or assume a different form if you are already maintaining a form. You can maintain your chosen form indefinitely, so long as you are not wearing armour, wielding a shield, or wielding a weapon with the two-handed or heavy properties. You also lose your current form if you are knocked prone, grappled or incapacitated.",
+        "{@bold {@i Coeurl Form}}. An aggressive stance based on the Coeurl’s hunting prowess. While in Coeurl form, you have a +2 bonus to damage rolls of your melee weapon attacks and unarmed strikes using Strength, and you can use a bonus action on your turn to make one unarmed strike. When you reach 9th level, the damage bonus increases to +3, and at 17th level, it increases to +4.}",
+        "{@bold {@i Opo-Opo Form}}. A defensive stance based on the Opo-Opo’s evasive nature. While in Opo-Opo form, you have a +1 bonus to AC, and you can use a bonus action on your turn to take the Disengage action. When you reach 9th level, the AC bonus increases to +2, and at 17th level, it increases to +3.}",
+        "{@bold {@i Raptor Form}}. A swift stance based on the Raptor’s impressive mobility. While in Raptor form, your speed increases by 10 feet, and you can use a bonus action on your turn to take the Dash action. When you reach 9th level, the bonus speed increases to 20 feet, and at 17th level, it increases to 30 feet.}"
+			]
+		},
+    {
+			"name": "Combat Forms Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 9,
+			"entries": [
+				"At 9th level, your combat forms improve."
+			]
+		},
+    {
+			"name": "Combat Forms Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 17,
+			"entries": [
+				"At 17th level, your combat forms improve again."
+			]
+		},
+    {
+			"name": "Unarmored Defense",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Strength modifier."
+			]
+		},
+    {
+			"name": "Mantra",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you can focus on a mantra to quell your mind and spirit during meditation. When you finish a short or long rest, choose one of the following mantras. You gain the benefit of your chosen mantra until you use this feature again. You must spend at least 10 minutes of the rest meditating and repeating your mantra to do so.",
+        "{@bold {@i Riddle of the Body.}} You ruminate on your understanding of the physical body. You gain a climbing speed equal to your walking speed, and your jump height and distance is doubled.",
+        "{@bold {@i Riddle of the Mind.}} You ruminate on your understanding of the conscious mind. You can understand any language spoken by another creature."
+			]
+		},
+    {
+			"name": "Masterful Blitz",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"Also at 2nd level, your understanding of your chakra allows you to unleash devastating techniques.",
+        "{@bold {@i Chakra.}} You have access to two chakra. Your monk level determines the number of chakra you have, as shown in the Chakra column of the Monk table. You use your chakra to fuel and unleash your blitz techniques. Once you use a chakra, it is unavailable to you until you finish a short or long rest. Your use of chakra represents the closing of open chakra gates, and when you finish a rest, your meditation and focus allow you to reopen your gates.",
+        "{@bold {@i Blitz Techniques.}} You know two blitz techniques of your choice, which are presented at the end of the class description. You learn more blitz techniques as you gain levels in this class, as shown in the Techniques Known column of the Monk table. When you gain a level in this class, you can choose one of the blitz techniques you know and replace it with another technique you meet the requirements for. When you use a technique, you spend a number of Chakra up to your Wisdom modifier (minimum of 1) to fuel it, increasing its power for each chakra you spend.",
+        "{@bold {@i Form Requirements.}} Your blitz techniques require you to be maintaining a specific form in order to use it, as specified in its description.",
+        "{@bold {@i Saving throws.}} Some of your techniques require your target to make a saving throw to resist the technique’s effects. The saving throw DC is calculated as follows:",
+        {
+					"type": "abilityDc",
+					"name": "Masterful Blitz",
+					"attributes": [
+						"str"
+					]
+				}
+			]
+		},
+    {
+			"name": "Monastic Brotherhood",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 3,
+			"entries": [
+				"When you reach 3rd level, you commit yourself wholly to a monastic brotherhood, splinters of the original Fist of Rhalgr sect that commit themselves to studying and understanding one of the fundamental elements of Rhalgr’s doctrine and the world. Choose from the Brotherhood of Fire, Brotherhood of Earth, Brotherhood of Wind, Brotherhood of Water or Brotherhood of Void. Your choice grants you features at 3rd level, and again at 6th, 14th and 18th level."
+			]
+		},
+    {
+			"name": "Monastic Brotherhood Feature",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 6,
+			"entries": [
+				"When you reach 6th level, you gain a feature from your monastic brotherhood."
+			]
+		},
+    {
+			"name": "Monastic Brotherhood Feature",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 14,
+			"entries": [
+				"When you reach 14th level, you gain a feature from your monastic brotherhood."
+			]
+		},
+    {
+			"name": "Monastic Brotherhood Feature",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 18,
+			"entries": [
+				"When you reach 18th level, you gain a feature from your monastic brotherhood."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 8,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 12,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 16,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 19,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Extra Attack",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+    {
+			"name": "Rhalgr's Blessing",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, the damage of your unarmed strikes and Masterful Blitz techniques counts as magical for the purposes of overcoming resistance and immunity."
+			]
+		},
+    {
+			"name": "Purification",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 7,
+			"entries": [
+				"At 7th level, your mastery over the aether flowing through you allows you to rid your body of harmful effects. You can spend one chakra as an action to end either the blinded, deafened or poisoned condition on yourself.",
+        "Alternatively, you can spend three chakra to end one effect that is reducing your Strength, Dexterity or Constitution score, or one effect reducing your hit point maximum."
+			]
+		},
+    {
+			"name": "Forms of Might",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 10,
+			"entries": [
+				"At 10th level, your mastery over the ways of Rhalgr improves your combat forms in the following ways.",
+        "{@b {@i Coeurl Form}} You have advantage on the first attack roll you make while in Coeurl form.",
+        "{@b {@i Opo-Opo Form}} While in Opo-Opo form, you have advantage on Dexterity saving throws.",
+        "{@b {@i Raptor Form}} When you take the Dash action while in Raptor Form, opportunity attacks made against you have disadvantage until the end of your turn."
+			]
+		},
+    {
+			"name": "Perfect Balance",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 11,
+			"entries": [
+				"From 11th level, when you start your turn, you can spend 3 chakra to enter a special stance, gaining all the benefits of Coeurl, Opo-Opo and Raptor form until the start of your next turn. While in this stance, you can also use any Masterful Blitz technique you know without needing to meet the form requirement."
+			]
+		},
+    {
+			"name": "Improved Mantra",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, you become more attuned to your spiritual self. When you finish a short or long rest, you can choose two mantras to gain the benefits of, rather than only one. Moreover, when you perform a mantra as part of a short rest, you can roll any hit dice you spend twice and choose either result."
+			]
+		},
+    {
+			"name": "Formless Technique",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 15,
+			"entries": [
+				"At 15th level, you have practised one of your techniques to utter perfection. Choose one of the Masterful Blitz techniques you know. You can use that technique without needing to meet the form requirements.",
+        "When you reach 20th level, you can choose another technique to gain this benefit."
+			]
+		},
+    {
+			"name": "Formless Technique",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 20,
+			"entries": [
+        "When you reach 20th level, you can choose another masterful blitz technique to gain this benefit."
+			]
+		},
+    {
+			"name": "Enlightenment",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"level": 20,
+			"entries": [
+				"When you reach 20th level, your martial and spiritual training reaches its absolute peak. Your Strength and Wisdom scores increase by 4. Your maximum for those scores is now 24."
+			]
 		}
   ],
   "subclass": [
@@ -3109,6 +3603,77 @@
 				"Acrid Aura|Gunbreaker|LightParty5e|Chemmonger|LightParty5e|7",
 				"Mithradatism|Gunbreaker|LightParty5e|Chemmonger|LightParty5e|10",
 				"Kiss of Black Rose|Gunbreaker|LightParty5e|Chemmonger|LightParty5e|15"
+			]
+		},
+    {
+			"name": "Brotherhood of Fire",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"shortName": "Brotherhood of Fire",
+			"subclassFeatures": [
+				"Riddle of Fire|Monk|LightParty5e|Brotherhood of Fire|LightParty5e|3",
+				"Fists of Flame|Monk|LightParty5e|Brotherhood of Fire|LightParty5e|3",
+  			"Restrained Will|Monk|LightParty5e|Brotherhood of Fire|LightParty5e|3",
+				"Lashing Cinders|Monk|LightParty5e|Brotherhood of Fire|LightParty5e|6",
+				"Blazing Will|Monk|LightParty5e|Brotherhood of Fire|LightParty5e|14",
+				"Forms of Fire|Monk|LightParty5e|Brotherhood of Fire|LightParty5e|18"
+			]
+		},
+    {
+			"name": "Brotherhood of Earth",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"shortName": "Brotherhood of Earth",
+			"subclassFeatures": [
+				"Riddle of Earth|Monk|LightParty5e|Brotherhood of Earth|LightParty5e|3",
+				"Earth's Reply|Monk|LightParty5e|Brotherhood of Earth|LightParty5e|3",
+				"Stone Stance|Monk|LightParty5e|Brotherhood of Earth|LightParty5e|6",
+				"Shatterpoint|Monk|LightParty5e|Brotherhood of Earth|LightParty5e|14",
+				"Forms of Earth|Monk|LightParty5e|Brotherhood of Earth|LightParty5e|18"
+			]
+		},
+    {
+			"name": "Brotherhood of Wind",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"shortName": "Brotherhood of Wind",
+			"subclassFeatures": [
+				"Riddle of Wind|Monk|LightParty5e|Brotherhood of Wind|LightParty5e|3",
+				"Thunderclap Step|Monk|LightParty5e|Brotherhood of Wind|LightParty5e|3",
+				"Tailwind|Monk|LightParty5e|Brotherhood of Wind|LightParty5e|6",
+				"Thunderstruck|Monk|LightParty5e|Brotherhood of Wind|LightParty5e|14",
+				"Forms of Wind|Monk|LightParty5e|Brotherhood of Wind|LightParty5e|18"
+			]
+		},
+    {
+			"name": "Brotherhood of Water",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"shortName": "Brotherhood of Water",
+			"subclassFeatures": [
+				"Riddle of Water|Monk|LightParty5e|Brotherhood of Water|LightParty5e|3",
+				"Healing Waters|Monk|LightParty5e|Brotherhood of Water|LightParty5e|3",
+				"Chakra Pool|Monk|LightParty5e|Brotherhood of Water|LightParty5e|6",
+				"Benevolent Stream|Monk|LightParty5e|Brotherhood of Water|LightParty5e|14",
+				"Forms of Water|Monk|LightParty5e|Brotherhood of Water|LightParty5e|18"
+			]
+		},
+    {
+			"name": "Brotherhood of Void",
+			"source": "LightParty5e",
+			"className": "Monk",
+			"classSource": "LightParty5e",
+			"shortName": "Brotherhood of Void",
+			"subclassFeatures": [
+				"Riddle of Void|Monk|LightParty5e|Brotherhood of Void|LightParty5e|3",
+				"Void Strike|Monk|LightParty5e|Brotherhood of Void|LightParty5e|3",
+				"Ethereal Seeker|Monk|LightParty5e|Brotherhood of Void|LightParty5e|6",
+				"Ethereal Retreat|Monk|LightParty5e|Brotherhood of Void|LightParty5e|14",
+				"Forms of Void|Monk|LightParty5e|Brotherhood of Void|LightParty5e|18"
 			]
 		}
   ],
@@ -3939,6 +4504,338 @@
             "Poison. The creature becomes Blinded and Poisoned.",
             "Necrotic. The creature’s max hp is reduced by an amount equal to the damage taken for 1 minute."
         ]
+    },
+    {
+        "name": "Riddle of Fire",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Fire",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you gain a new mantra option, the Riddle of Fire. You ruminate on your understanding of fire, and all it represents. You gain darkvision out to 60 feet, and can use an action to create a magical, harmless flame in your hand that sheds bright light out to 30 feet and dim light for an additional 30 feet. The flame persists for 10 minutes, or until you choose to snuff it (no action required)"
+        ]
+    },
+    {
+        "name": "Fists of Flame",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Fire",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you learn to channel fire through your strikes. When you enter a combat form at the start of your turn, you can spend 1 chakra to engulf your hands, feet and weapons in flame. Until the end of your turn, your melee weapon attacks and unarmed strikes deal fire damage instead of their regular damage, and gain a bonus to the damage roll equal to your Wisdom modifier."
+        ]
+    },
+    {
+        "name": "Restrained Will",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Fire",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "Also at 3rd level, when you use a Masterful Blitz technique that deals damage in an area, you can spend one additional chakra to cause any number of creatures in that area to be immune to the technique’s effects."
+        ]
+    },
+    {
+        "name": "Lashing Cinders",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Fire",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "At 6th level, when you use Fists of Flame, you can spend one additional chakra to increase your reach by 10 feet for the duration."
+        ]
+    },
+    {
+        "name": "Blazing Will",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Fire",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "Starting at 14th level, whenever you fail a Wisdom saving throw, you can spend 2 chakra to reroll the saving throw. You must use the new roll. If you then succeed, the creature that forced you to make the save takes fire damage equal to your Wisdom modifier."
+        ]
+    },
+    {
+        "name": "Forms of Fire",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Fire",
+        "subclassSource": "LightParty5e",
+        "level": 18,
+        "entries": [
+            "When you reach 18th level, you have completed your attunement to the aspect of fire, channelling it through your combat forms. Each of your combat forms gains the following benefits:",
+            "{@b {@i Coeurl Form}} The first time you deal damage to a creature in Coeurl form, you deal an additional {@dice 1d10} fire damage.",
+            "{@b {@i Opo-Opo Form}} You are immune to fire damage while in Opo-Opo form.",
+            "{@b {@i Raptor Form}}While in Raptor form, you can move through the space of any creature as if it were difficult terrain, causing it to take fire damage equal to your Wisdom modifier. A creature can take damage this way only once per turn."
+        ]
+    },
+    {
+        "name": "Riddle of Earth",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Earth",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you gain a new mantra option, the Riddle of Earth. You ruminate on your understanding of earth, and all it represents. You gain tremorsense out to 10 feet, and you can use your action to strike the ground and learn the locations of every creature touching the ground within 30 feet of you."
+        ]
+    },
+    {
+        "name": "Earth's Reply",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Earth",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "Also at 3rd level, when a creature you can see within 30 feet of you deals damage to you or another creature within 5 feet of you, you can spend chakra as a reaction to strike the earth and assail it with a tumult of earth. Choose a point you can see within 5 feet of the creature. A 15-foot cone of earth erupts from that point in the direction of the creature, forcing it and any other creature caught in the cone to make a Strength saving throw against your Masterful Blitz save DC. On a failed save, a creature takes {@damage 1d8} bludgeoning damage for each chakra spent, or half as much on a successful one."
+        ]
+    },
+    {
+        "name": "Stone Stance",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Earth",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "At 6th level, when you enter a combat form at the start of your turn, you gain temporary hit points equal to a roll of your Discipline Die + your Wisdom modifier. Moreover, while you retain these temporary hit points, you can’t be forcibly moved against your will and have advantage on saving throws against being knocked prone."
+        ]
+    },
+    {
+        "name": "Shatterpoint",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Earth",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "At 14th level, your mastery over earth allows you to break down a foe’s defences. When you deal bludgeoning damage to a creature that has temporary hit points or a temporary increase to its hit point maximum, you can spend a chakra to force to to make a Constitution saving throw. On a failed save, the creature loses all temporary hit points or bonuses to its hit point maximum and takes damage equal to the number of points lost."
+        ]
+    },
+    {
+        "name": "Forms of Earth",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Earth",
+        "subclassSource": "LightParty5e",
+        "level": 18,
+        "entries": [
+            "At 18th level, you have completed your attunement to the aspect of earth, channelling it through your combat forms. Each of your combat forms gains the following benefits:",
+            "{@b {@i Coeurl Form}} The first time you deal bludgeoning damage while in Coeurl form, you ignore resistance to bludgeoning damage, and treat immunity to it as a resistance instead.",
+            "{@b {@i Opo-Opo Form}} When you enter Opo-Opo form, creatures of your choice within 5 feet of you gain temporary hit points equal to your Wisdom modifier.",
+            "{@b {@i Raptor Form}} While in Raptor form, you ignore difficult terrain."
+        ]
+    },
+    {
+        "name": "Riddle of Wind",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Wind",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you gain a new mantra option, the Riddle of Wind. You ruminate on your nature of wind, gaining an understanding of the subtle currents and movements in the sky. You always know what the weather will be at your current location for the next 24 hours. Moreover, you always know the location of any flying creature within 60 feet of you that is not behind total cover."
+        ]
+    },
+    {
+        "name": "Thunderclap Step",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Wind",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, the wind itself carries your steps. When you enter a combat form at the start of your turn, you can spend one chakra to teleport to an unoccupied space within 5 feet of a creature you can see and that is within 30 feet of you. When you do so, your melee weapon attacks an unarmed strikes this turn deal thunder damage instead of the usual damage type. You also gain an additional effect based on the form you assume:",
+            "{@b {@i Coeurl Form}} Immediately after you use Thunderclap Step, creatures of your choice within 5 feet of you take thunder damage equal to your Wisdom modifier.",
+            "{@b {@i Opo-Opo Form}} While in Opo-Opo form, one other willing creature of your choice that is within 5 feet of you can also teleport to an unoccupied space within 5 feet of your target creature.",
+            "{@b {@i Raptor Form}} While in Raptor form, Thunderclap Step’s range is doubled to 60 feet."
+        ]
+    },
+    {
+        "name": "Tailwind",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Wind",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "Starting at 6th level, you can spend two chakra as a bonus action to conjure a 10-foot wide, 30-foot long line of wind originating from you that lasts for 1 minute or until you use this feature again. Friendly creatures in the tailwind have their movement speed increased by 10 feet as well as having their jump distance doubled. Hostile creatures in the area have their movement speed decreased by 10 feet, and their jump distance halved."
+        ]
+    },
+    {
+        "name": "Thunderstruck",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Wind",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "From 14th level, you can call the wind’s fury to assail your foes. Once per turn when you deal thunder damage to a creature, you can spend one chakra to force it to make a Constitution saving throw against your Masterful Blitz save DC. On a failed save, the creature takes half as much damage as lightning damage at the end of its next turn."
+        ]
+    },
+    {
+        "name": "Forms of Wind",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Wind",
+        "subclassSource": "LightParty5e",
+        "level": 18,
+        "entries": [
+            "At 18th level, you have completed your attunement to the aspect of wind, channelling it through your combat forms. Each of your combat forms gains the following benefits:",
+            "{@b {@i Coeurl Form}} While in Coeurl form, when you hit a creature with a melee weapon attack or unarmed strike, one creature of your choice within 5 feet of the target takes thunder damage equal to your Wisdom modifier.",
+            "{@b {@i Opo-Opo Form}} While in Opo-Opo form, you can take the Dodge action as a bonus action.",
+            "{@b {@i Raptor Form}} While in Raptor form, you have a flying speed equal to your walking speed."
+        ]
+    },
+    {
+        "name": "Riddle of Water",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Water",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you gain a new mantra option, the Riddle of Water. You ruminate on your understanding of water and all it represents. You gain a swimming speed equal to your walking speed, can hold your breath for up to 10 minutes, and can walk across liquid surfaces without falling through unless you choose to."
+        ]
+    },
+    {
+        "name": "Healing Waters",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Water",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you are able to infuse water with mystical power to heal wounds. As an action, you can spend a number of chakra up to your Wisdom modifier to heal a creature you can see within 5 feet of either you or a body of water that you can see. For each chakra spent, the creature regains hit points equal to 1 + a roll of your Discipline die.",
+            "If you are able to make multiple attacks using the Attack action, you can use this feature in place of one of them."
+        ]
+    },
+    {
+        "name": "Chakra Pool",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Water",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "Starting at 6th level, you can spend two chakra as a bonus action to create a 10-foot diameter pool of healing centered on a point you can see within 30 feet of you. The pool manifests as a shimmering puddle of water, and lasts for 1 minute. A friendly creature standing in the pool has resistance to fire damage, and whenever it receives healing, it can roll the dice twice and choose either result. The pool also counts as a body of water for the purposes of your Healing Waters feature."
+        ]
+    },
+    {
+        "name": "Benevolent Stream",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Water",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "At 14th level, when you use Purification, you can choose to use it on a creature within 5 feet of ether you or your chakra pool instead of yourself. Moreoever, when you use Improved Mantra to reroll hit dice during a short rest, you can extend this benefit to any other creature that took the short rest with you."
+        ]
+    },
+    {
+        "name": "Forms of Water",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Water",
+        "subclassSource": "LightParty5e",
+        "level": 18,
+        "entries": [
+            "At 18th level, you have completed your attunement to the aspect of water, channelling it through your combat forms. Each of your combat forms gains the following benefits:",
+            "{@b {@i Coeurl Form}}  When you use Healing Waters while in Coeurl form, the target has advantage on the next attack roll it makes.",
+            "{@b {@i Opo-Opo Form}} While in Opo-Opo form, you can use Healing Waters as a bonus action.",
+            "{@b {@i Raptor Form}} When you enter Raptor Form, you can teleport to your Chakra Pool, so long as it is within 60 feet of you."
+        ]
+    },
+    {
+        "name": "Riddle of Void",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Void",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "At 3rd level, you gain a new mantra option, the Riddle of Void. You ruminate on your understanding of void, deciphering secrets of the ethereal. You can see into the ethereal plane within 15 feet of you and you can speak with and understand a creature in the ethereal plane you can see, and vice-versa if you are on the ethereal plane. You must share a language with the creature to do so."
+        ]
+    },
+    {
+        "name": "Void Strike",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Void",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+            "Starting at 3rd level, you can slip between planes when you strike. Once per turn, when you make an unarmed strike, you can spend one chakra to make the attack from a space you can see within 30 feet of you, as if you were standing there. When you do so, all the damage dealt by the attack becomes force damage, and the attack deals additional damage equal to a roll of your Discipline dice."
+        ]
+    },
+    {
+        "name": "Ethereal Seeker",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Void",
+        "subclassSource": "LightParty5e",
+        "level": 6,
+        "entries": [
+            "At 6th level, you can spend one chakra as a bonus action to be able to see invisible creatures within 60 feet of you for 1 minute, and double the range of Riddle of Void for the same duration if you are currently benefiting from it.",
+            "Moreoever, when you finish a short or long rest and use the Riddle of Void mantra as part of that rest, you can send your spirit into the ethereal plane to locate one creature or object you are familiar with, so long as it is within 1 mile of you. You retain its location in your mind for 1 hour after finishing the rest."
+        ]
+    },
+    {
+        "name": "Ethereal Retreat",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Void",
+        "subclassSource": "LightParty5e",
+        "level": 14,
+        "entries": [
+            "From 14th level, whenever a creature deals damage to you, you can spend chakra as a reaction to slip into the ethereal plane until the start of your next turn. When you do so, you can choose a number of creatures within 5 feet of equal to the number of chakra spent beyond the first to also gain this benefit until the start of their next turn."
+        ]
+    },
+    {
+        "name": "Forms of Void",
+        "source": "LightParty5e",
+        "className": "Monk",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Brotherhood of Void",
+        "subclassSource": "LightParty5e",
+        "level": 18,
+        "entries": [
+            "At 18th level, you have completed your attunement to the aspect of void, channelling it through your combat forms. Each of your combat forms gains the following benefits:",
+            "{@b {@i Coeurl Form}}  While in Coeurl form, Void Strike deals additional damage equal to your Wisdom modifier.",
+            "{@b {@i Opo-Opo Form}} While in Opo-Opo form, you have resistance to non-magical bludgeoning, piercing and slashing damage.",
+            "{@b {@i Raptor Form}} When you use Void Strike while in Raptor Form the range is doubled to 30 feet."
+        ]
     }
   ],
   "optionalfeature": [
@@ -3960,6 +4857,338 @@
 			],
 			"featureType": [
 				"GB:FS"
+			]
+		},
+    {
+			"name": "Arm of the Destroyer",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you take the Attack action, you can forgo one of your attacks to you strike the ground with devastating force. Creatures within 30 feet of you must make a Strength saving throw. On a failed save, a creature takes 1d6 thunder damage for each chakra you spent, and is pushed back 15 feet. On a successful save, a creature takes half as much damage and is only pushed back 5 feet.",
+        "If you use this technique while at least 10 feet in the air, you come crashing down, increasing the radius to 60 feet and subtracting up to 50 feet from the fall when calculating the fall damage."
+			]
+		},
+    {
+			"name": "Celestial Revolution",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you make an unarmed strike, you can spend chakra to deliver a sweeping skyward moonsault against a creature within reach. You can make the attack against any creature that is up to 30 feet above you. On a hit, the target takes an extra {@damage 1d8} damage for each chakra spent, and if it is flying, it must make a Strength saving throw or be knocked prone."
+			]
+		},
+    {
+			"name": "Demolish",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Coeurl",
+        "When you hit a creature with a weapon attack or unarmed strike, you can spend chakra to sunder its defences. The target must succeed on a Constitution saving throw. On a failed save, its AC is reduced by an amount equal to the number of chakra you spent for 1 minute. On a successful save, its AC is only reduced by half the amount, and the effect ends at the start of the creature’s next turn. If you have advantage on the attack, then the creature has disadvantage on its saving throw."
+			]
+		},
+    {
+			"name": "Dragon Kick",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you hit a creature with a weapon attack or unarmed strike, you can spend chakra to deliver a devastating blow. The target takes an extra 1d6 damage for each chakra spent, or {@damage 1d10} if the attack beat the target’s AC by 5 or more."
+			]
+		},
+    {
+			"name": "Elixir Field",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 15,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Coeurl",
+        "When you take the attack action, you can forgo one of your attacks to blast a gale of concentrated aether in either a 30-foot long, 5-feet wide line, or in a 30-foot radius around you. Creatures caught in the area must make a Dexterity saving throw, taking {@damage 1d12} radiant damage for each chakra spent on the attack, or half as much on a successful one."
+			]
+		},
+    {
+			"name": "Flint Strike",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+			"entries": [
+				"{@b Form:} Coeurl",
+        "When you hit a creature with a melee weapon attack or unarmed strike, you can spend chakra to release a burst of flame. The target and each creature of your choice within 5 feet of it other than you must make a Constitution saving throw, taking 1d6 fire damage for each chakra spent on a failed save, or half as much on a successful one."
+			]
+		},
+    {
+			"name": "Four-Point Fury",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Raptor",
+        "When you take the attack action, you can forgo one of your attacks to deliver a sweeping kick around you. Creatures within 15 feet of you must make a Dexterity saving throw. On a failed save, a creature takes 1d6 damage for each chakra you spent, and is knocked prone. On a successful save, it takes half as much damage and isn’t knocked prone."
+			]
+		},
+    {
+			"name": "Haymaker",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you hit a creature with a melee weapon attack or unarmed strike, you can spend chakra to deliver a concussive blow. The creature must make a Constitution saving throw. On a failed save, the creature cannot take reactions and can only take an action or a bonus action on its turn, but not both. These effects last until the end of your next turn. For each additional chakra spent beyond the first, the duration increases by one round, and the creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+			]
+		},
+    {
+			"name": "Howling Fist",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you hit a creature with a melee weapon attack or unarmed strike, you can spend chakra to deliver the blow with the force of the wind. The creature and each creature in a 60-foot long, 5-feet wide line behind it must make a Strength saving throw. On a failed save, the creatures take 1d6 thunder damage for each chakra spent and are deafened. On a successful save, a creature takes half as much damage and suffers no other effect."
+			]
+		},
+    {
+			"name": "One Ilm Punch",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you make a melee weapon attack or unarmed strike, you can spend chakra to deliver an accurate, debilitating strike to the target. The target must make a Wisdom saving throw. On a failed save, you end one beneficial spell on the creature. The spell must be of a level equal to or lower than the number of chakra spent."
+			]
+		},
+    {
+			"name": "Phantom Rush",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Raptor",
+        "As an action, you channel chakra to vanish and strike like a phantom. Choose a number of creatures up to the number of chakra spent within 30 feet of you. Make a melee weapon attack or unarmed strike against each target, each of which deals an additional {@damage 1d8} force damage. If an attack misses, it deals half damage instead of no damage. You can then teleport to an unoccupied space within 5 feet of one of the targets."
+			]
+		},
+    {
+			"name": "Rising Phoenix",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 10,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Coeurl",
+        "As an action, you rise up in a gout of flame. Creatures within 10 feet of you must make a Constitution saving throw, taking 1d6 fire damage for each chakra spent on a failed save, or half as much on a successful one.",
+        "You then rise 15 feet into the air, along with any creature that failed their Strength saving throw. You only fall at the end of your next turn, and you don’t take fall damage when you fall this way. A creature that fails the saving throw falls as normal."
+			]
+		},
+    {
+			"name": "Rockbreaker",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+			"entries": [
+				"{@b Form:} Coeurl",
+        "When you take the attack action, you can forgo one of your attacks to deliver a pulverizing shockwave in a 15-foot cube in front of you. Creatures caught in the area must make a Constitution saving throw. On a failed save, a creature takes 1d8 thunder damage for each chakra spent and has its speed recuced to 5 feet until the end of your next turn. On a successful save, a creature takes half as much damage and suffers no other effect. A nonmagical object that isn’t being worn or carried takes double the damage if its in the area."
+			]
+		},
+    {
+			"name": "Steel Peak",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Coeurl",
+        "When you hit a creature with an unarmed strike or unarmed strike, you can spend chakra to deliver a strike at the target’s vitals. The creature must succeed on a Constitution saving throw, or be stunned until the end of your next turn. For each additional chakra spent beyond the first, the duration increases by one round. The stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+			]
+		},
+    {
+			"name": "Six-Sided Star",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 15,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Raptor",
+        "As an action, you channel chakra and move up to 15 feet for each chakra spent. This movement doesn't provoke opportunity attacks. If you come within reach of another creature during that move, you can make one melee weapon attack or unarmed strike against that creature."
+			]
+		},
+    {
+			"name": "Tornado Kick",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+			"entries": [
+				"{@b Form:} Raptor",
+        "When you hit a creature with a melee weapon attack or unarmed strike, you can deliver a strike with the force of a tornado. The target takes an extra {@damage 1d6} thunder damage for each chakra spent and must make a Strength saving throw. On a failed save, it is pushed back 5 feet for each chakra spent, or half as far on a successful save. You can then move up to your speed to an unoccupied space within 5 feet of the creature."
+			]
+		},
+    {
+			"name": "Touch of Death",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 15,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Opo-Opo",
+        "When you hit a creature with a melee weapon attack or unarmed strike, you can spend chakra and force it to make a Constitution saving throw. On a failed save, it becomes afflicted with lingering agony, taking 1d4 necrotic damage for each chakra spent, and must repeat the save at the end of each of its turns for the next minute, ending the effect on a success. Each time the creature fails the save, you roll one less d4 the next time it takes damage from this effect, to a minimum of 1d4. On a successful save, a creature takes half as much damage and suffers no other effect."
+			]
+		},
+    {
+			"name": "Twin Snakes",
+			"source": "LightParty5e",
+			"featureType": [
+				"MNK:MBT"
+			],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Monk",
+              "source": "LightParty5e"
+            }
+          }
+        }
+      ],
+			"entries": [
+				"{@b Form:} Raptor",
+        "When you hit a creature with a melee weapon attack or unarmed strike, you can deliver a deadly strike that turns the target’s own aether into a poison. The target must make a Constitution saving throw. On a failed save, the creature becomes poisoned until the end of your next turn. While poisoned this way, the target also has disadvantage on Constitution saving throws made to maintain concentration on a spell. For each additional chakra spent beyond the first, the duration increases by one round, and the poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
 			]
 		}
   ],
