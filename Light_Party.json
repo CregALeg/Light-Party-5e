@@ -17,7 +17,8 @@
       }
     ],
     "optionalFeatureTypes": {
-			"GB:FS": "Gunbreaker; Fighting Style",
+      "B:FS": "Bard; Fighting Style",
+      "GB:FS": "Gunbreaker; Fighting Style",
       "DK:FS": "Dark Knight; Fighting Style",
       "MNK:MBT": "Monk: Masterful Blitz Techniques",
       "MCH:G": "Machinist: Gadgets",
@@ -2408,6 +2409,208 @@
         "hasFluff": true
       },
     {
+      "name":"Bard",
+      "source": "LightParty5e",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "dex",
+        "cha"
+      ],
+      "startingProficiencies": {
+        "armor":[
+          "light"
+        ],
+        "weapons":[
+          "simple",
+          "{@item rapier|PHB|rapiers}",
+          "{@item scimitar|phb|scimitar",
+          "{@item hand crossbow|phb|hand crossbow",
+          "{@item heavy crossbow|phb|heavy crossbow",
+          "{@item longbow|phb|longbow"
+        ],
+        "tools": [
+        "three {@item instrument|PHB}s of your choice"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from":[
+                "acrobatics",
+                "arcana",
+                "deception",
+                "history",
+                "intimidation",
+                "nature",
+                "performance",
+                "persuasion",
+                "sleight of hand",
+                "stealth"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb} or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapons}",
+          "(a) a {@item longbow|phb} and a quiver of 20 {@item arrow|phb|arrows} or (b) a {@item light crossbow|phb} and a case of 20 {@item crossbow bolts|phb|bolts}",
+          "(a) an {@item entertainer's pack|phb} or (b) an {@item explorer's pack|phb}",
+          "{@item leather armor|phb}, a {@item dagger} and a {@item instrument|PHB|musical instrument} of your choice"
+        ]
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Repetoire Bonus"
+          ],
+          "rows": [
+            [
+              "---"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+1"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+2"
+            ],
+            [
+              "+3"
+            ],
+            [
+              "+3"
+            ],
+            [
+              "+3"
+            ],
+            [
+              "+3"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Battle Voice|Bard|LightParty5e|1",
+        "Battle Voice Improvement|Bard|LightParty5e|9",
+        "Battle Voice Improvement|Bard|LightParty5e|17",
+        "Expertise|Bard|LightParty5e|1",
+        "Repetoire|Bard|LightParty5e|2",
+        "Fighting Style|Bard|LightParty5e|2",
+        {
+          "classFeature": "Bard Troupe|Bard|LightParty5e|3",
+          "gainSubclassFeature": true
+        },
+        {
+          "classFeature": "Bard Troupe Feature|Bard|LightParty5e|7",
+          "gainSubclassFeature": true
+        },
+        {
+          "classFeature": "Bard Troupe Feature|Bard|LightParty5e|10",
+          "gainSubclassFeature": true
+        },
+        {
+          "classFeature": "Bard Troupe Feature|Bard|LightParty5e|15",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Bard|LightParty5e|4",
+        "Martial Versatility (Optional)|Bard|LightParty5e|4",
+        "Ability Score Improvement|Bard|LightParty5e|8",
+        "Martial Versatility (Optional)|Bard|LightParty5e|8",
+        "Ability Score Improvement|Bard|LightParty5e|12",
+        "Martial Versatility (Optional)|Bard|LightParty5e|12",
+        "Ability Score Improvement|Bard|LightParty5e|16",
+        "Martial Versatility (Optional)|Bard|LightParty5e|16",
+        "Ability Score Improvement|Bard|LightParty5e|19",
+        "Martial Versatility (Optional)|Bard|LightParty5e|19",
+        "Extra Attack|Bard|LightParty5e|5",
+        "Expertise|Bard|LightParty5e|6",
+        "Troubadour's Ballad|Bard|LightParty5e|9",
+        "Radiant Finale|Bard|LightParty5e|11",
+        "Peerless Performer|Bard|LightParty5e|13",
+        "Warden's Paean|Bard|LightParty5e|14",
+        "Minstrel's Coda|Bard|LightParty5e|17",
+        "Radiant Encore|Bard|LightParty5e|18",
+        "Perfect Symphony|Bard|LightParty5e|20"
+      ],
+      "subclassTitle": "Troupe",
+      "multiclassing": {
+        "requirements": {
+          "dex":13,
+          "cha":13
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light"
+          ],
+          "skills": [
+            {
+              "choose": {
+                "from": [
+                  "acrobatics",
+                  "arcana",
+                  "deception",
+                  "history",
+                  "intimidation",
+                  "nature",
+                  "performance",
+                  "persuasion",
+                  "sleight of hand",
+                  "stealth"
+                ],
+                "count": 1
+              }
+            }
+          ],
+          "tools": [
+            "one musical instrument of your choice"
+          ]
+        }
+      }
+      },
+    {
           "name": "Black Mage",
           "source": "LightParty5e",
           "hd": {
@@ -2990,7 +3193,7 @@
             "Paradox|LightParty5e"
           ],
           "hasFluff": true
-        },
+      },
     {
           "name": "Dark Knight",
           "source": "LightParty5e",
@@ -3433,7 +3636,7 @@
             "Negative Energy Flood|XGE"
           ],
           "hasFluff": true
-        },
+      },
     {
       "name": "Gunbreaker",
       "source": "LightParty5e",
@@ -3622,7 +3825,7 @@
       ],
       "subclassTitle": "Contingent",
       "hasFluff": true
-    },
+      },
     {
         "name": "Monk",
         "source": "LightParty5e",
@@ -4408,14 +4611,16 @@
 			"source": "LightParty5e",
 			"className": "Gunbreaker",
 			"classSource": "LightParty5e",
-			"level": 11
+			"level": 11,
+      "entries": []
 		},
     {
 			"name": "Brutal Shell Improvement",
 			"source": "LightParty5e",
 			"className": "Gunbreaker",
 			"classSource": "LightParty5e",
-			"level": 11
+			"level": 11,
+      "entries": []
 		},
     {
 			"name": "Ability Score Improvement",
@@ -4495,14 +4700,16 @@
 			"source": "LightParty5e",
 			"className": "Gunbreaker",
 			"classSource": "LightParty5e",
-			"level": 17
+			"level": 17,
+      "entries": []
 		},
     {
 			"name": "Brutal Shell Improvement",
 			"source": "LightParty5e",
 			"className": "Gunbreaker",
 			"classSource": "LightParty5e",
-			"level": 17
+			"level": 17,
+      "entries": []
 		},
     {
 			"name": "Bloodfest",
@@ -5490,6 +5697,347 @@
 			"entries": [
 				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class’s Spellcasting feature with another cantrip from the black mage spell list"
 			]
+		},
+    {
+			"name": "Battle Voice",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"You can infuse your voice with power to strengthen the resolve of your allies. Starting at 1st level, you can use your action to invoke your Battle Voice. Choose a number of creatures within 30 feet of you that can hear you, up to your Charisma modifier (you can choose yourself). The chosen creatures gain 1d6 + your Charisma modifier temporary hit points and can add a d6 to the next damage roll they make before the end of their next turn.",
+        "You can use this feature a number of times equal to 1 + your Charisma modifier (minimum of once). You regain all expended uses when you finish a short or long rest.",
+        "When you reach 9th level the d6s increase to d8s and at 17th level they become d10s."
+			]
+		},
+    {
+			"name": "Battle Voice Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 9,
+			"entries": [
+			]
+		},
+    {
+			"name": "Battle Voice Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 17,
+			"entries": [
+			]
+		},
+    {
+			"name": "Expertise",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 1,
+			"entries": [
+				"Also at 1st level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+        "At 6th level, you can choose another two skill proficiencies to gain this benefit."
+			]
+		},
+    {
+			"name": "Expertise",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 6,
+			"entries": [
+        "At 6th level, you can choose another two skill proficiencies to gain this benefit."
+			]
+		},
+    {
+			"name": "Repetoire",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you are able to perform enchanted battlesongs to affect the battlefield. You start knowing two battlesongs: Army’s Paeon and Wanderer’s Minuet.",
+        "You can use a bonus action to begin performing a battlesong you know. The performance lasts for 1 minute, or until you are incapacitated or begin performing another battlesong. You can perform each battlesong you know once, and regain the ability to do so after finishing a short or long rest.",
+        "Each battlesong you know imparts an effect to friendly or enemy creatures, as specified in its description. A creature must be within 30 feet of you and be able to hear you to be affected by your battlesong. Your battlesongs also make use of a Repetoire Bonus, which begins as a +1 bonus. Your Repetoire Bonus increases as you gain levels in this class, as shown in the Repetoire Bonus column of the Bard table."
+			]
+		},
+    {
+			"name": "Army's Paeon",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"A stirring song to lift the spirits of soldiers in battle. When you or a friendly creature that can hear the song makes a weapon attack roll, the creature can add your Repetoire Bonus to the roll."
+			]
+		},
+    {
+			"name": "Wanderer's Minuet",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"A rousing song to energise your allies. You and friendly creatures that start their turn able to hear your song have their movement speed increased by 5 times your repetoire bonus."
+			]
+		},
+    {
+			"name": "Fighting Style",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 2,
+			"entries": [
+				"Also at 2nd level you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.",
+        {
+          "type": "options",
+          "count": 1,
+          "entries": [
+            {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery"
+						},
+            {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+            {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Discordant Fighter|LightParty5e"
+						},
+            {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+            {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting|TCE"
+						},
+            {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						}
+          ]
+        }
+			]
+		},
+    {
+			"name": "Bard Troupe",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose a bard troupe to join, acquiring their unique skills and ideals. Choose from the Doom Singer, God’s Bows, Spell Singer, Troubadour or Wood Warden troupes. Your choice grants you features at 3rd level and again at 7th, 10th and 15th level."
+			]
+		},
+    {
+			"name": "Bard Troupe Feature",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 7,
+			"entries": [
+			]
+		},
+    {
+			"name": "Bard Troupe Feature",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 10,
+			"entries": [
+			]
+		},
+    {
+			"name": "Bard Troupe Feature",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 15,
+			"entries": [
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Martial Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 4,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to bards. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 8,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Martial Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 8,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to bards. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 12,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Martial Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 12,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to bards. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 16,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Martial Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 16,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to bards. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+    {
+			"name": "Ability Score Improvement",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 19,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+			]
+		},
+    {
+			"name": "Martial Versatility (Optional)",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 19,
+			"entries": [
+				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to bards. This replacement represents a shift of focus in your martial practice."
+			]
+		},
+    {
+			"name": "Extra Attack",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can use Battle Voice in place of one of those attacks."
+			]
+		},
+    {
+			"name": "Troubadour's Ballad",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 9,
+			"entries": [
+				"At 9th level, you learn the battlesong Troubadour’s Ballad, a powerful song to protect your allies. While performing Troubadour’s Ballad, whenever you or a friendly creature that can hear you song makes a saving throw, the creature can add your Repetoire Bonus to the saving throw."
+			]
+		},
+    {
+			"name": "Radiant Finale",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 11,
+			"entries": [
+				"At 11th level, when you start your turn performing a battlesong, you can choose to start a radiant finale, bringing your song to a close with a powerful crescendo. Your performance ends at the start of your next turn, but your Repetoire Bonus is doubled until your performance ends.",
+        "Once you use this feature, you can’t use it again until you finish a short or long rest."
+			]
+		},
+    {
+			"name": "Peerless Performer",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 13,
+			"entries": [
+				"Starting at 13th level, you have advantage on all Charisma checks."
+			]
+		},
+    {
+			"name": "Warden's Paean",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 14,
+			"entries": [
+				"Starting at 14th level, your songs can cure the ailing. You can expend a use of Battle Voice as a bonus action and choose a creature you can see within 30 feet of you that can hear you. You end one of the following conditions on the creature: blinded, charmed, frightened, poisoned or stunned."
+			]
+		},
+    {
+			"name": "Minstrel's Coda",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 17,
+			"entries": [
+				"When you reach 17th level, you learn the battlesong Minstrel’s Coda, a majestic song to weaken yours foes. An enemy creature that can hear your song subtracts your Repetoire Bonus from any damage roll it makes."
+			]
+		},
+    {
+			"name": "Radiant Encore",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 18,
+			"entries": [
+				"Starting at 18th level, your voice grows ever more powerful. The range of your Battle Voice and battlesongs increases to 45 feet. During Radiant Finale, the range of both Battle Voice and your battlesongs increases to 60 feet."
+			]
+		},
+    {
+			"name": "Perfect Symphony",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"level": 20,
+			"entries": [
+				"Finally, when you reach 20th level, your mastery over music is sublime. When you use a bonus action to begin a performance, you can perform two battlesongs at the same time. If you try to start playing a third song, choose which one of your current battlesongs ends."
+			]
 		}
   ],
   "subclass": [
@@ -5914,6 +6462,129 @@
         "Conduit of Power|Black Mage|LightParty5e|Black Cloud|LightParty5e|14",
 				"Thunderhead|Black Mage|LightParty5e|Black Cloud|LightParty5e|18"
 			]
+		},
+    {
+			"name": "Blade Warden Troupe",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"shortName": "Blade Warden Troupe",
+			"subclassFeatures": [
+				"Frontliner Training|Bard|LightParty5e|Blade Warden Troupe|LightParty5e|3",
+  			"Bursting Blade|Bard|LightParty5e|Blade Warden Troupe|LightParty5e|3",
+  			"Frontliner's March|Bard|LightParty5e|Blade Warden Troupe|LightParty5e|3",
+				"Long March|Bard|LightParty5e|Blade Warden Troupe|LightParty5e|7",
+				"Shoulder to Shoulder|Bard|LightParty5e|Blade Warden Troupe|LightParty5e|10",
+				"Battle Charge|Bard|LightParty5e|Blade Warden Troupe|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Elemental's Voice Troupe",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"shortName": "Elemental's Voice Troupe",
+			"subclassFeatures": [
+  			"Echo of Life|Bard|LightParty5e|Elemental's Voice Troupe|LightParty5e|3",
+  			"Nature's Minne|Bard|LightParty5e|Elemental's Voice Troupe|LightParty5e|3",
+				"Protected Respite|Bard|LightParty5e|Elemental's Voice Troupe|LightParty5e|7",
+				"Soothing Voice|Bard|LightParty5e|Elemental's Voice Troupe|LightParty5e|10",
+				"Song of Salvation|Bard|LightParty5e|Elemental's Voice Troupe|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Doomsong Troupe",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"shortName": "Doomsong Troupe",
+			"subclassFeatures": [
+  			"Doom Voice|Bard|LightParty5e|Doomsong Troupe|LightParty5e|3",
+  			"Hysteria Dirge|Bard|LightParty5e|Doomsong Troupe|LightParty5e|3",
+				"Song of Regret|LightParty5e|Doomsong Troupe|LightParty5e|7",
+				"Voice of Mourning|Bard|LightParty5e|Doomsong Troupe|LightParty5e|10",
+				"Finality|Bard|LightParty5e|Doomsong Troupe|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Godsbow Troupe",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"shortName": "Godsbow Troupe",
+			"subclassFeatures": [
+  			"Refulgent Arrow|Bard|LightParty5e|Godsbow Troupe|LightParty5e|3",
+  			"Arrow's Aria|Bard|LightParty5e|Godsbow Troupe|LightParty5e|3",
+				"Song of the Hawk's Eye|LightParty5e|Godsbow Troupe|LightParty5e|7",
+				"Blast Arrow|Bard|LightParty5e|Godsbow Troupe|LightParty5e|10",
+				"Empyreal Arrow|Bard|LightParty5e|Godsbow Troupe|LightParty5e|14"
+			]
+		},
+    {
+			"name": "Spell Singer Troupe",
+			"source": "LightParty5e",
+			"className": "Bard",
+			"classSource": "LightParty5e",
+			"shortName": "Spell Singer Troupe",
+			"subclassFeatures": [
+  			"Spellcasting|Bard|LightParty5e|Spell Singer Troupe|LightParty5e|3",
+  			"Mage's Ballad|Bard|LightParty5e|Spell Singer Troupe|LightParty5e|3",
+				"Ritual Performance|LightParty5e|Spell Singer Troupe|LightParty5e|7",
+				"Voice of Song and Spell|Bard|LightParty5e|Spell Singer Troupe|LightParty5e|10",
+				"Distant Voice|Bard|LightParty5e|Spell Singer Troupe|LightParty5e|14"
+			],
+      "casterProgression": "1/3",
+      "spellcastingAbility": "cha",
+      "subclassSpells": [
+        {
+          "className": "Sorcerer",
+          "classSource": "PHB"
+        }
+      ],
+      "cantripProgression": [
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+      ],
+      "spellsKnownProgression": [
+          0,
+          0,
+          3,
+          4,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          8,
+          9,
+          10,
+          10,
+          11,
+          11,
+          11,
+          12,
+          13
+      ]
 		}
   ],
   "subclassFeature": [
@@ -8068,13 +8739,7 @@
         "subclassSource": "LightParty5e",
         "level": 6,
         "entries": [
-          "At 6th level, ice magic begins to permeate your body. You gain the following benefits.",
-          {
-            "type":"list",
-            "items":[
-              "Starting at 6th level, you can conduct a ritual to call a storm and step across the land. The ritual takes 10 minutes to perform, at the end of which you and creatures of your choice within 10 feet of you are teleported by a bolt of lightning to unoccupied spaces within 100 feet of you. The spaces must be within 10 feet of eachother and open to the sky. If it is raining, the range increases to 300 feet, and if it is a thunderstorm, the radius increases to 500 feet. You don’t need to see the destination to teleport, as you can guide the teleportation from within the localised storm."
-            ]
-          }
+          "Starting at 6th level, you can conduct a ritual to call a storm and step across the land. The ritual takes 10 minutes to perform, at the end of which you and creatures of your choice within 10 feet of you are teleported by a bolt of lightning to unoccupied spaces within 100 feet of you. The spaces must be within 10 feet of eachother and open to the sky. If it is raining, the range increases to 300 feet, and if it is a thunderstorm, the radius increases to 500 feet. You don’t need to see the destination to teleport, as you can guide the teleportation from within the localised storm."
         ]
     },
     {
@@ -8109,9 +8774,374 @@
         "entries": [
           "From 18th level, your ley lines serve as a conduit for thunderous power. Choose a spell of 2nd level or lower from the black mage spell list that deals either lightning or thunder damage. While standing in your ley lines, you can cast your chosen spell at its lowest level without expending a spell slot. When you finish a long rest, you can change your swap out your chosen spell for another spell of 2nd level or lower that deals lightning or thunder damage. If the weather around you is a thunderstorm, you can instead do so as an action."
         ]
+    },
+    {
+        "name": "Frontliner Training",
+        "source": "LightParty5e",
+        "className": "Bard",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Blade Warden Troupe",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+          "At 3rd level, you gain proficiency in medium armor and shields and with battleaxes, flails and longswords."
+        ]
+    },
+    {
+        "name": "Bursting Blade",
+        "source": "LightParty5e",
+        "className": "Bard",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Blade Warden Troupe",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+          "When you join this troupe at 3rd level, you become able to infuse your weapon with power. Once per turn, when you hit a creature with a melee weapon attack, you can cause the attack to deal an extra 1d6 thunder damage and disorient the creature until the start of your next turn. While disoriented, the creature has disadvantage on opportunity attacks.",
+          "You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses after finishing a long rest.",
+          "When you reach 9th level, the extra damage die increases to a d8, and at 17th level, it increases to a d10."
+        ]
+    },
+    {
+        "name": "Frontliner's March",
+        "source": "LightParty5e",
+        "className": "Bard",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Blade Warden Troupe",
+        "subclassSource": "LightParty5e",
+        "level": 3,
+        "entries": [
+          "At 3rd level, you learn the battlesong Frontliner’s March, a rallying song to bolster blades. A friendly creature that can hear your song adds your Repetoire Bonus to the damage of it’s melee weapon attacks."
+        ]
+    },
+    {
+        "name": "Long March",
+        "source": "LightParty5e",
+        "className": "Bard",
+        "classSource": "LightParty5e",
+        "subclassShortName": "Blade Warden Troupe",
+        "subclassSource": "LightParty5e",
+        "level": 7,
+        "entries": [
+          "Starting at 7th level, you are able to keep up the morale of your allies. While travelling, you and your allies can travel for an additional 4 miles in a single day. Moreover, you and your allies have advantage on saving throws against exhaustion caused by a forced march, and when you finish a short rest, you and any other creature that took the short rest with you can reduce their exhaustion level by one."
+        ]
+    },
+    {
+      "name": "Shoulder to Shoulder",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Blade Warden Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, your allies are at their strongest when stood beside you. When a creature would gain the benefit of one of your battlesongs, your repetoire bonus for that creature increases by +1 if it is within 5 feet of you."
+      ]
+    },
+    {
+      "name": "Battle Charge",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Blade Warden Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 14,
+      "entries": [
+        "When you reach 14th level, you charge into the fray with your allies. When you roll initiative and aren’t surprised, you can immediately use Battle Voice without expending a use."
+      ]
+    },
+    {
+      "name": "Echo of Life",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Elemental's Voice Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "Starting at 3rd level, you can use a bonus action to cause a creature within 30 feet of you to regain hit points equal to 1d6 + your Charisma modifier. Then, a creature of your choice within 30 feet of that creature regains half as many hit points.",
+        "You can use this feature a number of times equal to your proficiency bonus and regain all expended uses after finishing a long rest.",
+        "When you reach 9th level, the d6 becomes a d8, and when you reach 17th level, it becomes a d10."
+      ]
+    },
+    {
+      "name": "Nature's Minne",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Elemental's Voice Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you learn the battlesong Nature’s Minne, a soothing song to cure wounds. A friendly creature that can hear your song adds your Repetoire Bonus to any healing it receives."
+      ]
+    },
+    {
+      "name": "Protected Respite",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Elemental's Voice Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 7,
+      "entries": [
+      "At 7th level, you can create a performance to call upon the elementals for protection while resting. At the start of a short rest or long rest, you can begin the performance, which lasts for 10 minutes. At the end of the performance, make a Charisma (Performance) check. The result of the check determines how the elementals respond to you,",
+      "{@b {@i 9 or below.}} The elementals are unmoved by your performance and take no action.",
+      "{@b {@i 10 to 14.}} You and your companions can’t be surprised for the duration of the rest, and the elementals magically awaken you and your companions if any of you are sleeping naturally when combat begins.",
+      "{@b {@i 15 to 19.}} As above, and the elementals grant you and your allies a +5 bonus to Dexterity (Stealth) checks for the duration of the rest.",
+      "{@b {@i 20 or higher.}} As above, and the elementals project an invisible 30-foot-sphere of protective magic centered on you, preventing any creature from entering the area other than you and your allies for the duration of the rest."
+      ]
+    },
+    {
+      "name": "Soothing Voice",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Elemental's Voice Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, your voice is laced with healing magic. Whenever you use Battle Voice or begin performing a battlesong, you and creatures of your choice within 30 feet of you regain hit points equal to your Charisma modifier."
+      ]
+    },
+    {
+      "name": "Song of Salvation",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Elemental's Voice Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 14,
+      "entries": [
+        "When you reach 15th level, the elementals can flow through you for a brief time to turn the tide of battle. As an action, you can begin a performance that lasts until the end of your next turn. While the performance is active, friendly creatures within 30 feet of you can’t be reduced below 1 hit point, and when a friendly creature starts its turn within 30 feet of you, it regains hit points equal to your Charisma modifier.",
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Doom Voice",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Doomsong Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "From 3rd level, when you use Battle Voice, you can also choose a number of hostile creatures up to your Charisma modifier within 30 feet of you and force them to make a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier.) On a failed save, the creature becomes frightened of you for 1 minute. While frightened this way, the creature’s maximum hit points are reduced by an amount equal to your Charisma modifier + your Bard level. If a frightened creature is more than 30 feet away from you, or can no longer hear you, it can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+      ]
+    },
+    {
+      "name": "Hysteria Dirge",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Doomsong Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you learn the battlesong Hysteria Dirge, a morbid song to weaken foes. A hostile creature that can hear your song subtracts your repetoire bonus from any saving throw it makes."
+      ]
+    },
+    {
+      "name": "Song of Regret",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Doomsong Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 7,
+      "entries": [
+        "At At 7th level, you can create a mournful performance that compels a creature to answer your questions. The performance lasts for 10 minutes. At the end of the performance, choose one creature that witnessed the entire performance. That creature must succeed on a Charisma saving throw or it becomes overwhelmed by guilt and sorrow and is compelled to blurt out the answer to a question of your choosing. You know if the creature is telling the truth when it answers."
+      ]
+    },
+    {
+      "name": "Voice of Mourning",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Doomsong Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, when a hostile creature enters the radius of a battlesong you are playing on its turn, or starts its turn there, it must succeed on a Charisma saving throw against your Doom Voice save DC or become overwhelmed by misery. Its speed becomes zero until the start of its next turn. A creature frightened of you has disadvantage on the saving throw."
+      ]
+    },
+    {
+      "name": "Finality",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Doomsong Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 14,
+      "entries": [
+        "Starting at 15th level, the end of your songs brings the ends of days. During your Radiant Final, the radius of your Battle Voice and Battlesongs is doubled. Moreover, when a creature fails the saving throw against Doom Voice or Voice of Mourning during Radiant Finale, it takes necrotic damage equal to your Charisma modifier."
+      ]
+    },
+    {
+      "name": "Refulgent Arrow",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Godsbow Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "Starting at 3rd level, when you make a ranged weapon attack that beats the target’s AC by 5 or more, your weapon becomes empowered with refulgent power until the end of your next turn. The first ranged weapon attack you make while your weapon is empowered this way deals an additional 1d6 damage and scores a critical hit on a roll of 18, 19 or 20 on the d20. It also counts as magical for the purposes of overcoming resistance and immunity. The effect ends immediately after making the weapon attack. The extra damage increases to 1d8 when you reach 9th level, and again to 1d10 when you reach 17th level.",
+        "Additionally, you can use a bonus action to automatically empower a weapon you are holding with refulgent power. You can do so twice and regain all expended uses after finishing a long rest."
+      ]
+    },
+    {
+      "name": "Arrow's Aria",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Godsbow Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you learn the battlesong Arrow’s Aria. You or a friendly creature that can hear your song adds your repetoire bonus to the damage of its ranged weapon attacks."
+      ]
+    },
+    {
+      "name": "Song of the Hawks's Eye",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Godsbow Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 7,
+      "entries": [
+        "At 7th level, you learn a song that can stirr the spirit and inspire caution. At the end of a short or long rest, you can create a performance that lasts for 10 minutes. At the end of the performance, choose a number of creatures that witnessed the performance up to your Charisma modifier. You and the chosen creatures gain the following benefits until you finish a long rest:",
+        {
+          "type":"list",
+          "items": [
+            "The creatures gain a bonus to your passive Wisdom (Perception) scores equal to your Charisma modifier.",
+            "The creatures’ passive Wisdom (Perception) isn’t reduced by effects that impose disadvantage on your Wisdom (Perception) checks.",
+            "The creatures gain a bonus to the first Wisdom (Perception) check they make before this effect ends equal to your Charisma modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blast Arrow",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Godsbow Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, your Refulgant Arrow attacks ignore half and three quarters cover. Moreover, when you make a Refulgent Arrow attack, regardless of if the attack hits or misses creatures in a straight line between you and the target must make a Dexterity saving throw (DC 8 + your Dexterity modifier + your proficiency bonus), taking the weapon’s damage on a failed save, or half as much on a successful one."
+      ]
+    },
+    {
+      "name": "Empyreal Arrow",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Godsbow Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 14,
+      "entries": [
+        "At 14th level, your music hastens your bowstring. When use a bonus action to begin performing a battlesong, you can make a ranged weapon attack as part of the same bonus action. If you then make another weapon attack against that creature on the same turn, the attack has advantage.",
+        "Additionally, when you begin a radiant finale, you can make a single ranged weapon attack as a bonus action."
+      ]
+    },
+    {
+      "name": "Spellcasting",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Spell Singer Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "When you reach 3rd level, you augment your skills with the ability to cast spells.",
+        "{@b {@i Cantrips.}} You learn two cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 10th level.",
+        "{@b {@i Spell Slots.}} The Spell Singer Spellcasting table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.",
+        "For example, if you know the 1st-level spell Shield and have a 1st-level and a 2nd-level spell slot available, you can cast Shield using either slot.",
+        "{@b {@i Spells Known of 1st Level and Higher.}} You know three 1st-level sorcerer spells of your choice, two of which you must choose from the enchantment and evocation spells on the sorcerer spell list.",
+        "The Spells Known column of the Spell Singer Spellcasting table shows when you learn more sorcerer spells of 1st level or higher. Each of these spells must be an enchantment or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+        "The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
+        "Whenever you gain a level in this class, you can replace one of the sorcerer spells you know with another spell of your choice from the sorcerer spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.",
+        "{@b {@i Song Casting.}} As you cast your spells through the power of your voice, sorcerer spells you cast require only a verbal component instead of their usual spellcasting components. However, if a spell has a material component with a gold cost, you must still supply that component.",
+        "{@b {@i Spellcasting Ability.}} Charisma is your spellcasting ability for your sorcerer spells, since you invoke your spells through the power of voice and song. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.",
+        {
+          "type": "abilityDc",
+          "name": "Spell",
+          "attributes": [
+            "cha"
+          ]
+        },
+        {
+          "type": "abilityAttackMod",
+          "name": "Spell",
+          "attributes": [
+            "cha"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mage's Ballad",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Spell Singer Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you learn the battlesong Mage’s Ballad, an arcane song to bolster spells. A friendly creature that can hear your song adds your repetoire bonus to the damage of its spells."
+      ]
+    },
+    {
+      "name": "Ritual Performance",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Spell Singer Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 7,
+      "entries": [
+        "Starting at 7th level, you become able to perform rituals as if they were a song. Choose two spells from the sorcerer spell list that can be cast as a ritual. Your chosen spells don’t count towards the number of spells you know, and you can only cast these spells as a ritual. When you do so, they require only verbal components and any material components with a gold cost.",
+        "When you reach 15th level, you can choose a third ritual spell from the sorcerer spell list to learn."
+      ]
+    },
+    {
+      "name": "Voice of Song and Spell",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Spell Singer Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, when you use your action to cast a spell, you can use Battle Voice as a bonus action."
+      ]
+    },
+    {
+      "name": "Distant Voice",
+      "source": "LightParty5e",
+      "className": "Bard",
+      "classSource": "LightParty5e",
+      "subclassShortName": "Spell Singer Troupe",
+      "subclassSource": "LightParty5e",
+      "level": 14,
+      "entries": [
+        "From 15th level, you can use a mote of magic to throw your voice further. When you use Battle Voice or cast a spell with a verbal component, you can cause the effect to originate from a space you can see within 30 feet of you, as if you were standing there. Additionally, when you begin performing a battlesong, you can choose a friendly creature within 30 feet of you. The effects of the song originate from that creature, instead of you, for the duration of the song or until you use a bonus action to return it to yourself."
+      ]
     }
   ],
   "optionalfeature": [
+    {
+			"name": "Discordant Fighter",
+			"source": "LightParty5e",
+			"entries": [
+				"You infuse your voice with magic to fight. You learn the {@spell vicious mockery} and {@spell prestidigitation} cantrips. Charisma is your spellcasting modifier for these spells."
+			],
+			"featureType": [
+				"B:FS"
+			]
+		},
 		{
 			"name": "Gunner",
 			"source": "LightParty5e",
@@ -9126,7 +10156,7 @@
     {
     	"name": "Chocobo",
     	"source": "LightParty5e",
-			"tokenUrl": "https://i.imgur.com/8PQFKNx.png",
+			"tokenUrl": "https://i.imgur.com/ecDo4Ih.png",
     	"size": [
     		"L"
     	],
