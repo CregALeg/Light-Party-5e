@@ -12996,6 +12996,421 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ruin",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You channel raw destructive energy into a devastating attack. Make a ranged spell attack against a creature you can see within 120 feet. On a hit, the target takes {@damage 2d10} force damage. Until the spell ends, you can make the attack again on each of your turns as an action."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d10} for each slot level above 1st."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Tri Disaster",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 3,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 120
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a cluster of three pearls"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You conjure forth a devastating conflux of elemental energies. The area of the conflux consists of three 15-foot spheres, which you can arrange as you wish. Each sphere must be arranged within 30 feet from one another. A creature in the area of one or more of the spheres must make a Dexterity saving throw, taking {@damage 5d6} damage on a failed save, and half as much on a successful one. Each of the spheres deals your choice of either fire, cold or lightning damage, and each one must deal a different damage type. If a creature is in the area of more than one of the spheres, you choose which sphere's damage type affects the creature."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+          ]
+        }
+      ],
+      "savingThrow": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Dosis",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 0,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You fire concentrated beams of energy at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d4} force damage.",
+        "This spell's damage increases by {@dice 2d4} when you reach 5th level ({@dice 4d4}), 11th level ({@dice 6d4}), and 17th level ({@dice 8d4})"
+      ],
+      "scalingLevelDice": {
+        "label": "fire damage",
+        "scaling": {
+          "1": "2d4",
+          "5": "4d4",
+          "11": "6d4",
+          "17": "8d4"
+        }
+      },
+      "damageInflict": [
+        "force"
+      ],
+      "spellAttack": [
+        "R"
+      ],
+      "miscTags": [
+        "OBJ",
+        "SCL"
+      ]
+    },
+    {
+      "name": "Haima",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 6,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "The discarded shell of an insect"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "You touch a creature and erect a barrier of force around it. The creature gains 30 temporary hit points. While the creature has these hit points, it has {@quickref Cover||3||half cover}. If the creature would lose all its temporary hit points from this spell as a result of taking damage during the spells duration, you can use your bonus action on a subsequent turn to rebuild the barrier, again granting the creature temporary hit points. Each time you rebuild the barrier, the number of temporary hit points the creature gains is reduced by 5, to a minimum of 5 temporary hit points. When the spell ends, the target loses any remaining temporary hit points from this spell."
+      ],
+      "miscTags": [
+        "THP",
+        "UBA"
+      ]
+    },
+    {
+      "name": "Holos",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 4,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You release a wave of healing magic in every direction. Up to six creatures of your choice within range regain {@dice 4d6} hit points. The targets also gain half as many temporary hit points, which last for 1 minute."
+      ],
+      "miscTags": [
+        "HL",
+        "THP"
+      ]
+    },
+    {
+      "name": "Mesotes",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 7,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "A transparent glass ball"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "A dome of magical energy forms in a 15-foot radius sphere around a point you can see within range. When you cast this spell, you can designate any number of creatures within the area of the spell to be affected by it, which can include yourself. While an affected creature is within the radius of the spell, any damage they take is reduced by 5."
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Pneuma",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 5,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "line",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "Complex research notes on the nature of the mortal soul"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You conjure a paradoxical beam of destructive and restorative magic in a line 60 feet long and 5 feet wide in a direction you choose. Each creature in the line must make a Dexterity saving throw, taking {@damage 5d10} force damage on a failed save, or half as much on a successful one. When you cast this spell, you can choose a number of creatures in the line to instead regain {@dice 2d10} hit points, rather than taking damage."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 6th level or higher, the damage and healing both increase by {@dice 1d10} for each slot level above 5th."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "savingThrow": [
+        "dexterity"
+      ],
+      "miscTags": [
+        "HL"
+      ]
+    },
+    {
+      "name": "Toxicon",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 3,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "A hail of magical energy descends upon a creature within range. The target and each creature within 10 feet of the it must make a Constitution saving throw, taking {@damage 4d10} force damage on a failed save, or half as much on a successful one."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d10} for each slot level above 2nd."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "force"
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Zoe",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 2,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "bonus"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "You draw restorative magics from the world around you to empower your next spell. The next time you cast a spell of 1st level or higher that restores hit points to a creature during this spells duration, you restore an additional {@dice 2d4} hit points to one creature affected by the spell, and the spell ends."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d4} for every two slot levels above 2nd."
+          ]
+        }
+      ],
+      "miscTags": [
+        "HL"
+      ]
     }
   ],
   "item": [
@@ -13087,6 +13502,1864 @@
         "P"
       ],
       "hasFluff": true
+    },
+    {
+      "name": "Ifrit Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "5 + five times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 11,
+      "con": 14,
+      "int": 13,
+      "wis": 10,
+      "cha": 12,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "fire"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell produce flame} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Crimson Cyclone. When summoned, Ifrit Egi moves up to it's speed and unleashes a gale of flame in a 15-foot cone. Creatures in the cone must make a Dexterity saving throw against your spell save DC. Roll a number of d8s equal to your PB, and add the numbers together. On a failed save, a creature takes fire damage equal to the total, or half as much on a successful save."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Burning Strike Melee Weapon Attack:",
+          "entries": [
+            "{@hit 2 plus PB} to hit, reach 5ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} fire damage"
+          ]
+        },
+        {
+          "name": "Inferno",
+          "entries": [
+            "Ifrit Egi unleashes baleful flame in a 10-foot radius around either itself or you. Each creature caught in the area must make a Dexterity saving throw against your spell save DC, taking {@damage 1d6 +  PB} fire damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "miscTags": [
+        "AOE"
+      ]
+    },
+    {
+      "name": "Titan Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "13 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "6 + six times your summoner level"
+      },
+      "speed": {
+        "walk": 25,
+        "fly": {
+          "number": 25,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 14,
+      "dex": 10,
+      "con": 15,
+      "int": 11,
+      "wis": 12,
+      "cha": 13,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell magic stone|XGE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Mountain Buster. When summoned, Titan Egi conjures the land itself to crush your foes. Choose a number of creatures up to your PB within 60 feet of Titan Egi. The chosen creatures must make a Constitution saving throw against your spell save DC. On a failed save, the creature takes {@damage 1d8 +  PB} bludgeoning damage and it's speed is reduced by 10 feet until the end of it's next turn. On a successful save, a creature takes half as much damage and suffers no other effect."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Rock Buster",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} bludgeoning damage"
+          ]
+        },
+        {
+          "name": "Earthen Armour",
+          "entries": [
+            "Titan Egi draws upon earth magic to erect a powerful barrier around either itself or you. The target creature gains temporary hit points equal to {@dice 1d10 + 2 +  PB} for 1 minute."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Garuda Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "11 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "4 + four times your summoner level"
+      },
+      "speed": {
+        "walk": 35,
+        "fly": {
+          "number": 35,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 11,
+      "dex": 15,
+      "con": 10,
+      "int": 12,
+      "wis": 14,
+      "cha": 13,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell gust|XGE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Slipstream. When summoned, Garuda Egi conjures vortex of air in a 15-foot radius around a point you can see within 60 feet of the egi. Creatures in the area of the vortex when it appears must make a Constitution saving throw. Roll a number of d6s equal to your PB, and add them together. On a failed save, a creature takes thunder damage equal to the total, or half as much on a successful save. Additionally, creatures that start their turn in the area of the vortex take thunder damage equal to your PB."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Wind Blade",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, range 60 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} slashing damage"
+          ]
+        },
+        {
+          "name": "Aerial Step",
+          "entries": [
+            "Garuda Egi draws upon wind magic, increasing the speed of either itself or you until the end of your next turn."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "AOE",
+        "RW"
+      ]
+    },
+    {
+      "name": "Leviathan Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "4 + four times your summoner level"
+      },
+      "speed": {
+        "walk": 25,
+        "swim": 40,
+        "fly": {
+          "number": 25,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 14,
+      "dex": 15,
+      "con": 12,
+      "int": 11,
+      "wis": 10,
+      "cha": 13,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell shape water|XGE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Temporary Current. When summoned, Leviathan Egi unleashes a pulse of water in a 30-foot long, 5-foot wide line. A creature caught in the line is pushed back 15 feet and must make a Dexterity saving throw against your spell save DC. Roll a number of d6s equal to your PB, and add them together. On a failed save, a creature takes cold damage equal to the total, or half as much on a successful save."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Water Shot",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, ranged 30 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} cold damage"
+          ]
+        },
+        {
+          "name": "Storm Surge",
+          "entries": [
+            "Leviathan Egi surges water magic outwards from either itself or it you. Creatures within 5 feet of the chosen creature are pushed back up to 15 feet."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "C"
+      ],
+      "miscTags": [
+        "RW"
+      ]
+    },
+    {
+      "name": "Ramuh Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "11 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "4 + four times your summoner level"
+      },
+      "speed": {
+        "walk": 25,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 10,
+      "dex": 12,
+      "con": 11,
+      "int": 14,
+      "wis": 15,
+      "cha": 13,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "lightning",
+        "thunder"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell lightning lure|TCE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Chaotic Strike. When summoned, Ramuh Egi targets a number of creatures up to your PB that it can see, and drops a wicked thunderbolt on them. The chosen creatures must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes {@damage 1d8 +  PB} lightning damage and becomes {@condition frightened} of the Egi until the end of your next turn. On a successful save, a creature takes half as much damage and suffers no other effect."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Thunderbolt",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, ranged 60 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} lightning damage"
+          ]
+        },
+        {
+          "name": "Judgement Bolt",
+          "entries": [
+            "Ramuh Egi drops a bolt of thunder at a point it can see within 60 feet. Creatures in a 30-foot radius around the chosen point must make a Constitution saving throw against your spell save DC, taking {@damage 1d6 +  PB} lightning damage on a failed save, or half as much on a successful one. A creature that is {@condition frightened} of the Ramuh Egi has disadvantage on the saving throw."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "L"
+      ],
+      "miscTags": [
+        "AOE",
+        "RW"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ]
+    },
+    {
+      "name": "Shiva Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "5 + five times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 14,
+      "con": 13,
+      "int": 10,
+      "wis": 11,
+      "cha": 12,
+      "immune": [
+        "cold"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained sense darkvision 60 ft.",
+        "passive perception 10"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell ray of frost} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Diamond Dust. When summoned, Shiva Egi targets targets a number of creatures up to your PB within 30 feet of the egi and attempts to encase them in ice. The creatures must make a Constitution saving throw against your spell save DC, becoming {@condition restrained} on a failed save. While {@condition restrained} this way, the first time the creature takes damage, it takes an additional {@damage 1d6} cold damage, and is no longer {@condition restrained}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Blade of Frost",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} cold damage"
+          ]
+        },
+        {
+          "name": "Bow of Frost",
+          "entries": [
+            "{@atk rw} {@hit 1 plus PB} to hit, range 30/60 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} cold damage"
+          ]
+        },
+        {
+          "name": "Dreams of Ice",
+          "entries": [
+            "Shiva Egi channels the power of ice magic into either itself or you. The next time the target creature deals damage, it deals an additional {@damage 1d6} cold damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "C"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ]
+    },
+    {
+      "name": "Odin Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "13 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "5 + five times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 13,
+      "con": 14,
+      "int": 11,
+      "wis": 10,
+      "cha": 12,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell true strike} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Shin Zantetsuken. When summoned, Odin Egi targets a creature of your choice within 5 feet of Odin Egi. If the creature has hit points fewer than five times your proficiency bonus, it dies. Otherwise, the creature takes {@damage 1d12 + 2 +  PB} slashing damage."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Zantetsuken",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} slashing damage"
+          ]
+        },
+        {
+          "name": "Gungnir",
+          "entries": [
+            "Odin Egi targets a creature it can see within 5 feet. The creature must succeed on a Wisdom saving throw against your spell save DC. On a failed save, the creature becomes bound to the egi, and is unable to move away from it for 1 minute. Additionally, Odin Egi has advantage on the next weapon attack it makes against the bound creature."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Enkidu Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "11 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "4 + four times your summoner level"
+      },
+      "speed": {
+        "walk": 35,
+        "fly": {
+          "number": 35,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 12,
+      "dex": 15,
+      "con": 14,
+      "int": 11,
+      "wis": 13,
+      "cha": 10,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell thunderclap|XGE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "{@spell Web|PHB}. When summoned, Enkidu Egi targets targets a number of creatures up to your PB within 30 feet of it, and tries to trap them with a blast of silk. The targets must make a Dexterity saving throw. On a failed save, the creature becomes caught in the web, and it's speed becomes 0 until the start of your next turn."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Missile",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, range 30/60 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} thunder damage"
+          ]
+        },
+        {
+          "name": "Eerie Soundwave",
+          "entries": [
+            "Enkidu Egi targets a creature of your choice within 60 feet of itself with a wave of disorienting sound. The target must make a Constitution saving throw against your spell save DC. On a failed save, any beneficial effect, magical or otherwise, ends on the target. This could include something like a barbarian's rage, or a spell like mage armour."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "T"
+      ],
+      "miscTags": [
+        "RW"
+      ]
+    },
+    {
+      "name": "Ravana Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "5 + five times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 13,
+      "con": 14,
+      "int": 11,
+      "wis": 12,
+      "cha": 10,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell sword burst|TCE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Stance Change. When summoned, Ravana Egi assumes one of three stances: dragonfly, scorpion or beetle. Each stance gives Ravana Egi a different effect:",
+            "Dragonfly Stance: Ravana Egi's speed is increased by 30 feet.",
+            "Scorpion Stance: Ravana Egi's weapon attacks deal an additional {@damage 1d8} damage.",
+            "Beetle Stance: Ravana Egi's AC increases by 2."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Blinding Blade",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} slashing damage"
+          ]
+        },
+        {
+          "name": "Prelude to Slaughter",
+          "entries": [
+            "Ravana Egi unleashes sweeping attacks imbued with energy in an area. The area and effect of this ability changes based on Ravana Egi's current stance. A creature caught in the area must make a Dexterity saving throw. On a failed save, it takes {@damage 1d6 + 2 +  PB} slashing damage and is subject to the effect determined by Ravana Egi's stance. On a successful save, a creature takes half as much damage and suffers no other effect.",
+            "Dragonfly Stance: The area is a 15-foot cube originating from Ravana Egi. On a failed save, creatures are knocked {@condition prone}.",
+            "Scorpion Stance: The area is a 15-foot long, 5-feet wide line originating from Ravana Egi. On a failed save, creatures are frightned of Ravana Egi until the start of your next turn.",
+            "Beetle Stance: The area is a 15-foot radius centered on Ravana Egi. On a failed save, creatures have disadvantage on weapon attacks against you until the start of your nex"
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ]
+    },
+    {
+      "name": "Bismarck Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "5 + five times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "swim": 30,
+        "canHover": true
+      },
+      "str": 14,
+      "dex": 13,
+      "con": 15,
+      "int": 11,
+      "wis": 12,
+      "cha": 10,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "resist": [
+        "lightning",
+        "thunder"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell shocking grasp} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "{@spell Control Weather|PHB}. When summoned, Bismarck Egi takes control of the weather immediately around it. Bismarck Egi emanates a 5-foot radius area of harsh weather. When you summon Bismarck Egi, you choose which weather effect the egi creates."
+          ]
+        },
+        {
+          "name": "Wind",
+          "entries": [
+            "Creatures in the area are buffeted by harsh winds, making the area difficult terrain for all creatures other than you."
+          ]
+        },
+        {
+          "name": "Water",
+          "entries": [
+            "Torrential rain pours in the area, making the area lightly obscured."
+          ]
+        },
+        {
+          "name": "Thunder",
+          "entries": [
+            "A storm brews in the area, causing each creature that starts its turn in the area - other than you - to take lightning damage equal to your PB."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Brine",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, ranged 60 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} cold damage, or {@damage 1d8 +  PB} cold damage if the target has less than half its maximum hit points."
+          ]
+        },
+        {
+          "name": "Dead Wind",
+          "entries": [
+            "Bismarck Egi looses a gale of wind that sucks in foes. Creatures of your choice within 30 feet of Bismarck Egi must make a Strength saving throw against your Spell Save DC. On a failed save, the creatures are pulled up to 15 feet torwards Bismarck Egi."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "C"
+      ],
+      "miscTags": [
+        "AOE",
+        "RW"
+      ]
+    },
+    {
+      "name": "Sephirot Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "13 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "6 + six times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 13,
+      "con": 14,
+      "int": 11,
+      "wis": 12,
+      "cha": 10,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell resistance} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Fiendish Rage. When summoned, Sephirot Egi leaps up to 30 feet onto a creature you can see. Sephirot Egi jumps to a space within 5 feet of the creature. The target must succeed on a Dexterity saving throw against your Spell Save DC or be knocked {@condition prone}. Sephirot Egi can repeat this effect whenever it or you reduces a creature to 0 hit points."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Earth Shaker",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} bludgeoning damage, or {@damage 1d12 + 2 +  PB} bludgeoning damage if the target is {@condition prone}."
+          ]
+        },
+        {
+          "name": "Life Force",
+          "entries": [
+            "Sephirot Egi creates two surges of primal energy. Each surge is a 10-foot radius centered on two points you can see within 60 feet of Sephirot Egi. The areas cannot overlap with eachother. Creatures in one of the areas must succeed on a Strength saving throw or be knocked {@condition prone}. Creatures in the other area must succeed on a Wisdom saving throw, or take {@damage 1d8 +  PB} force damage. You decide which area creates each effect."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "B",
+        "O"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "prone"
+      ]
+    },
+    {
+      "name": "Sophia Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "11 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "4 + four times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 12,
+      "dex": 10,
+      "con": 11,
+      "int": 14,
+      "wis": 15,
+      "cha": 13,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell message} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Scales of Revelation. When summoned, Sophia Egi weighs the souls of those around it. Creatures within 30 feet of Sophia Egi must make a Wisdom Saving Throw against your spell save DC. Roll a number of d6s equal to your PB, and add them together. On a failed save, a creature takes damage equal to the total, and is pushed up to 30 feet in a direction of your choice. On a successful save, it takes half as much damage, and suffers no other effect."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Quasar",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, range 30/60 ft., one target you can see. Hit {@damage 1d6 + 2 +  PB} radiant damage"
+          ]
+        },
+        {
+          "name": "Equilibrium",
+          "entries": [
+            "Sophia Egi conjures meteors that rain down on 2 creatures of your choice within 60 feet of Sophia Egi. The creatures must make a Dexterity saving throw, taking {@damage 1d6 +  PB} radiant damage on a failed save, or half as much on a successful one. A creature that takes damage from this is also moved up to 15 feet in a direction of your choice."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "R"
+      ],
+      "miscTags": [
+        "RW"
+      ]
+    },
+    {
+      "name": "Zurvan Egi",
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "12 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "5 + five times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 13,
+      "con": 12,
+      "int": 11,
+      "wis": 14,
+      "cha": 10,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "resist": [
+        "cold",
+        "fire"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the green {@spell flame blade} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Infallible Judgement. When summoned, Zurvan Egi judges a creature you can see within 120 feet of it. The creature must make a Constitution saving throw. On a failed save, the creature is {@condition restrained}, as creeping ice binds it in place. It must then make a Dexterity saving throw. Roll a number of d8s equal to your PB, and add them together. On a failed save, the creature takes fire damage equal to the total, or half as much on a successful one."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Flaming Halberd",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} fire damage, and the target must make a Constitution saving throw against your Spell Save DC, taking {@damage 1d8} fire damage on failed save, or half as much on a successful one."
+          ]
+        },
+        {
+          "name": "Biting Halberd",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} cold damage, and the target must make a Constitution saving throw against your Spell Save DC. On a failed save, its speed is reduced by 15 feet until the start of your next turn, or only 5 feet on a successful save."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "C",
+        "F"
+      ],
+      "miscTags": [
+        "MLW",
+        "MW"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ]
+    },
+    {
+      "name": "Susano Egi",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "S"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "13 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "6 + six times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 13,
+      "int": 10,
+      "wis": 11,
+      "cha": 14,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "resist": [
+        "lightning"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While this creature is summoned, you know the {@spell booming blade|TCE} cantrip."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Yata No Kagami. When summoned, Susano Egi brandishes its blade and targets a creature you can see within 60 feet of the egi. The creature must make a Strength saving throw against your spell save DC. Roll a number of d8s equal to your PB, and add them together. On a failed save, the creature takes slashing damage equal to the total, and is pushed back 30 feet. On a successful save, the creature takes half as much damage, and is only pushed 15 feet."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Assail",
+          "entries": [
+            "{@atk mw} {@hit 2 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 1d8 + 2 +  PB} slashing damage"
+          ]
+        },
+        {
+          "name": "Brightstorm",
+          "entries": [
+            "Susano Egi targets a creature that took damage from its Enkindle: Yata No Kagami feature within the last minute. The target, and each creature within 10 feet of it, must make a Dexterity saving throw, taking {@damage 1d10 +  PB} lightning damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "L",
+        "S"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ]
+    },
+    {
+      "name": "Demi Bahamut",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "15 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "7 + seven times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 16,
+      "dex": 13,
+      "con": 15,
+      "int": 12,
+      "wis": 12,
+      "cha": 14,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "fire"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While Demi Bahamut is summoned, you know the firebolt cantrip."
+          ]
+        },
+        {
+          "name": "Dreadwyrm Trance",
+          "entries": [
+            "While Demi Bahamut is summoned, you have a +1 bonus to the damage of your spells."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Akh Morn. When summoned, Demi Bahamut unleashes a hail of fiery blasts. Choose a number of creatures up to your Proficiency Bonus within 120 feet of Demi Bahamut. The creatures must make a Dexterity saving throw against your spell save DC, taking {@damage 2d10 +  PB} fire damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Demi Bahamut makes two Wyrmwave attacks."
+          ]
+        },
+        {
+          "name": "Wyrmwave",
+          "entries": [
+            "{@atk rw} {@hit 2 plus PB} to hit, range 90 ft., one target you can see. Hit {@damage 2d6 + 2 +  PB} fire damage"
+          ]
+        },
+        {
+          "name": "Astral Flare",
+          "entries": [
+            "Demi Bahamut blasts a creature you can see within 90 feet with a gale of draconic energy. The target and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC, taking {@damage 1d10 + 3 +  PB} fire damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "RW"
+      ]
+    },
+    {
+      "name": "Demi Alexander",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "L"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "16 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "8 + eight times your summoner level"
+      },
+      "speed": {
+        "walk": 20
+      },
+      "str": 14,
+      "dex": 12,
+      "con": 15,
+      "int": 16,
+      "wis": 13,
+      "cha": 12,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While Demi Alexander is summoned, you know the {@spell sacred flame} cantrip."
+          ]
+        },
+        {
+          "name": "Colossus Trance",
+          "entries": [
+            "While Demi Alexander is summoned, you have a +1 bonus to AC."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Mega Holy. When summoned, Demi Alexander explodes with holy light. Creatures within 30 feet of Demi Alexander must make a Constitution saving throw, taking {@damage 2d10 +  PB} radiant damage on a failed save, or half as much on a successful one. If a creature fails the saving throw by 5 or more, then it takes an additional {@damage 2d10} radiant damage."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Divine Spear",
+          "entries": [
+            "Demi Alexander blasts out light in a 15-foot cone. Creatures caught in the area must make a Dexterity saving throw, taking {@damage 2d6 + 2 +  PB} radiant damage on failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Temporal Manipulation",
+          "entries": [
+            "When a creature Demi Alexander can see makes an attack roll or saving throw, it can use its reaction to warp time around it. The creature has either advantage or disadvantage on the roll (your choice)."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "R"
+      ],
+      "miscTags": [
+        "AOE",
+        "MLW"
+      ]
+    },
+    {
+      "name": "Demi Phoenix",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "14 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "6 + 6 times your summoner level"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 40,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 12,
+      "dex": 15,
+      "con": 13,
+      "int": 12,
+      "wis": 16,
+      "cha": 14,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "fire"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While Demi Phoenix is summoned, you know the {@spell control flames|XGE} cantrip."
+          ]
+        },
+        {
+          "name": "Firebird Trance",
+          "entries": [
+            "While Demi Phoenix is summoned, you regain 1 hit point at the start of each of your turns."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Everlasting Flight. When summoned, creatures of your choice within 30 feet of the Demi Phoenix regain {@dice 1d10 +  PB} hit points."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Demi Phoenix makes two Scarlet Flame attacks."
+          ]
+        },
+        {
+          "name": "Scarlet Flame",
+          "entries": [
+            "{@atk rw} {@hit 3 plus PB} to hit, range 90 ft., one target you can see. Hit {@damage 2d6 + 3 +  PB} fire damage"
+          ]
+        },
+        {
+          "name": "Revelation",
+          "entries": [
+            "Demi Phoenix releases a soothing waft of flame. A creature you can see within 60 feet of the Demi Phoenix regains {@dice 1d6 +  PB} hit points."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "miscTags": [
+        "RW"
+      ]
+    },
+    {
+      "name": "Demi Thordan",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "16 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "8 + 8 times your summoner level"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 13,
+      "con": 15,
+      "int": 12,
+      "wis": 14,
+      "cha": 12,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While Demi Thordan is summoned, you know the {@spell sword burst|TCE} cantrip."
+          ]
+        },
+        {
+          "name": "Heavens Trance",
+          "entries": [
+            "While Demi Thordan is summoned, you have a +1 bonus the attack and damage rolls of your melee attacks."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Sanctity of the Ward. When summoned, Demi Thordan conjures ethereal shadows of the Knights Twelve to attack your foes. Make a melee spell attack against a number of creatures up to your Proficiency Bonus within 60 feet of Demi Thordan. If the attack hits, the creature takes {@damage 2d12 + 2 +  PB} radiant damage."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Demi Thordan makes two Ascalon attacks."
+          ]
+        },
+        {
+          "name": "Ascalon",
+          "entries": [
+            "{@atk mw} {@hit 3 plus PB} to hit, reach 5 ft., one target you can see. Hit {@damage 2d8 + 3 +  PB} slashing damage"
+          ]
+        },
+        {
+          "name": "Broad Swing",
+          "entries": [
+            "Demi Thordan swings its blade in a 15-foot cone. Creatures caught in the cone must make a Dexterity saving throw. On a failed save, a creature takes {@damage 2d6 +  PB} slashing damage and is pushed back up to 15 feet. On a successful save, a creature takes half as much damage and suffers no other effect."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "R",
+        "S"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ]
+    },
+    {
+      "name": "Demi Moggle Mog",
+      "isNamedCreature": true,
+      "source": "LightParty5e",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "type": "elemental",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "special": "15 + PB (natural armour)"
+        }
+      ],
+      "hp": {
+        "special": "7 + 7 times your summoner level"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 13,
+      "int": 12,
+      "wis": 16,
+      "cha": 14,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "grappled",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "understands the languages you speak"
+      ],
+      "pbNote": "equals your bonus",
+      "trait": [
+        {
+          "name": "Gemshine",
+          "entries": [
+            "While Demi Moggle Mog is summoned, you know the {@spell druidcraft} cantrip."
+          ]
+        },
+        {
+          "name": "Kupo Trance",
+          "entries": [
+            "While Demi Moggle Mog is summoned, you have a +1 bonus to your Spell Save DC."
+          ]
+        },
+        {
+          "name": "Enkindle:",
+          "entries": [
+            "Royal Decree. When summoned, Demi Moggle Mog issues a royal decree, summoning one of the following facsimile's of the Mooglesguard at random. Roll a {@dice d8} to determine the effect this has:",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "item",
+                  "name": "1: Pom Cure",
+                  "entries": [
+                    "A mirage Furryfoot Kupli Kipp is conjured. Choose a number of creatures up to your PB. The chosen creatures regain {@dice 1d6 +  PB} hit points."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "2: Pom Flare",
+                  "entries": [
+                    "A mirage of Pukla Puki the Pomburner is conjured, and begins charging a great and terrible ball of flame. At the end of your turn, the flare explodes. Roll a number of d8s equal to your PB, and add the results together. Creatures within 60 feet of you must make a Dexterity saving throw, taking damage equal to the total rolled on a failed save, or half as much on a successful one."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "3: Pom Stab",
+                  "entries": [
+                    "A mirage of Pukna Pako the Tailturner is conjured, and darts across the battlefield. Make a melee spell attack against a number of creatures of your choice up to your PB. These attacks score a critical hit on a roll of 19 or 20 on the {@dice d20}. On a hit, a target takes {@damage 2d4 +  PB} piercing damage."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "4: Pom Song",
+                  "entries": [
+                    "A mirage of Puksi Piko the Shaggysong is conjured in an unoccupied space you can see within 60 feet. For 1 minute, the mirage sings an empowering tune. Creatures of your choice within 30 feet of the mirage that can hear it can add your PB to their damage rolls."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "5: Pom Overpower",
+                  "entries": [
+                    "A mirage of Ruffletuft Kupta Kapa is conjured, creating a shockwave of force in a 30-foot cone in front of Demi Moggle Mog. Creatures in the cone must make a Constitution saving throw. Roll a number of d6s equal to your PB, and add the results together. On a failed save, a creature takes damage equal to the total rolled, and is knocked {@condition prone}. On a successful save, a creature takes haf as much damage, but is still knocked {@condition prone}."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "6: Pom Wall",
+                  "entries": [
+                    "A mirage of Whiskerwall Kupdi Koop is conjured, defending you and Demi Moggle Mog. Until the start of your next turn, both you and Demi Moggle Mog have resistance to bludgeoning, piercing and slashing damage."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "7: Pom Shot",
+                  "entries": [
+                    "A mirage of Woolywart Kupqu Kogi is conjured, unleashing a barrage of arrows on a creature of your choice within 60 feet of Demi Moggle Mog. Make a number of ranged spell attacks against the creature up to your PB. Each attack deals {@damage 1d4 +  PB} piercing damage on a hit."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "8: Royaler Decree",
+                  "entries": [
+                    "Roll twice again, skipping duplicates"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Demi Moggle Mog makes two 1000 Kuponze Swing attacks."
+          ]
+        },
+        {
+          "name": "1000 Kuponze Swing",
+          "entries": [
+            "{@atk mw} {@hit 3 plus PB} to hit, reach 10 ft., one target you can see. Hit {@damage 2d8 + 3 +  PB} blugeoning damage"
+          ]
+        },
+        {
+          "name": "Mog Creation",
+          "entries": [
+            "Demi Moggle Mog unleashes a beam of energy in a line 60 feet long and 5 feet wide. Creatures in the line must make a Dexterity saving throw, taking {@damage 2d6 +  PB} radiant damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "R"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "prone"
+      ]
     }
   ],
   "raceFluff": [
