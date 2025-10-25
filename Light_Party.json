@@ -83,6 +83,7 @@
       "speed": {
         "walk": 30
       },
+      "darkvision": 60,
       "traitTags": [
         "Natural Armor"
       ],
@@ -119,6 +120,13 @@
           "name": "Speed",
           "entries": [
             "Your walking speed is 30 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of yourself as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
           ]
         },
         {
@@ -1011,25 +1019,7 @@
     {
       "name": "Raen",
       "source": "LightParty5e",
-      "skillProficiencies": [
-        {
-          "choose": {
-            "from": [
-              "insight",
-              "performance",
-              "persuasion"
-            ]
-          }
-        }
-      ],
       "entries": [
-        {
-          "type": "entries",
-          "name": "Social Proficiency",
-          "entries": [
-            "You gain proficiency in one of the following skills of your choice: Insight, Performance or Persuasion."
-          ]
-        },
         {
           "type": "entries",
           "name": "Loyalty",
@@ -1063,25 +1053,7 @@
       "speed": {
         "walk": 35
       },
-      "skillProficiencies": [
-        {
-          "choose": {
-            "from": [
-              "animal handling",
-              "athletics",
-              "intimidation"
-            ]
-          }
-        }
-      ],
       "entries": [
-        {
-          "type": "entries",
-          "name": "Warrior's Insight",
-          "entries": [
-            "You gain proficiency in one of the following skills of your choice: Animal Handling, Athletics or Intimidation."
-          ]
-        },
         {
           "type": "entries",
           "name": "Nomadic Wanderer",
@@ -4958,6 +4930,7 @@
         },
         "Ability Score Improvement|Sage|LightParty5e|8",
         "Sagely Versatility (Optional)|Sage|LightParty5e|8",
+        "Studied|Sage|LightParty5e|9",
         {
           "classFeature": "Sage Study Feature|Sage|LightParty5e|10",
           "gainSubclassFeature": true
@@ -4970,6 +4943,7 @@
         },
         "Ability Score Improvement|Sage|LightParty5e|16",
         "Sagely Versatility (Optional)|Sage|LightParty5e|16",
+        "Studied|Sage|LightParty5e|9",
         "Eukrasia Mastery|Sage|LightParty5e|18",
         "Ability Score Improvement|Sage|LightParty5e|19",
         "Sagely Versatility (Optional)|Sage|LightParty5e|19",
@@ -6559,7 +6533,7 @@
       "classSource": "LightParty5e",
       "level": 1,
       "entries": [
-        "At 1st level, you can draw on the aether of the world around you to enhance your spells. When you use your action to cast a spell, you can at the same time draw on a strand of that magic to weave together ley lines in a 5-foot radius circle centered on you. Your ley lines remain there for 1 minute, and you cannot create another radius of ley lines until the previous one ends. When standing in your ley lines, you gain the following effects:",
+        "At 1st level, you can draw on the aether of the world around you to enhance your spells. You can use a bonus action to weave together ley lines in a 5-foot radius circle centered on you. Your ley lines remain there for 1 minute, and you cannot create another radius of ley lines until the previous one ends. When standing in your ley lines, you gain the following effects:",
         {
           "type": "list",
           "items": [
@@ -6567,7 +6541,8 @@
             "When you use your action to Ready a spell, you don’t need to concentrate on the readied spell. You lose the readied spell if you leave your ley lines and you are not concentrating on it.",
             "After you cast a spell in your ley lines, your speed is 0 until the end of your turn."
           ]
-        }
+        },
+        "You can create your ley lines a number of times equal to your proficiency bonus, and regain all expended uses after finishing a long rest."
       ]
     },
     {
@@ -6629,7 +6604,7 @@
           "type": "entries",
           "name": "Astral Phase",
           "entries": [
-            "You attune to the sporradic and volatile astral pole. When you cast a spell of 1st level or higher that deals acid, fire, lightning, psychic or radiant damage, you can roll the damage dice twice and choose either result. Moreover, you deal additional damage equal to the level of the spell."
+            "You attune to the sporradic and volatile astral pole. When you cast a spell of 1st level or higher that deals acid, fire, lightning, psychic or radiant damage, you can roll the damage dice twice and choose either result."
           ]
         },
         {
@@ -6663,7 +6638,7 @@
           "type": "list",
           "items": [
             "As a bonus action, you can teleport to the center of your ley lines.",
-            "As an action, you reweave your ley lines, causing it to disappear from it’s current location and reappear centered on you. You can do so only once each time you create your ley lines."
+            "As a bonus action, you reweave your ley lines, causing it to disappear from it’s current location and reappear centered on you. You can do so only once each time you create your ley lines."
           ]
         }
       ]
@@ -7389,7 +7364,7 @@
         "By 20th level, you have perfected the technology you wield in battle. Whenever you deal damage to a creature using a gadget or heat die, you deal additional damage equal to your Intelligence modifier."
       ]
     },
-    
+
     {
       "name": "Spellcasting",
       "source": "LightParty5e",
@@ -7455,7 +7430,7 @@
           "name": "Nouliths",
           "entries": [
             "At 1st level, you have a flying array of foci called nouliths. You control your nouliths as an extension of your mind, using only hand gestures and thoughts to send them darting through the air to cast spells. When wielding nouliths, they levitate beside you, leaving your hands empty. You can draw and stow your nouliths without needing a free hand. When you cast a spell through your nouliths, you need a free hand to direct them with, though it can be the same hand that you use to perform somatic components.",
-            "When you cast a spell that doesn’t have a range of Self through your nouliths, you can move your nouliths to another space up to 15 feet away, and cast the spell as if you were standing in that space. Your nouliths can share a space with another creature, and return to you immediately after casting the spell.",
+            "When you cast a spell that doesn’t have a range of Self through your nouliths, you can move your nouliths to another space up to 10 feet away, and cast the spell as if you were standing in that space. Your nouliths can share a space with another creature, and return to you immediately after casting the spell. This range increases as you gain sage levels, as shown in the Noulith Range column of the Sage table.",
             "If your nouliths enter an area of antimagic, such as that caused by an antimagic field spell, they become inert and drop to the ground. They become fully functional again after being removed from the area."
           ]
         }
@@ -7468,8 +7443,36 @@
       "classSource": "lightParty5e",
       "level": 1,
       "entries": [
-        "At 1st level, you have learned a great deal from your extensive education. Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make using the chosen skill.",
-        "You can also speak, read, and write 2 additional languages of your choice."
+        "At 1st level, you have learned a great deal from your extensive education. You can speak, read and write two additional languages of your choice. You also gain one of the following features of your choice:",
+        "Broad Knowledge. You gain one additional skill proficiency from the list of skills available to Sages at 1st level.",
+        "Specialist Knowledge. Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.",
+        "You can choose one of these benefits again when you reach 9th level, and again at 17th level."
+      ]
+    },
+    {
+      "name": "Studied",
+      "source": "LightParty5e",
+      "className": "Sage",
+      "classSource": "lightParty5e",
+      "level": 9,
+      "entries": [
+        "At 1st level, you have learned a great deal from your extensive education. You can speak, read and write two additional languages of your choice. You also gain one of the following features of your choice:",
+        "Broad Knowledge. You gain one additional skill proficiency from the list of skills available to Sages at 1st level.",
+        "Specialist Knowledge. Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.",
+        "You can choose one of these benefits again when you reach 9th level, and again at 17th level."
+      ]
+    },
+    {
+      "name": "Studied",
+      "source": "LightParty5e",
+      "className": "Sage",
+      "classSource": "lightParty5e",
+      "level": 17,
+      "entries": [
+        "At 1st level, you have learned a great deal from your extensive education. You can speak, read and write two additional languages of your choice. You also gain one of the following features of your choice:",
+        "Broad Knowledge. You gain one additional skill proficiency from the list of skills available to Sages at 1st level.",
+        "Specialist Knowledge. Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.",
+        "You can choose one of these benefits again when you reach 9th level, and again at 17th level."
       ]
     },
     {
@@ -7654,7 +7657,7 @@
       "entries": [
         "When you reach 20th level, your mastery over magic allows you to subtly empower each of your spells. You gain a +2 bonus to your spell save DC and spell attack modifier. When you augment a spell using Eukrasia that requires an attack roll or saving throw, the bonus increases to +3 for that casting."
       ]
-    }    
+    }
   ],
   "subclass": [
     {
@@ -10307,7 +10310,8 @@
       "level": 18,
       "entries": [
         "At 18th level, your ley lines become a conduit for the void. If a creature other than you or your voidsent minion enters the area of your ley lines, you can use your reaction to force it to make a Charisma saving throw against your spell save DC. On a failed save, it is pulled into the void for 1 minute. While in the void, the creature is incapacitated and takes 3d10 necrotic damage at the start of each of its turns. If the creature dies as a result of this damage, you regain one expended spell slot of 6th level or lower.",
-        "The creature can repeat the saving throw at the end of each of its turns, ending the effect and returning to your current plane in an unoccupied space of your choice within 60 feet of you. The effect also ends early if you leave your ley lines, your ley lines end, or you are incapacited. You can only have one creature sent to the void in this way and cannot send another one until the first creature leaves the void."
+        "The creature can repeat the saving throw at the end of each of its turns, ending the effect and returning to your current plane in an unoccupied space of your choice within 60 feet of you. The effect also ends early if you leave your ley lines, your ley lines end, or you are incapacited. You can only have one creature sent to the void in this way and cannot send another one until the first creature leaves the void.",
+        "Once you successfully pull a creature into the void using this feature, you can’t do so again until you finish a long rest."
       ]
     },
     {
@@ -11398,7 +11402,7 @@
       "entries": [
         "At 14th level, your pool of aether has swelled in size, allowing you to construct and maintain a second artificial eye. Each of your artificial eyes has its own separate pool of uses."
       ]
-    }    
+    }
   ],
   "optionalfeature": [
     {
@@ -12708,7 +12712,7 @@
       ]
     },
     {
-      "name": "Flare Star",
+      "name": "Elemental Star",
       "source": "LightParty5e",
       "level": 6,
       "school": "V",
@@ -12739,7 +12743,7 @@
         }
       ],
       "entries": [
-        "A glowing mass of flame is blasted at a creature you can see within range. Make a ranged spell attack against the creature. On a hit, the target takes {@damage 8d10} fire damage. If the attack misses, it instead explodes in a 15-foot radius sphere centered on the target. Creatures in the sphere must make a Dexterity saving throw, taking {@damage 6d6} fire damage on a failed save, or half as much on a successful one."
+        "A glowing mass of elemental energy is blasted at a creature you can see within range. Make a ranged spell attack against the creature. On a hit, the target takes 8d10 damage. If the attack misses, it instead explodes in a 15-foot radius sphere centered on the target. Creatures in the sphere must make a Dexterity saving throw, taking 6d6 damage on a failed save, or half as much on a successful one. The damage type is your choice of acid, cold, fire, lightning, poison, or thunder."
       ],
       "entriesHigherLevel": [
         {
