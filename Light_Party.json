@@ -22,6 +22,7 @@
       "DK:FS": "Dark Knight; Fighting Style",
       "MNK:MBT": "Monk: Masterful Blitz Techniques",
       "MCH:G": "Machinist: Gadgets",
+      "SAM:FS": "Samurai: Fighting Style",
       "SMN:S": "Summoner: Summons",
       "LP5e:LB": "Limit Breaks"
     },
@@ -6320,10 +6321,6 @@
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Gunner|LightParty5e"
-            },
-            {
-              "type": "refOptionalfeature",
               "optionalfeature": "Two-Weapon Fighting"
             },
             {
@@ -7913,7 +7910,45 @@
       "classSource": "lightParty5e",
       "level": 2,
       "entries": [
-        "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."
+        "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.",
+        {
+          "type": "options",
+          "count": 1,
+          "entries": [
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Archery"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Blind Fighting|tce"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Defense"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Dueling"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Great Weapon Fighting"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Two-Weapon Fighting"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Unarmed Fighting|tce"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Versatile Fighting|LightParty5e"
+            }
+          ]
+        }
       ]
     },
     {
@@ -13325,6 +13360,16 @@
       "entries": [
         "You have designed a potent weapon capable of unleashing electricity around you. You can spend 15 battery points as an action to activate the stun gun. Any creature within 5 feet of you must make a Constitution saving throw, taking 3d8 lightning damage on a failed save, or half as much on a successful one.",
         "When you use this gadget, you gain two heat dice."
+      ]
+    },
+    {
+      "name": "Versatile Fighting",
+      "source": "LightParty5e",
+      "entries": [
+        "When you are wielding a versatile weapon in two hands, you gain a +2 bonus to the attack roll, and the weapon gains the finesse property."
+      ],
+      "featureType": [
+        "SAM:FS"
       ]
     }
   ],
