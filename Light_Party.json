@@ -15749,6 +15749,329 @@
       "miscTags": [
         "HL"
       ]
+    },
+    {
+      "name": "Glare",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 1,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You conjure radiant light to assail a creature you can see within range. The target must make a Constitution saving throw or take {@damage 2d8} radiant damage and is {@condition blinded} until the end of your next turn. On a successful save, a creature takes half as much damage and suffers no other effect."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell with a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Holy",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 5,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "radius",
+        "distance": {
+          "type": "feet",
+          "amount": 10
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "A crystal flower worth 50gp",
+          "cost": 5000
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "round",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Radiant light erupts from you in a 10-foot radius centered on you. A creature in the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d6} radiant damage and is {@condition stunned} and {@condition blinded} until the start of your next turn, or until it takes damage. On a successful save, a creature takes half as much damage and suffers no other effect."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell with a spell slot of 6th level or higher, the damage increases by {@dice 1d6} for each slot level above 5th."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "stunned"
+      ],
+      "savingThrow": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Dia",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 2,
+      "school": "evocaation",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 90
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "A tiny crystal bead"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "You instill a mote of purifying radiance within a creature you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 2d8} radiant damage immediately, and {@damage 1d8} radiant damage at the start of each of its turns until the spell ends. On a successful save, the target takes half the initial damage, and no damage at the start of each of its turns.",
+        "A creature that failed the save can repeat the saving throw at the end of each of its turns, ending the spell on a success."
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "miscTags": [
+        "SGT"
+      ]
+    },
+    {
+      "name": "Fluid Aura",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 3,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "You conjure a swell of water and launch it at a creature within range. The target must make a Strength saving throw. On a failed save it takes {@damage 3d8} bludgeoning damage, is pushed back 15 feet, and becomes {@condition restrained} by water for the duration. On a successful save, a creature takes half as much damage, is pushed back 5 feet, and is not {@condition restrained}.",
+        "For the duration, you can use a bonus action on your turn to move a creature {@condition restrained} by the spell up to 10 feet in any direction. The spell ends early if the creature is beyond the range of the spell. Alternatively, the creature can repeat the saving throw at the end of each of its turns, ending the spell on a success."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell with a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "bludgeoning"
+      ],
+      "conditionInflict": [
+        "restrained"
+      ],
+      "savingThrow": [
+        "strength"
+      ],
+      "miscTags": [
+        "FMV",
+        "UBA"
+      ]
+    },
+    {
+      "name": "Assize",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 4,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 30
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "A wave of purifying light bursts from a point you can see within range in a 20-foot radius. Creaures of your choice within the radius must make a Constitution saving throw, taking {@damage 4d8} radiant damage on a failed save or half as much on a successful one. You can then turn the light to heal your allies. Half the total damage dealt by the spell becomes a pool of healing, which you can distribute as many points of as you like to creatures of your choice within the 20-foot radius of the spell. A creature regains 1 hit point for each point you grant it from the pool."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell with a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+          ]
+        }
+      ],
+      "damageInflict": [
+        "radiant"
+      ],
+      "savingThrow": [
+        "constitution"
+      ],
+      "miscTags": [
+        "HL",
+        "SGT"
+      ]
+    },
+    {
+      "name": "Aquaveil",
+      "source": "LightParty5e",
+      "page": 0,
+      "level": 2,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You shield a creature you can see within range in a veil of water. The creature gains {@dice 2d8} temporary hit points. While it has these temporary hit points, it also has resistance to fire damage."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell with a spell slot of 3rd level or higher, the temporary hit points increase by {@dice 1d8} for each slot level above 2nd."
+          ]
+        }
+      ],
+      "damageResist": [
+        "fire"
+      ],
+      "miscTags": [
+        "SGT",
+        "THP"
+      ]
     }
   ],
   "item": [
