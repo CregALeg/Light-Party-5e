@@ -5258,6 +5258,646 @@
       ],
       "subclassTitle": "Discipline",
       "hasFluff": true
+    },
+    {
+      "name": "White Mage",
+      "source": "LightParty5e",
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": [
+        "cha",
+        "wis"
+      ],
+      "preparedSpells": "<$level$> + <$wis_mod$>",
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "full",
+      "startingProficiencies": {
+        "weapons": [
+          "{@item dagger|phb|daggers}",
+          "{@item dart|phb|darts}",
+          "{@item sling|phb|slings}",
+          "{@item quarterstaff|phb|quarterstaffs}",
+          "{@item light crossbow|phb|light crossbows}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "history",
+                "nature",
+                "insight",
+                "medicine",
+                "perception",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ],
+        "tools": [
+          "Harbalism Kit"
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "wis": 13
+        }
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
+          "(a) a {@item rod|phb} or (b) a {@item druidic focus|phb}",
+          "(a) a {@item priest's pack|PHB} or (b) an {@item explorer's pack|PHB}",
+          "a {@item herbalism kit|PHB}"
+        ],
+        "defaultData":[
+          {
+            "a": [
+              "quarterstaff|phb"
+            ],
+            "b": [
+              "dagger|phb"
+            ]
+          },
+          {
+            "a": [
+              "rod|phb"
+            ],
+            "b": [
+              "druidic focus|phb"
+            ]
+          },
+          {
+            "a": [
+              "priest's pack|phb"
+            ],
+            "b": [
+              "explorer's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              "herbalism kit|phb"
+            ]
+          }
+        ]
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Afflatus Dice",
+            "{@filter Cantrips Known|spells|level=0|class=Astrologian (LightParty5e)}"
+          ],
+          "rows": [
+            [
+              "2d8",
+              3
+            ],
+            [
+              "2d8",
+              3
+            ],
+            [
+              "2d8",
+              3
+            ],
+            [
+              "2d8",
+              4
+            ],
+            [
+              "3d8",
+              4
+            ],
+            [
+              "3d8",
+              4
+            ],
+            [
+              "3d8",
+              4
+            ],
+            [
+              "3d8",
+              4
+            ],
+            [
+              "4d8",
+              4
+            ],
+            [
+              "4d8",
+              4
+            ],
+            [
+              "4d8",
+              5
+            ],
+            [
+              "4d8",
+              5
+            ],
+            [
+              "5d8",
+              5
+            ],
+            [
+              "5d8",
+              5
+            ],
+            [
+              "5d8",
+              5
+            ],
+            [
+              "5d8",
+              5
+            ],
+            [
+              "6d8",
+              5
+            ],
+            [
+              "6d8",
+              5
+            ],
+            [
+              "6d8",
+              5
+            ],
+            [
+              "6d8",
+              5
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=Astrologian (LightParty5e)}",
+            "{@filter 2nd|spells|level=2|class=Astrologian (LightParty5e)}",
+            "{@filter 3rd|spells|level=3|class=Astrologian (LightParty5e)}",
+            "{@filter 4th|spells|level=4|class=Astrologian (LightParty5e)}",
+            "{@filter 5th|spells|level=5|class=Astrologian (LightParty5e)}",
+            "{@filter 6th|spells|level=6|class=Astrologian (LightParty5e)}",
+            "{@filter 7th|spells|level=7|class=Astrologian (LightParty5e)}",
+            "{@filter 8th|spells|level=8|class=Astrologian (LightParty5e)}",
+            "{@filter 9th|spells|level=9|class=Astrologian (LightParty5e)}"
+          ],
+          "rows": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|White Mage|LightParty5e|1",
+        "Secret of the Lily|White Mage|LightParty5e|1",
+        {
+          "classFeature": "Mystic Tradition|White Mage|LightParty5e|2",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|White Mage|LightParty5e|4",
+        {
+          "classFeature": "Mystic Tradition Feature|White Mage|LightParty5e|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|White Mage|LightParty5e|8",
+        {
+          "classFeature": "Mystic Tradition Feature|White Mage|LightParty5e|10",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|White Mage|LightParty5e|12",
+        {
+          "classFeature": "Mystic Tradition Feature|White Mage|LightParty5e|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|White Mage|LightParty5e|16",
+        "Afflatus Raise|White Mage|LightParty5e|18",
+        "Ability Score Improvement|White Mage|LightParty5e|19",
+        "Transcendant Afflatus|White Mage|LightParty5e|20"
+      ],
+      "subclassTitle": "Mystic Tradition",
+      "classSpells": [
+        "Dancing Lights",
+        "Druidcraft",
+        "Friends",
+        "Guidance",
+        "Gust|XGE",
+        "Infestation|XGE",
+        "Light",
+        "Magic Stone|XGE",
+        "Mending",
+        "Message",
+        "Minor Illusion",
+        "Mold Earth|XGE",
+        "Poison Spray",
+        "Resistance",
+        "Sacred Flame",
+        "Shape Water",
+        "Spare the Dying",
+        "Thorn Whip",
+        "Toll the Dead|XGE",
+        "Word of Radiance|XGE",
+        "Absorb Elements|XGE",
+        "Alarm",
+        "Animal Friendship",
+        "Bane",
+        "Bless",
+        "Catapult|XGE",
+        "Cause Fear|XGE",
+        "Ceremony|XGE",
+        "Command",
+        "Comprehend Languages",
+        "Create or Destroy Water",
+        "Cure Wounds",
+        "Detect Evil and Good",
+        "Detect Magic",
+        "Detect Poison and Disease",
+        "Divine Favour",
+        "Earth Tremor|XGE",
+        "Faerie Fire",
+        "Feather Fall",
+        "Glare|LightParty5e",
+        "Guiding Bolt",
+        "Healing Word",
+        "Heroism",
+        "Jump",
+        "Longstrider",
+        "Mage Armor",
+        "Protection from Evil and Good",
+        "Purify Food and Drink",
+        "Rescue|LightParty5e",
+        "Sanctuary",
+        "Sleep",
+        "Speak with Animals",
+        "Aid",
+        "Air Bubble",
+        "Aquaveil|LightParty5e",
+        "Blindness/Deafness",
+        "Calm Emotions",
+        "Darkvision",
+        "Dia|LightParty5e",
+        "Earthbind|XGE",
+        "Enhance Ability",
+        "Enlarge/Reduce",
+        "Gentle REpose",
+        "Gust of Wind",
+        "Healing Spirit|XGE",
+        "Hold Person",
+        "Invisibility",
+        "Lesser Restoration",
+        "Levitate",
+        "Locate Animals or Plants",
+        "Maximillian’s Earthen Grasp|XGE",
+        "Misty Step",
+        "Moonbeam",
+        "Pass without Trace",
+        "Prayer of Healing",
+        "Protection from Poison",
+        "Ray of Enfeeblement",
+        "See Invisibility",
+        "Silence",
+        "Skywrite",
+        "Suggestion",
+        "Warding Wind",
+        "Wither and Bloom",
+        "Zone of Truth",
+        "Aura of Vitality",
+        "Beacon of Hope",
+        "Counterspell",
+        "Daylight",
+        "Dispel Magic",
+        "Erupting Earth|XGE",
+        "Fear",
+        "Feign Death",
+        "Fluid Aura|LightParty5e",
+        "Fly",
+        "Gaseous Form",
+        "Life Transference",
+        "Magic Circle",
+        "Mass Healing Word",
+        "Meld into Stone",
+        "Nondetection",
+        "Protection from Energy",
+        "Remove Curse",
+        "Revivify",
+        "Sending",
+        "Slow",
+        "Speak with Dead",
+        "Spirit Guardians",
+        "Summon Fey|TCE",
+        "Tidal Wave",
+        "Wall of Water",
+        "Water Breathing",
+        "Water Walk",
+        "Wind Wall",
+        "Assize|LightParty5e",
+        "Aura of Life",
+        "Aura of Purity",
+        "Control Water",
+        "Death Ward",
+        "Greater Invisibility",
+        "Holy|LightParty5e",
+        "Locate Creature",
+        "Polymorph",
+        "Sickening Radiance|XGE",
+        "Stone Shape",
+        "Stoneskin",
+        "Summon Elemental|TCE",
+        "Watery Sphere",
+        "Antilife Shell",
+        "Commune with Nature",
+        "Contact Other Plane",
+        "Control Winds|XGE",
+        "Dawn|XGE",
+        "Dispel Evil and Good",
+        "Dream",
+        "Greater Restoration",
+        "Hallow",
+        "Holy Weapon",
+        "Maelstrom",
+        "Mass Cure Wounds",
+        "Reincarnate",
+        "Skill Empowerment|XGE",
+        "Summon Celestial|TCE",
+        "Transmute Rock",
+        "Wall of Light|XGE",
+        "Wall of Stone",
+        "Bones of the Earth|XGE",
+        "Conjure Fey",
+        "Flesh to Stone",
+        "Globe of Invulnerability",
+        "Heal",
+        "Investiture of Stone|XGE",
+        "Investiture of Wind|XGE",
+        "Move Earth",
+        "Sunbeam",
+        "True Seeing",
+        "Wind Walk",
+        "Conjure Celestial",
+        "Divine Word",
+        "Etherealness",
+        "Regenerate",
+        "Resurrection",
+        "Teleport",
+        "Whirlwind|XGE",
+        "Angimagic Field",
+        "Control Weather",
+        "Earthquakre",
+        "Holy Aura",
+        "Sunburst",
+        "Tsunami",
+        "Mass Heal",
+        "Power Word Heal",
+        "True Polymorph",
+        "True Resurrection"
+      ],
+      "hasFluff": true
     }
   ],
   "classFeature": [
@@ -8185,6 +8825,215 @@
       "entries": [
         "By 20th level, you have mastered Iaijutsu and the kenki that flows through you, and can use them in tandem to devastate your foes. You can use Iaijutsu twice on each of your turns, rather than once, and you can add your Wisdom modifier to the damage of your Iaijutsu techniques."
       ]
+    },
+    {
+      "name": "Spellcasting",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "LightParty5e",
+      "level": 1,
+      "entries": [
+        "Blessed by the elementals and permitted to learn white magic, you can cast white mage spells.",
+        {
+          "type": "entries",
+          "name": "Cantrips",
+          "entries": [
+            "At 1st level, you know three cantrips of your choice from the white mage spell list. You learn additional white mage cantrips of your choice at higher levels, as shown in the Cantrips Known column of the White Mage table."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spell Slots",
+          "entries": [
+            "The White Mage table shows how many spell slots you have to cast your white mage spells of 1st level and higher. To cast one of these white mage spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of white mage spells that are available for you to cast, choosing from the white mage spell list. When you do so, choose a number of white mage spells equal to your Wisdom modifier + your white mage level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level white mage, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of white mage spells requires time spent communing with the elementals and studying lost amdaporian magic: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "entries": [
+            "Wisdom is your spellcasting ability for your white mage spells. The power of your spells comes from white magic, which draws on the aether of both yourself and the natural world around you. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an white mage spell you cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": [
+                "wis"
+              ]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": [
+                "wis"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "entries": [
+            "You can cast a white mage spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "entries": [
+            "You can use a rod, staff or druidic focus as a spellcasting focus for your white mage spells."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Secret of the Lily",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 1,
+      "entries": [
+        "Also at 1st level, you gain access to a mystical curative power in the form of lilies, which serve as a manifestation of your white magic. You have a number of lilies equal to your Wisdom modifier (minimum of 1). You regain one expended lily when you finish a short rest, and all expended lilies when you finish a long rest.",
+        "You can spend lilies to use fuel various afflatus features. You start with two such effects: Afflatus Solace and Afflatus Reclamation. You gain additional options as you gain levels in this class.",
+        "Some of your afflatus features makes use of Afflatus Dice, which at 1st level is 2d8. Your afflatus dice increase as you gain levels in this class, as",
+        "shown in the Afflatus Dice column of the White Mage Table. If an afflatus feature requires a saving throw, the DC equals your white mage spell save DC.",
+        "***Afflatus Solace.*** As a bonus action, you can expend a lily and choose a creature you can see within 60 feet of you (you can choose yourself). That creature regains hit points equal to your afflatus dice + your Wisdom modifier.",
+        "***Afflatus Reclamation.*** As a bonus action, you can expend a lily and choose one creature you can see within 60 feet of you (you can choose yourself). The chosen creature regains one expended 1st-level spell slot. The maximum level of spell slot you can restore increases by 1 when you reach 9th level (2nd-level slot) and 17th level (3rd-level slot)"
+      ]
+    },
+    {
+      "name": "Mystic Tradition",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, the elementals bestow upon you knowledge of an ancient white mage practice, a mystic tradition. Choose from the Amdapori, Bell Tender, Blood Magister,  traditions. Your choice grants you features at 2nd level, and again at 6th, 10th and 14th level."
+      ]
+    },
+    {
+      "name": "Mystic Tradition Feature",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 2nd level, the elementals bestow upon you knowledge of an ancient white mage practice, a mystic tradition. Choose from the Amdapori, Bell Tender, Blood Magister,  traditions. Your choice grants you features at 2nd level, and again at 6th, 10th and 14th level."
+      ]
+    },
+    {
+      "name": "Mystic Tradition Feature",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "At 2nd level, the elementals bestow upon you knowledge of an ancient white mage practice, a mystic tradition. Choose from the Amdapori, Bell Tender, Blood Magister,  traditions. Your choice grants you features at 2nd level, and again at 6th, 10th and 14th level."
+      ]
+    },
+    {
+      "name": "Mystic Tradition Feature",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "At 2nd level, the elementals bestow upon you knowledge of an ancient white mage practice, a mystic tradition. Choose from the Amdapori, Bell Tender, Blood Magister,  traditions. Your choice grants you features at 2nd level, and again at 6th, 10th and 14th level."
+      ]
+    },
+    {
+      "name": "# Tradition Spells",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 9,
+      "entries": [
+        "Each tradition has a list of spells -- its tradition spells -- that you gain at the white mage levels noted in the tradition description. Once you gain a tradition spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
+        "If you have a tradition spell that doesn't appear on the white mage spell list, the spell is nonetheless a white mage spell for you."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 8,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 12,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 16,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 19,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Cantrip Versatility (Optional)",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 11,
+      "entries": [
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the white mage spell list."
+      ]
+    },
+    {
+      "name": "Afflatus Raise",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 18,
+      "entries": [
+        "At 18th level, your white magic allows you to revive the dead. As a bonus action, you can expend 3 lilies and choose a dead creature within 60 feet of you. The target returns to life and regains hit points equal to your afflatus dice + your white mage level + your Wisdom modifier.",
+        "Once you use this feature, you can't use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Transcendant Afflatus",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "level": 20,
+      "entries": [
+        "By 20th level, you have reached the pinnacle of white magic. When you roll initiative, you regain up to two expended lilies. Additionally, the first time you roll your afflatus dice after rolling initiative, you can replace the d8s with d12s."
+      ]
     }
   ],
   "subclass": [
@@ -8948,6 +9797,118 @@
         "Iaijutsu: Kyōzō|Samurai|LightParty5e|Master of the Mind|LightParty5e|6",
         "Open Eyes|Samurai|LightParty5e|Master of the Mind|LightParty5e|10",
         "Hissatsu Kaigan|Samurai|LightParty5e|Master of the Mind|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Amdapori",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "shortName": "Amdapori",
+      "subclassSpells": [
+        "Cure Wounds",
+        "Detect Evil and Good",
+        "Lesser Restoration",
+        "Prayer of Healing",
+        "Daylight",
+        "Revivify",
+        "Assize|LightParty5e",
+        "Death Ward",
+        "Dispel Evil and Good",
+        "Mass Cure Wounds"
+      ],
+      "subclassFeatures": [
+        "Amdapori|White Mage|LightParty5e|Amdapori|LightParty5e|2",
+        "Amdapori Spells|White Mage|LightParty5e|Amdapori|LightParty5e|2",
+        "Afflatus Rapture|White Mage|LightParty5e|Amdapori|LightParty5e|2",
+        "Temperance|White Mage|LightParty5e|Amdapori|LightParty5e|2",
+        "Freecure|White Mage|LightParty5e|Amdapori|LightParty5e|6",
+        "Plenary Indulgence|White Mage|LightParty5e|Amdapori|LightParty5e|10",
+        "Benediction|White Mage|LightParty5e|Amdapori|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Bell Tender",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "shortName": "Bell Tender",
+      "subclassSpells": [
+        "Entangle",
+        "Goodberry",
+        "Lesser Restoration",
+        "Spike Growth",
+        "Plant Growth",
+        "Speak with Plants",
+        "Grasping Vine",
+        "Guardian of Nature|XGE",
+        "Commune with Nature",
+        "Wrath of Nature|XGE"
+      ],
+      "subclassFeatures": [
+        "Bell Tender|White Mage|LightParty5e|Bell Tender|LightParty5e|2",
+        "Bell Tender Spells|White Mage|LightParty5e|Bell Tender|LightParty5e|2",
+        "Afflatus Liturgy|White Mage|LightParty5e|Bell Tender|LightParty5e|2",
+        "Essence of Nature|White Mage|LightParty5e|Bell Tender|LightParty5e|2",
+        "Lily's Blessing|White Mage|LightParty5e|Bell Tender|LightParty5e|6",
+        "Nature's Resistance|White Mage|LightParty5e|Bell Tender|LightParty5e|10",
+        "Miracle of Nature|White Mage|LightParty5e|Bell Tender|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Blood Magister",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "shortName": "Blood Magister",
+      "subclassSpells": [
+        "Glare|LightParty5e",
+        "Inflict Wounds",
+        "Dia|LightParty5e",
+        "Wither and Bloom|SCC",
+        "Bestow Curse",
+        "Fear",
+        "Blight",
+        "Holy|LightParty5e",
+        "Destructive Wave",
+        "Enervation"
+      ],
+      "subclassFeatures": [
+        "Blood Magister|White Mage|LightParty5e|Blood Magister|LightParty5e|2",
+        "Blood Tender Spells|White Mage|LightParty5e|Blood Magister|LightParty5e|2",
+        "Afflatus Misery|White Mage|LightParty5e|Blood Magister|LightParty5e|2",
+        "Blood Lily|White Mage|LightParty5e|Blood Magister|LightParty5e|2",
+        "Cycle of Blood|White Mage|LightParty5e|Blood Magister|LightParty5e|6",
+        "Foul Misery|White Mage|LightParty5e|Blood Magister|LightParty5e|10",
+        "Afflatus Purgation|White Mage|LightParty5e|Blood Magister|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Peace Clergy",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "shortName": "Peace Clergy",
+      "subclassSpells": [
+        "Rescue|LightParty5e",
+        "Sanctuary",
+        "Aid",
+        "Calm Emotions",
+        "Beacon of Hope",
+        "Tongues",
+        "Aura of Life",
+        "Guardian of Faith",
+        "Greater Restoration",
+        "Hallow"
+      ],
+      "subclassFeatures": [
+        "Peace Clergy|White Mage|LightParty5e|Peace Clergy|LightParty5e|2",
+        "Peace Clergy Spells|White Mage|LightParty5e|Peace Clergy|LightParty5e|2",
+        "Afflatus Asylum|White Mage|LightParty5e|Peace Clergy|LightParty5e|2",
+        "Confession|White Mage|LightParty5e|Peace Clergy|LightParty5e|2",
+        "Blessings of the Twelve|White Mage|LightParty5e|Peace Clergy|LightParty5e|6",
+        "Divine Caress|White Mage|LightParty5e|Peace Clergy|LightParty5e|10",
+        "Shroud of Saints|White Mage|LightParty5e|Peace Clergy|LightParty5e|14"
       ]
     }
   ],
@@ -12389,6 +13350,381 @@
       "level": 14,
       "entries": [
         "Starting at 14th level, immediately after you use an Iaijutsu technique or Hissatsu Kaiten, you can teleport up to 60 feet to an unoccupied space you can see."
+      ]
+    },
+    {
+      "name": "Amdapori",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "Flavour text"
+      ]
+    },
+    {
+      "name": "Amdapori Spells",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+      ]
+    },
+    {
+      "name": "Afflatus Rapture",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you gain a new afflatus feature: afflatus rapture. As a bonus action, you can expend a lily to cause a swell of light to manifest in a 15-foot radius centered on a point you can see within 60 feet of you. Roll your afflatus dice, then choose a creature for each die. That creature regains hit points equal to the number rolled on the die."
+      ]
+    },
+    {
+      "name": "Temperance",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you learn an ancient amdapori technique to channel healing magicks through your body. You can use a bonus action to enter the temperance state, which lasts for 1 minute or until you are incapcitated. While in the temperance state, you gain the following benefits:",
+        "- When you roll one or more dice to restore hit points to a creature, you can treat any roll of 1 or 2 on the dice as a 3.",
+        "- The range of your white mage spells, Afflatus Solace and Afflatus Rapture increases by 30 feet.",
+        "- When you would take damage from a creature, you can reduce that damage by an amount equal to your Wisdom modifier, to a minimum of 0.",
+        "You can enter the temperance state twice, and regain all expended uses after finishing a long rest."
+      ]
+    },
+    {
+      "name": "Freecure",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 6th level, white magic flows freely through you. The first time you cast *cure wounds* during temperance, you can do so without expending a spell slot."
+      ]
+    },
+    {
+      "name": "Plenary Indulgence",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, you have resistance to radiant and necrotic damage. During temperance, you instead gain immunity to these damage types.",
+        "Additionally, when you restore hit points to a creature, that creature also becomes resistant to radiant and necrotic damage until the start of your next turn."
+      ]
+    },
+    {
+      "name": "Benediction",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Amdapori",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "When you reach 14th level, you uncover the greatest technique of amdapori magic. As an action, you can touch a creature and restore all its missing hit points.",
+        "Once you use this feature, you can't use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Bell Tender",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "The tradition of the bell tenders stretches back to the tenders of ancient amdapor. These white mages who were in tune with the essence of nature could use white magic to sprout a magical flower; a lily bell. Such a flower was seen as a gift from the gods, its enchanted petals supposedly chiming in rythm with Nophica's heartbeat. Thus the bell tenders sprouted around the flower to become an order of druidic white mages with a deep connection to the natural world."
+      ]
+    },
+    {
+      "name": "Bell Tender Spells",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+      ]
+    },
+    {
+      "name": "Afflatus Liturgy",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you gain a new afflatus feature: afflatus liturgy. As a bonus action, you can expend a lily and conjure a magical lily bell at a point you can see within 30 feet of you.",
+        "When the bell appears, it has a pool of healing power dice to your afflatus dice. Once per turn, when you take damage, you can expend a die from the pool to cause the lily bell to ring. Choose a number of creatures up to your Wisdom modifier that are within 10 feet of the lily bell and can hear it (you can choose yourself). The chosen creatures regain hit points equal to a roll of the expended die + your Wisdom modifier.",
+        "The bell lasts for 1 minute, until you conjure another bell, until you dismiss it (no action required) or until every die in its pool is expended."
+      ]
+    },
+    {
+      "name": "Essence of Nature",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you learn the *druidcraft* cantrip and it doesn't count against the number of white mage cantrips you know. If you already know *druidcraft*, you learn one other cantrip of your choice from the white mage spell list.",
+        "You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
+      ]
+    },
+    {
+      "name": "Lily's Blessing",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 6th level, you can call upon your connection with nature whenever you expend a lily to create one of the following effects:",
+        "***Wild Growth.*** The ground in a 10-foot radius centered on either you or your lily bell becomes difficult terrain, as a tangle of plants sprouts there. The difficult terrain lasts until the start of your next turn.",
+        "***Aetherial Shift.*** You teleport up to 30 feet to an unoccupied space within 5 feet of your lily bell."
+      ]
+    },
+    {
+      "name": "Nature's Resistance",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "At 10th level, the power of nature can shield you from elemental harm. When you or a creature you can see within 10 feet of you or your lily bell takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to protect that creature. Roll your afflatus dice. The damage taken is reduced by the total rolled, to a minimum of 0, and the creature has resistance to that damage type until the end of its next turn.",
+        "Once you use this feature, you can't do so again until you finish a short or long rest, unless you expend a lily to use it again."
+      ]
+    },
+    {
+      "name": "Miracle of Nature",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Bell Tender",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "At 14th level, your connection to nature allows you to invoke the forms of its creatures. You always have the *polymorph* spell prepared and can cast it without expending a spell slot once. You must then finish a long rest to cast it this way again.",
+        "When you cast *polymorph*, the target's new form can also be a fey or plant. Moreover, you can cast the spell from your lily bell's position as if you were standing there. You don't need to see the target if you cast the spell in this way."
+      ]
+    },
+    {
+      "name": "Blood Magister",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "Flavour text"
+      ]
+    },
+    {
+      "name": "Blood Tender Spells",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+      ]
+    },
+    {
+      "name": "Afflatus Misery",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you gain a new way to use your lilies to harm your foes. As an action, you can expend a lily and choose a creature you can see within 60 feet of you. White magic turns bitter and assails the target, forcing it to make Constitution saving throw. On a failed save, a creature takes radiant or necrotic damage (your choice) equal to your afflatus dice. On a successful save, it takes half as much damage."
+      ]
+    },
+    {
+      "name": "Blood Lily",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you have learned to cultivate and nourish a blood lily. Your blood lily is represented by a pool of dice, with a maximum number of dice equal to 1 + your Wisdom modifier (minimum of two dice).",
+        "When you finish a short or long rest, you can add a d8 to your blood lily pool.",
+        "When you expend a lily or a spell slot, you can add a d8 to your blood lily pool.",
+        "If your blood lily pool has at least one dice in it, you can expend it when you use Afflatus Solace or Afflatus Misery instead of a regular lily. When you do so, you use the dice in your blood lily pool, rather than your afflatus dice. After you use your blood lily this way, the pool resets to 0."
+      ]
+    },
+    {
+      "name": "Cycle of Blood",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 6th level, you learn new ways to nourish the blood lily, and in turn it grants you strength. You gain the following benefits:",
+        "- When you reduce a creature to 0 hit points using Afflatus Misery or a white mage spell, you can add two d8s to your blood lily pool.",
+        "- While you have at least one dice in your blood lily pool, your white mage spells and afflatus misery deal additional damage equal to your Wisdom modifier."
+      ]
+    },
+    {
+      "name": "Foul Misery",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "From 10th level, your spells leave your foes weakened. When a creature fails the saving throw against afflatus misery, you can inflict one of the following curses on the target. The effect lasts for 1 minute. An afflicted creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. A creature can only be afflicted by one of these effects at a time.",
+        "***Sublime Anguish.*** The creature has disadvantage on attack rolls and its speed is halved.",
+        "***Broken Spirit.*** The creature has disadvantage on Intelligence, Wisdom and Charisma saving throws, and loses any immunity it has to the charmed or frightened conditions."
+      ]
+    },
+    {
+      "name": "Afflatus Purgation",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Blood Magister",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "At 14th level, your blood lily reveals to you a powerful ability. You gain a new afflatus feature that you can only use by expending your blood lily: afflatus purgation.",
+        "As an action, you conjure a blast of white magic in a line 30-feet long and 5-feet wide. A creature in the area of the line must make a Dexterity saving throw. On a failed save, a creature takes radiant or necrotic damage (your choice) equal to the dice in your blood lily pool. On a successful save, a creature takes half as much damage.",
+        "If your blood lily pool has at least four dice in it when you use this feature, then a creature that fails the saving throw is also stunned until the start of your next turn."
+      ]
+    },
+    {
+      "name": "Peace Clergy",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "White Mages who seek to heal spiritual wounds tend towards the peace clergy tradition. In ancient Amdapor, they once served as spiritual leaders, offering guidance to the lost and absolution to the sinners. They believed through a doctrine of peace that the gods would smile kindly and grant one peace, and as such, they strive to spread peace through the power of white magic."
+      ]
+    },
+    {
+      "name": "Peace Clergy Spells",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+      ]
+    },
+    {
+      "name": "Afflatus Asylum",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you can expend a lily as a bonus action to create a realm of holy protection in a 10-foot radius sphere centered on a point you can see within 30 feet of you. When you create the realm, you can choose a number of creatures up to your Wisdom modifier to be affected by it.",
+        "When an affected creature starts its turn in the area of the realm, or enters there for the first time on its turn, it regains hit points equal to your Wisdom modifier, unless it has 0 hit points.",
+        "The realm lasts for 1 minute or until you choose to end it (no action required)."
+      ]
+    },
+    {
+      "name": "Confession",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you provide spiritual protection to you allies. As an action, choose a number of creatures you can see within 30 feet of you up to your Wisdom modifier. The chosen creatures confess themselves to you, gaining the following benefits for 1 minute:",
+        "- The creatures gain temporary hit points equal to twice your Wisdom modifier.",
+        "- The creatures are immune to your choice of either the charmed or frightened conditions. If a creature is already afflicted by the chosen condition, then it immediately ends for that creature.",
+        "___",
+        "A creature with these benefits can choose to end them when it receives healing from you to regain additional hit points equal to your white mage level.",
+        "Once you use this feature, you can't use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Blessings of the Twelve",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "From 6th level, you can invoke the Twelve to grant you a protective blessing. During a short or long rest, you can spend 10 minutes in prayer to one of the Twelve, at the end of which you gain resistance to a damage type determined by the chosen deity. Consult the Twelve Blessings table below to determine the resistance you receive from your chosen god. The blessing lasts until you choose a new one with this feature."
+      ]
+    },
+    {
+      "name": "Twelve Blessings",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+      ]
+    },
+    {
+      "name": "Divine Caress",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "When you reach 10th level, divine power flows through the realm you create with Afflatus Asylum, improving it in the following ways:",
+        "- The radius increases to 20 feet.",
+        "- An affected creature in the radius has resistance to the same damage type as your Blessings of the Twelve. If you are in the radius, you gain immunity to that damage type.",
+        "- When a creature receives healing from the realm, it gains an equal number of temporary hit points."
+      ]
+    },
+    {
+      "name": "Shroud of Saints",
+      "source": "LightParty5e",
+      "className": "White Mage",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Peace Clergy",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "Starting at 14th level, the gods themselves intervene to protect you. Whenever you finish a short or long rest, you gain the benefit of the *sanctuary* spell. This version of the spell has a duration of 1 hour instead of its usual duration."
       ]
     }
   ],
