@@ -5095,6 +5095,168 @@
         "Time Stop"
       ],
       "hasFluff": true
+    },
+    {
+      "name": "Samurai",
+      "source": "LightParty5e",
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "wis"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ],
+        "tools": [
+          "Calligrapher's Supplies"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "history",
+                "insight",
+                "intimidation",
+                "investigation",
+                "performance",
+                "persuasion",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "str": 13,
+          "wis": 13
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "simple",
+            "martial"
+          ],
+          "tools": [
+            "calligrapher's supplies"
+          ]
+        }
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) {@item chain mail|phb} or (b) {@item leather armor|phb}",
+          "(a) a {@item longsword|phb} or (b) two {@filter martial weapon|items|source=phb|category=basic|type=martial weapons}",
+          "(a) a {@item shortsword|phb} or (b) a {@item shortbow|PHB} and and a quiver of 20 {@item arrow|PHB|arrows}",
+          "(a) a {@item dungeoneer's pack|PHB} or (b) an {@item explorer's pack|PHB}",
+          "A set of {@item Calligrapher's Supplies|PHB}"
+        ],
+        "defaultData":[
+          {
+            "a": [
+              "chain mail|phb"
+            ],
+            "b": [
+              "leather armor|phb"
+            ]
+          },
+          {
+            "a": [
+              "longsword|PHB"
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponMartial"
+              }
+            ]
+          },
+          {
+            "a": [
+              "shortsword|PHB"
+            ],
+            "b": [
+              "shortbow|PHB", "arrow (20)|PHB"
+            ]
+          },
+          {
+            "a": [
+              "dungeoneer's pack|phb"
+            ],
+            "b": [
+              "explorer's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              "calligrapher's supplies|phb"
+            ]
+          }
+        ]
+      },
+      "classFeatures": [
+        "Iaijutsu|Samurai|LightParty5e|1",
+        "Meditation|Samurai|LightParty5e|1",
+        "Fighting Style|Samurai|LightParty5e|2",
+        "Hissatsu Kaiten|Samurai|LightParty5e|2",
+        {
+          "classFeature": "Samurai Discipline|Samurai|LightParty5e|3",
+          "gainSubclassFeature": true
+        },
+        "Enhanced Critical|Samurai|LightParty5e|3",
+        "Ability Score Improvement|Samurai|LightParty5e|4",
+        "Martial Versatility (Optional)|Samurai|LightParty5e|4",
+        "Extra Attack|Samurai|LightParty5e|5",
+        "Iaijutsu (x3)|Samurai|LightParty5e|6",
+        {
+          "classFeature": "Samurai Discipline Feature|Samurai|LightParty5e|6",
+          "gainSubclassFeature": true
+        },
+        "Focused Meditation|Samurai|LightParty5e|7",
+        "Ability Score Improvement|Samurai|LightParty5e|8",
+        "Martial Versatility (Optional)|Samurai|LightParty5e|8",
+        "Third Eye|Samurai|LightParty5e|9",
+        {
+          "classFeature": "Samurai Discipline Feature|Samurai|LightParty5e|10",
+          "gainSubclassFeature": true
+        },
+        "Iaijutsu (x4)|Samurai|LightParty5e|11",
+        "Iaijutsu Improvement|Samurai|LightParty5e|11",
+        "Ability Score Improvement|Samurai|LightParty5e|12",
+        "Martial Versatility (Optional)|Samurai|LightParty5e|12",
+        "Iaijutsu: Hagakure|Samurai|LightParty5e|13",
+        {
+          "classFeature": "Samurai Discipline Feature|Samurai|LightParty5e|14",
+          "gainSubclassFeature": true
+        },
+        "Kenki Mastery|Samurai|LightParty5e|15",
+        "Ability Score Improvement|Samurai|LightParty5e|16",
+        "Martial Versatility (Optional)|Samurai|LightParty5e|16",
+        "Iaijutsu (x5)|Samurai|LightParty5e|17",
+        "Iaijutsu Improvement|Samurai|LightParty5e|17",
+        "Steel Spirit|Samurai|LightParty5e|18",
+        "Ability Score Improvement|Samurai|LightParty5e|19",
+        "Martial Versatility (Optional)|Samurai|LightParty5e|19",
+        "Tsubame-gaeshi|Samurai|LightParty5e|20"
+      ],
+      "subclassTitle": "Discipline",
+      "hasFluff": true
     }
   ],
   "classFeature": [
@@ -7657,6 +7819,337 @@
       "entries": [
         "When you reach 20th level, your mastery over magic allows you to subtly empower each of your spells. You gain a +2 bonus to your spell save DC and spell attack modifier. When you augment a spell using Eukrasia that requires an attack roll or saving throw, the bonus increases to +3 for that casting."
       ]
+    },
+    {
+      "name": "Iaijutsu",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 1,
+      "entries": [
+        "At 1st level, your training and martial prowess has taught you the secrets of Iaijutsu. Iaijutsus are powerful weapon techniques that require intense focus to unleash. You start knowing two such techniques: Tenka Goken and Midare Setsugekka.",
+        "When you use Iaijutsu, you choose which technique to unleash. You can use Iajutsu twice, and regain all expended uses when you finish a short or long rest. You also regain one expended use when you score a critical hit against a creature. When you reach 6th level, you have three uses of Iaijutsu. At 11th level, you have four uses, and at 17th level, you have five uses. You can only use Iaijutsu once per turn.",
+        "___",
+        "Many Iaijutsu techniques empower an attack in some way. If an Iaijutsu technique deals damage, the damage type is the same as that of the weapon or unarmed strike used for the attack, unless otherwise specified. Your Iaijutsu techniques also count as magical for the  purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+        "Some Iaijutsu techniques require saving throws. The saving throw DC is calculated as follows:",
+        "___",
+        "**Iaijutsu save DC** = 8 + your proficiency bonus +<br> your Wisdom modifier"
+      ]
+    },
+    {
+      "name": "Iaijutsu Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 11
+    },
+    {
+      "name": "Iaijutsu Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 17
+    },
+    {
+      "name": "Iaijutsu (x3)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 6
+    },
+    {
+      "name": "Iaijutsu (x4)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 11
+    },
+    {
+      "name": "Iaijutsu (x5)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 17
+    },
+    {
+      "name": "Iaijutsu: Tenka Goken",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 15,
+      "entries": [
+        "When you make a weapon attack or unarmed strike, you can use Iaijutsu to conjure ethereal blades. Hit or miss, the target and each creature in a 15-foot cone behind it must make a Dexterity saving throw, taking 2d6 slashing damage on a failed save, or half as much on a successful one. If a creature fails the saving throw by 5 or more, it is also knocked prone.",
+        "The damage of this technique increases by 1d6 when you reach 11th level (3d6) and again at 17th level (4d6)"
+      ]
+    },
+    {
+      "name": "Iaijutsu: Midare Setsugekka",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "When you make a weapon attack or unarmed strike, you can use Iaijutsu to deliver a focused, devastating attack. If the attack hits, it deals an additional 2d8 damage. If the attack misses, the target takes half damage, but suffers no additional effect from the attack.",
+        "The damage of this technique increases by 1d8 when you reach 11th level (3d8) and again at 17th level (4d8)"
+      ]
+    },
+    {
+      "name": "Meditation",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 1,
+      "entries": [
+        "Also at 1st level, you are able to channel your energy in meditations. You perform your meditation over the course of 10 minutes, and it can be performed during a short or long rest. When you finish meditating, you gain the following benefits:",
+        "- You have advantage on the first Wisdom check you make within the next hour.",
+        "- Any madness effect afflicting you is supressed for 1 hour.",
+        "- You end any effect on yourself causing you to be charmed or frightened."
+      ]
+    },
+    {
+      "name": "Fighting Style",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again."
+      ]
+    },
+    {
+      "name": "Hissatsu Kaiten",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 2,
+      "entries": [
+        "Also at 2nd level, you become able to channel kenki through your weapon when you strike. When you roll damage for a weapon attack or Iaijutsu technique, you can choose to deal maximum damage, instead of rolling.",
+        "You can use this feature twice, and regain all expended uses after finishing a short or long rest. You can also regain expended uses in the following ways:",
+        "- When you score a critical hit against a creature you regain one expended use.",
+        "- When a creature you dealt damage to during your current or previous turn dies, you regain one expended use.",
+        "- You can use a bonus action, to regain one expended use, but you can't do so again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Samurai Discipline",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "When you reach 3rd level, you commit yourself to a discipline of combat. Choose from the Master of the Blade, Master of the Spirit, Master of the Wind, Master of Blood or Master of the Mind disciplines, all detailed at the end of the class description. Your choice of discipline grants you features at 3rd level and again at 6th level, 11th level and 14th level."
+      ]
+    },
+    {
+      "name": "Samurai Discipline Feature",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "When you reach 3rd level, you commit yourself to a discipline of combat. Choose from the Master of the Blade, Master of the Spirit, Master of the Wind, Master of Blood or Master of the Mind disciplines, all detailed at the end of the class description. Your choice of discipline grants you features at 3rd level and again at 6th level, 11th level and 14th level."
+      ]
+    },
+    {
+      "name": "Samurai Discipline Feature",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "When you reach 3rd level, you commit yourself to a discipline of combat. Choose from the Master of the Blade, Master of the Spirit, Master of the Wind, Master of Blood or Master of the Mind disciplines, all detailed at the end of the class description. Your choice of discipline grants you features at 3rd level and again at 6th level, 11th level and 14th level."
+      ]
+    },
+    {
+      "name": "Samurai Discipline Feature",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "When you reach 3rd level, you commit yourself to a discipline of combat. Choose from the Master of the Blade, Master of the Spirit, Master of the Wind, Master of Blood or Master of the Mind disciplines, all detailed at the end of the class description. Your choice of discipline grants you features at 3rd level and again at 6th level, 11th level and 14th level."
+      ]
+    },
+    {
+      "name": "Enhanced Critical",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "Starting at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20 on the d20."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 8,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 12,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 16,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 19,
+      "entries": [
+        "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Martial Versatility (Optional)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 4,
+      "entries": [
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to samurai. This replacement represents a shift of focus in your martial practice."
+      ]
+    },
+    {
+      "name": "Martial Versatility (Optional)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 8,
+      "entries": [
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to samurai. This replacement represents a shift of focus in your martial practice."
+      ]
+    },
+    {
+      "name": "Martial Versatility (Optional)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 12,
+      "entries": [
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to samurai. This replacement represents a shift of focus in your martial practice."
+      ]
+    },
+    {
+      "name": "Martial Versatility (Optional)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 16,
+      "entries": [
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to samurai. This replacement represents a shift of focus in your martial practice."
+      ]
+    },
+    {
+      "name": "Martial Versatility (Optional)",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 19,
+      "entries": [
+        "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to samurai. This replacement represents a shift of focus in your martial practice."
+      ]
+    },
+    {
+      "name": "Extra Attack",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 5,
+      "entries": [
+        "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+      ]
+    },
+    {
+      "name": "Focused Meditation",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 7,
+      "entries": [
+        "Begining at 7th level, when you finish a meditation, you gain proficiency in one skill of your choice from the list of skills available to samurai at 1st level. This benefit lasts until you choose a different one using this feature.",
+        "Additionally, when you finish a short rest, you regain hit points equal to your Wisdom modifier provided you meditated during the short rest."
+      ]
+    },
+    {
+      "name": "Third Eye",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 9,
+      "entries": [
+        "At 9th level, you become able to use your kenki to open your awareness to danger. When you are forced to make a Strength, Dexterity or Constitution saving throw, you can use your reaction to add your Wisdom modifier to the roll. If you succeed on the roll as a result of this bonus, you regain one expended use of Hissatsu Kaiten."
+      ]
+    },
+    {
+      "name": "Iaijutsu: Hagakure",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 13,
+      "entries": [
+        "At 13th level, you learn a new Iaijutsu technique. You can use Iaijutsu as a bonus action to bolster your body and spirit. You end any blinded, deafened, or poisoned effect afflicting you, and you gain temporary hit points equal to twice your samurai level."
+      ]
+    },
+    {
+      "name": "Kenki Mastery",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 15,
+      "entries": [
+        "At 15th level, your mastery over kenki becomes absolute. You have three uses of Hissatsu Kaiten, rather than two. Additionally, whenever you use Hissatsu Kaiten, you can spend one additional use to cause the attack or Iaijutsu technique to ignore resistance to one damage type it deals."
+      ]
+    },
+    {
+      "name": "Steel Spirit",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 18,
+      "entries": [
+        "At 18th level, your spirit and will is unbreakable. You are immune to the charmed and frightened conditions. Additionally, you have advantage on saving throws made to resist the blinded, deafened, exhausted, paralyzed, poisoned and stunned conditions."
+      ]
+    },
+    {
+      "name": "Tsubame-gaeshi",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "level": 20,
+      "entries": [
+        "By 20th level, you have mastered Iaijutsu and the kenki that flows through you, and can use them in tandem to devastate your foes. You can use Iaijutsu twice on each of your turns, rather than once, and you can add your Wisdom modifier to the damage of your Iaijutsu techniques."
+      ]
     }
   ],
   "subclass": [
@@ -8345,6 +8838,81 @@
         "Draconic Defence|Sage|LightParty5e|Dracology Study|LightParty5e|6",
         "Sight of the First Brood|Sage|LightParty5e|Dracology Study|LightParty5e|10",
         "Twin Gaze|Sage|LightParty5e|Dracology Study|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Master of the Blade",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "shortName": "Master of the Blade",
+      "subclassFeatures": [
+        "Master of the Blade|Samurai|LightParty5e|Master of the Blade|LightParty5e|3",
+        "Way of the Artisan|Samurai|LightParty5e|Master of the Blade|LightParty5e|3",
+        "Hissatsu Chiten|Samurai|LightParty5e|Master of the Blade|LightParty5e|3",
+        "Iaijutsu: Shōja Hitsumetsu|Samurai|LightParty5e|Master of the Blade|LightParty5e|6",
+        "Martial Mastery|Samurai|LightParty5e|Master of the Blade|LightParty5e|10",
+        "Hissatsu Shinten|Samurai|LightParty5e|Master of the Blade|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Master of the Spirit",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "shortName": "Master of the Spirit",
+      "subclassFeatures": [
+        "Master of the Spirit|Samurai|LightParty5e|Master of the Spirit|LightParty5e|3",
+        "Sense of Soul|Samurai|LightParty5e|Master of the Spirit|LightParty5e|3",
+        "Test of Spirit|Samurai|LightParty5e|Master of the Spirit|LightParty5e|3",
+        "Iaijutsu: Tsumi no Massatsu|Samurai|LightParty5e|Master of the Spirit|LightParty5e|6",
+        "Broken Spirit|Samurai|LightParty5e|Master of the Spirit|LightParty5e|10",
+        "Secrets of the Third Eye|Samurai|LightParty5e|Master of the Spirit|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Master of the Wind",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "shortName": "Master of the Wind",
+      "subclassFeatures": [
+        "Master of the Wind|Samurai|LightParty5e|Master of the Wind|LightParty5e|3",
+        "Wind Whisperer|Samurai|LightParty5e|Master of the Wind|LightParty5e|3",
+        "Gathering Storm|Samurai|LightParty5e|Master of the Wind|LightParty5e|3",
+        "Iaijutsu: Hasai Raigeki|Samurai|LightParty5e|Master of the Wind|LightParty5e|6",
+        "Gale Force|Samurai|LightParty5e|Master of the Wind|LightParty5e|10",
+        "Tornado Steps|Samurai|LightParty5e|Master of the Wind|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Master of Blood",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "shortName": "Master of Blood",
+      "subclassFeatures": [
+        "Master of Blood|Samurai|LightParty5e|Master of Blood|LightParty5e|3",
+        "Scarlet Senses|Samurai|LightParty5e|Master of Blood|LightParty5e|3",
+        "Bloodbath|Samurai|LightParty5e|Master of Blood|LightParty5e|3",
+        "Iaijutsu: Zansetsu|Samurai|LightParty5e|Master of Blood|LightParty5e|6",
+        "Blood Rage|Samurai|LightParty5e|Master of Blood|LightParty5e|10",
+        "Strength in Death|Samurai|LightParty5e|Master of Blood|LightParty5e|14"
+      ]
+    },
+    {
+      "name": "Master of the Mind",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "shortName": "Master of the Mind",
+      "subclassFeatures": [
+        "Master of the Mind|Samurai|LightParty5e|Master of the Mind|LightParty5e|3",
+        "Psychic Web|Samurai|LightParty5e|Master of the Mind|LightParty5e|3",
+        "Mind's Reach|Samurai|LightParty5e|Master of the Mind|LightParty5e|3",
+        "Iaijutsu: Kyōzō|Samurai|LightParty5e|Master of the Mind|LightParty5e|6",
+        "Open Eyes|Samurai|LightParty5e|Master of the Mind|LightParty5e|10",
+        "Hissatsu Kaigan|Samurai|LightParty5e|Master of the Mind|LightParty5e|14"
       ]
     }
   ],
@@ -11401,6 +11969,391 @@
       "level": 14,
       "entries": [
         "At 14th level, your pool of aether has swelled in size, allowing you to construct and maintain a second artificial eye. Each of your artificial eyes has its own separate pool of uses."
+      ]
+    },
+    {
+      "name": "Master of the Blade",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Blade",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "Masters of the blade focus their training on furthering their martial prowess. Their weapons are not just an extension of their body, but of their mind and soul as well. These samurai also spend time learning tools, an ancient practice said to temper ones fighting spirit, and guide their meditations."
+      ]
+    },
+    {
+      "name": "Way of the Artisan",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Blade",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you gain proficiency in one of the following tools of your choice: Painter's Supplies, Weaver's Tools or Woodcarver's Tools. During a meditation, you can spend time practicing with your chosen tool or calligrapher's tools, mirroring your martial practice. When you finish meditating, you have advantage on the next check you make using a specific skill within the next hour, based on the tool you practiced with.",
+        "Calligrapher's Tools Intelligence (History)",
+        "Painter's Supplies Charisma (Performance)",
+        "Weaver's Tools Dexterity (Acrobatics)",
+        "Woodcarver's Tools Intelligence (Nature)"
+      ]
+    },
+    {
+      "name": "Hissatsu Chiten",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Blade",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you learn to channel your kenki to defend yourself. Immediately after you use an Iaijutsu technique or Hissatsu Kaiten, you can choose to assume a defensive position. Until the start of your next turn, you gain a +2 bonus to AC, and if a creature deals damage to you, you can use your reaction to make a weapon attack against that creature."
+      ]
+    },
+    {
+      "name": "Iaijutsu: Shōja Hitsumetsu",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Blade",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 6th level, you learn a new Iaijutsu technique. When you make a weapon attack, you can use Iaijutsu to deliver an attack with intent to kill. If the attack hits, it deals an additional 2d6 damage. If the creature has less than half its maximum hit points, you have advantage on the attack, and the extra damage becomes 2d10.",
+        "The damage of this technique increases by one die when you reach 11th level (3d6/2d10) and again at 17th level (4d6/4d10)."
+      ]
+    },
+    {
+      "name": "Martial Mastery",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Blade",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, when you make a weapon attack and miss, the target takes damage equal to the ability modifier you used to make the attack roll."
+      ]
+    },
+    {
+      "name": "Hissatsu Shinten",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Blade",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "At 14th level, you learn to channel your kenki into attacks. Once on each of your turns, immediately after you use an Iaijutsu technique or Hissatsu Kaiten, you can make a weapon attack."
+      ]
+    },
+    {
+      "name": "Master of the Spirit",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Spirit",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "Some samurai in the Far East take go beyond the role of peackeepers; they hold the right to carry out justice if they see fit. These samurai become masters of the spirit, focusing their training to empower their own spirit to test that of others. They are said to be able to excise the sin from the soul of a truly repentant person, cleansing their spirit of evil. But should they sense a hint of wickedness at their heart, they do not hesitate to take a life."
+      ]
+    },
+    {
+      "name": "Sense of Soul",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Spirit",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you become able to reach out and sense the intentions of others. As a bonus action, you focus your awareness on a creature within 120 feet of you, and learn the creature's alignment."
+      ]
+    },
+    {
+      "name": "Test of Spirit",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Spirit",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you become able to test the spirit of other creatures. As a bonus action, you can subject a creature to a test of spirit. The target must make a Wisdom check, contested by your Wisdom check. This check may become difficult or easier based on the alignment of the creature in comparison to your own; if you are good and the target is evil, or vice-versa, then the target has disadvantage on the check. If you are both good or both evil, then the target has advantage on the check. Otherwise, the check is made normally.",
+        "If the target fails the test of spirit, it has disadvantage on attack rolls against creatures other than you for 1 minute. Whenever the creature makes an attack against a creature other than you while suffering from this effect, it takes necrotic damage equal to your Wisdom modifier. The effect ends early if you subject another creature to a test of spirit, or if you are incapacitated.",
+        "After you subject a creature to a test of spirit, you can't test that creature again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Iaijutsu: Tsumi no Massatsu",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Spirit",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 6th level, you learn a new Iaijutsu technique. When you make a weapon attack or unarmed strike, you can use Iaijutsu to deliver a rending attack that cleanses the sin from your target. Hit or miss, the target must make a Wisdom saving throw. On a failed save, it takes 2d6 necrotic damage and is frightened of you for 1 minute. On a successful save, it takes half as much damage and suffers no other effect. If the creature is suffering from the effect of your Test of Spirit, then it automatically fails the saving throw, and the effect of your Test of Spirit ends on that creature.",
+        "The damage of this technique increases by 1d6 when you reach 11th level (3d6) and again at 17th level (4d6)."
+      ]
+    },
+    {
+      "name": "Broken Spirit",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Spirit",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, you have resistance to all damage dealt by a creature that is suffering from the effect of your Test of Spirit."
+      ]
+    },
+    {
+      "name": "Secrets of the Third Eye",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Spirit",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "When you reach 14th level, your mastery of the spirit allows you to see the unseen. You have truesight out to a range of 120 feet. Additionally, you can see the alignment of a creature as a faint coloured aura around them; white for good, grey for neutral <br> </brand>and black for evil."
+      ]
+    },
+    {
+      "name": "Master of the Wind",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Wind",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "Samurai of this discpline learn to master the winds, using it to guide their hand and bolster their bodies. Their movement is like the breeze, fast, fleeting and untouchable, while their blades strike with the speed of lightning and force of thunder. Their techniques allow them to move across the battlefield with ease, and in doing so, empower their attacks."
+      ]
+    },
+    {
+      "name": "Wind Whisperer",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Wind",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you gain mastery over the wind, and can use it to your own devices. As a bonus action, you can whisper a message into the wind. One creature of your choice within 120 feet of you hears the message as if you were whispering in its ear.",
+        "Alternatively, at the end of a meditation, you can whisper a message to any creature you are familiar with across any distance on your current plane of existence."
+      ]
+    },
+    {
+      "name": "Gathering Storm",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Wind",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you are able to wield the very wind itself as a weapon. After you deal damage to a creature with a weapon attack, unarmed strike or Iaijutsu technique, you can call the wind into a gathering storm around you. While the storm is active, your walking speed increases by 10 feet. The storm ends at the end of your next turn, if you are incapacitated, or when you use take a bonus action to use one of the following abilities:",
+        "***Enpi.*** You launch a blade of wind at a creature you can see within 30 feet of you. Make a ranged attack against the creature. You make this attack with proficiency, you use your Wisdom modifier for the attack and damage rolls, and the damage dice is a d4. The damage type is your choice of slashing, lightning or thunder.",
+        "***Yaten.*** You take the Dash or Disengage action.",
+        "***Seigan.*** The next attack you make with a ranged weapon has its normal range doubled and ignores <br> half cover."
+      ]
+    },
+    {
+      "name": "Iaijutsu: Hasai Raigeki",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Wind",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "When you reach 6th level, you learn a new Iaijutsu. When you make a weapon attack or unarmed strike, you can use Iaijutsu to deliver an attack that splits the heavens. Hit or miss, the target and each creature in a line 30 feet long and 5 feet wide behind it must make a Strength saving throw. On a failed save, a creature takes 2d6 damage, and has disadvantage on all attack rolls it makes during its next turn. On a successful save, a creature takes half as much damage and suffers no other effect. The damage type is your choice of thunder or lightning.",
+        "The damage of this technique increases by 1d6 when you reach 11th level (3d6) and again at 17th level (4d6)."
+      ]
+    },
+    {
+      "name": "Gale Force",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Wind",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, while your gathering storm is active, opportunity attacks made against you are made at disadvantage, and your walking speed increases by a further 5 feet, for a total of 15 feet.",
+        "When you move at least 15 feet before making an attack while your gathering storm is active, you have advantage on the attack roll, and you can change the damage type to your choice of lightning or thunder."
+      ]
+    },
+    {
+      "name": "Tornado Steps",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Wind",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "When you reach 14th level, your mastery of the wind allows your steps to carry you through the air. While your gathering storm is active, you have a flying speed equal to your walking speed, and can hover. When you use your flying speed from this feature, you manifest platforms of wind with which to step on."
+      ]
+    },
+    {
+      "name": "Master of Blood",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of Blood",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "A secretive and forbidden discipline, <br> samurai that follow a dark path are <br> drawn towards the  power hidden within <br> blood. A master of blood can sacrifice their <br> own vitality to empower themselves and their <br> weapons. By unearthing these dark secrets, <br> they quickly become accustomed to brutal <br> and bloody combat, revelling in the pain and <br> bloodshed. Even their own injuries do little <br> to slow them down, as even in death, blood is <br> theirs to command."
+      ]
+    },
+    {
+      "name": "Scarlet Senses",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of Blood",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you become able to sense the vitality of familiar creatures. During a meditation, you become magically aware of the presence of every living creature within 60 feet of you that isn't an undead or construct. You know what kind of creature it is, but don't know it's identity unless you either know the creature well, or have dealt damage to it within the last hour. At 6th level, the range increases to 120 feet, and at 14th level, it increases to 300 feet."
+      ]
+    },
+    {
+      "name": "Bloodbath",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of Blood",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "When you choose this discipline at 3rd level, you are able to sacrifice your own vitality to gain power. As a bonus action, you can lose hit points equal to twice your proficiency bonus, empowering the next weapon attack or unarmed strike you make before the end of your turn to have advantage on the attack roll and deal additional damage equal to your proficiency bonus."
+      ]
+    },
+    {
+      "name": "Iaijutsu: Zansetsu",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of Blood",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "When you reach 6th, you learn a new Iaijutsu technique. When you make a weapon attack or unarmed strike, you can use Iaijutsu to deliver a vitality-draining attack. If the attack hits, it deals an additional 2d6 necrotic damage, and you regain hit points equal to the total damage dealt.",
+        "The damage of this technique increases by 2d6 when you reach 11th level (3d6) and against at 11th level (4d6)."
+      ]
+    },
+    {
+      "name": "Blood Rage",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of Blood",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, whenever a creature within 5 feet of you dies, your fighting spirit stirs. The first time you",
+        "use Bloodbath within the next minute, <br> you can use it without losing any hit points."
+      ]
+    },
+    {
+      "name": "Strength in Death",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of Blood",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "At 14th level, you have such a mastery <br> over your own vitality that having even death doesn't phase you. When you are reduced to 0 hit points but not killed outright, you can use your reaction to draw strength from your own spilled blood. For 1 minute, you gain the following benefits:",
+        "- Having 0 hit points doesn't knock you unconscious, and you don't make death saving throws. You still suffer the normal effects of taking damage while at 0 hit points.",
+        "- Your walking speed increases by 10 feet",
+        "- You can make one additional attack when you take the attack action on your turn.",
+        "This effect ends early if you fail three death saving throws, or if you have more than half your maximum hit points. Once you use this feature, you must finish a long rest before you can use it again."
+      ]
+    },
+    {
+      "name": "Master of the Mind",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Mind",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "The mind is a potent tool. It can be your greatest weapon, your greatest ally, or your greatest weakness. Samurai that master the mind sharpen this tool, working it into a potent weapon that can confound foes and empower their weapons. Masters of the Mind work so tirelessly to improve their mind that they unearth long dormat psionic powers, which they mix with their martial prowess to forge a brand new fighting style unlike any other."
+      ]
+    },
+    {
+      "name": "Psychic Web",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Mind",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "At 3rd level, your mastery over the mind unlocks deep hidden psionic potential, which you can channel in various ways. When you finish a meditation, you can use this psionic power to link up with a number of willing creatures up to your Wisdom modifier. Choose one language, skill or tool proficiency that you or one of the linked creatures has. You and  all of the linked creatures gain proficiency in that language, skill or tool for 8 hours."
+      ]
+    },
+    {
+      "name": "Mind's Reach",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Mind",
+      "subclassSource": "lightParty5e",
+      "level": 3,
+      "entries": [
+        "Also at 3rd level, your psionic power surges when you attack. When you make a weapon attack or unarmed strike, you can use a bonus action to increase the reach for that attack by 15 feet, or if the attack is with a ranged weapon, increase the range by 30 feet.",
+        "If the attack hits, you can force the creature to make a Strength saving throw against your Iaijutsu save DC. On a failed save, the creature takes psychic damage equal to your Wisdom modifier, and is pulled up to 30 feet to an unoccupied space you can see within 5 feet of you."
+      ]
+    },
+    {
+      "name": "Iaijutsu: Kyōzō",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Mind",
+      "subclassSource": "lightParty5e",
+      "level": 6,
+      "entries": [
+        "At 6th level, you learn a new Iaijutsu technique. You can use Iaijutsu as a bonus action to conjure two illusory duplicates in unoccupied spaces within 5 feet of you. The duplicates are identical to you in every way, and emit a psionic disturbance that makes it impossible to tell a duplicate from the real thing.",
+        "When you summon the duplicates, and again as a bonus action on your turn, you can move the duplicates up to 30 feet to an unoccupied space you can see. When you make a weapon attack or unarmed strike, you can deliver the attack as though you were standing in one of the duplicates' spaces. You can also make opportunity attacks as though you were standing in your duplicate's space.",
+        "The duplicates fade after one minute, and fade early if they take any damage or you use this technique again. A duplicate's AC is equal to your Iaijutsu save DC, and it it has to make a saving throw, it uses your saving throw bonus for the roll.",
+        "When you reach 11th level, you conjure three duplicates when you use this technique, and when you reach 17th level, you conjure four."
+      ]
+    },
+    {
+      "name": "Open Eyes",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Mind",
+      "subclassSource": "lightParty5e",
+      "level": 10,
+      "entries": [
+        "At 10th level, your mastery over the mind grants you resistance to psychic damage.",
+        "Additionally, you can use Third Eye when you are forced to make an Intelligence saving throw. If Third Eye would cause you to succeed on the roll, the creature that forced you to make the saving throw takes psychic damage equal to your Samurai level, in addition to the regular effects."
+      ]
+    },
+    {
+      "name": "Hissatsu Kaigan",
+      "source": "LightParty5e",
+      "className": "Samurai",
+      "classSource": "lightParty5e",
+      "subclassShortName": "Master of the Mind",
+      "subclassSource": "lightParty5e",
+      "level": 14,
+      "entries": [
+        "Starting at 14th level, immediately after you use an Iaijutsu technique or Hissatsu Kaiten, you can teleport up to 60 feet to an unoccupied space you can see."
       ]
     }
   ],
